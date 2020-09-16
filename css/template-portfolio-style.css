@@ -1,0 +1,184 @@
+/**
+ * CSS file for the template-portfolio.php custom page.
+ *
+ * @package		Canuck CP ClassicPress Theme
+ * @copyright	Copyright (C) 2020 or later Kevin Archibald
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html
+ * @author		Kevin Archibald <www.kevinsspace.ca/contact/>
+ */
+
+/* ======================================================================================================
+ *                                          Portfolio Page Styles
+ * ======================================================================================================= */
+.portfolio-post { width: 100%; float: left; padding: 0; margin: 0 0 30px 0; }
+/* -------------------------- Classic style overlay ------------ */
+.portfolio-classic-item-wrap                                                                  { width: 100%; float: left; position: relative; margin: 0; padding: 0; line-height: 0; }
+.portfolio-classic-item-wrap img                                                              { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-classic-item-wrap .portfolio-classic-overlay                                       { position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; width: 100%; height: 0%; opacity: 1.0;
+																								transition: .5s ease; display: flex; flex-direction: column; justify-content: center; }
+.portfolio-classic-item-wrap:hover .portfolio-classic-overlay                                 { opacity: 1.0; height: 100%; }
+.portfolio-classic-item-wrap .portfolio-classic-overlay .portfolio-classic-overlay-wrap       { position: relative; overflow: hidden; top: 0; left: 0; bottom: 0; right: 0; height: 100%; }
+.portfolio-classic-item-wrap:hover .portfolio-classic-overlay .portfolio-classic-overlay-wrap { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
+.portfolio-classic-item-wrap .portfolio-classic-overlay .masonry-links,
+.portfolio-classic-item-wrap .portfolio-classic-overlay .links                                { width: 100%; float: left; clear: both; margin: 0; padding: 0; text-align: center; }
+.portfolio-classic-item-wrap .portfolio-classic-overlay .masonry-links a,
+.portfolio-classic-item-wrap .portfolio-classic-overlay .links a                              { margin: 0 10px 0 0; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
+.portfolio-classic-item-wrap .portfolio-classic-overlay .links a:hover svg path               { fill: rgba(255,255,255,0.5); transition-property: color; transition: .25s ease; }
+.portfolio-classic-item-wrap:hover .portfolio-classic-overlay .masonry-links a,
+.portfolio-classic-item-wrap:hover .portfolio-classic-overlay .links a                        { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
+.portfolio-classic-item-wrap .portfolio-classic-overlay .masonry-links a:hover,
+.portfolio-classic-item-wrap .portfolio-classic-overlay .links a:hover                        { transition-property: color; transition: .25s ease; }
+/* ------------------ Full Width Portfolio ----------------- */
+.portfolio-full                        { width: 100%; float: left; margin: 0; padding: 20px 0 20px 0; }
+.portfolio-full .display-content-title { width: 100%; float: left; margin: 10px 0 0 0; padding: 0; }
+.portfolio-full .display-content       { float: left; clear: both; width: 100%; margin: 10px 0 0 0; }
+.portfolio-full .display-caption       { float: left;	clear: both; width: 100%; line-height: 1em; margin: 10px 0 0 0; }
+.portfolio-full .display-description   { float: left; clear: both; width: 100%; line-height: 1.25em; margin: 10px 0 0 0; }
+.portfolio-full .display-description p { margin: 0; padding: 0; }
+.portfolio-full h1,.portfolio-full h2,
+.portfolio-full h3,.portfolio-full h4,
+.portfolio-full h5,.portfolio-full h6  { line-height: 1em; }
+/* ------------------ One Column Portfolio ----------------- */
+.portfolio-one-column                                                    { width: 100%; float: left; margin: 0.5em 0 0 0; padding: 0 0 1em 0; }
+.portfolio-one-column .left-col                                          { width: 50%; float: left; padding: 1em 2% 1em 0; }
+.portfolio-one-column .left-col img                                      { width: 100%; height: auto; float: left; margin: 0; }
+.portfolio-one-column .left-col a img:hover                              { opacity: 0.5; }
+.portfolio-one-column .display-caption                                   { width: 100%; float: left; margin: 10px 0 0 0; padding: 0; }
+.portfolio-one-column .display-description                               { width: 100%; float: left; clear: both; margin: 10px 0 0 0; padding: 0; }
+.portfolio-one-column .left-col p:first-child                            { margin: 0; padding: 0; }
+.portfolio-one-column .left-col p                                        { margin: 0; padding: 5px 0 0 0; }
+.portfolio-one-column .right-col                                         { width: 46%; float: right; padding: 1.5em 0 1em 2%; }
+.portfolio-one-column .right-col h1,.portfolio-one-column .right-col h2,
+.portfolio-one-column .right-col h3,.portfolio-one-column .right-col h4,
+.portfolio-one-column .right-col h5,.portfolio-one-column .right-col h6  { margin: 0; line-height: 1em; padding: 0 0 10px 0; }
+.portfolio-one-column .right-col p:first-child                           { margin: 0; padding: 0; }
+.portfolio-one-column .right-col p                                       { margin: 0; padding: 5px 0 0 0; }
+/*------------------ Two Column Portfolio -----------------*/
+.portfolio-two-column-wrap                         { float: left; margin: 0; padding: 0; }
+.portfolio-two-column.left-col                     { width: 48%; float: left; margin: 1.5em 2% 1.5em 0; }
+.portfolio-two-column.right-col                    { width: 48%; float: left; margin: 1.5em 0 1.5em 2%; }
+.portfolio-two-column .display-caption             { width: 100%; float: left; margin: 10px 0 0 0; padding: 0; }
+.portfolio-two-column .display-caption h3          { width: 100%; float: left; margin: 10px 0 10px 0; padding: 0; }
+.portfolio-two-column .display-description         { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-two-column .display-post                { width: 100%; margin: 0; }
+.portfolio-two-column h1,.portfolio-two-column h2,
+.portfolio-two-column h3,.portfolio-two-column h4,
+.portfolio-two-column h5,.portfolio-two-column h6  { width: 100%; margin: 10px 0 10px 0; font-size: 1.2em; line-height: 1em; }
+.portfolio-two-column p                            { font-size: 1em; margin: 0.5em 0em 0.5em 0em; }
+.portfolio-two-column p:first-child                { font-size: 1em; margin: 0em 0em 0.5em 0em; }
+.portfolio-two-column ul                           { margin: 0px 1% 0px 1%; }
+/*------------------ Three Column Portfolio -----------------*/
+.portfolio-three-column-wrap                           { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-three-column.left-col                       { width: 31%; float: left; margin: 1.5em 3.5% 1.5em 0; }
+.portfolio-three-column.center-col                     { width: 31%; float: left; margin: 1.5em 0 1.5em 0; }
+.portfolio-three-column.right-col                      { width: 31%; float: left; margin: 1.5em 0 1.5em 3.5%; }
+.portfolio-three-column .display-caption               { width: 100%; margin: 0; }
+.portfolio-three-column .display-caption h5            { width: 100%; float: left; margin: 10px 0 0 0; padding: 0; }
+.portfolio-three-column .display-description           { width: 100%; float: left; margin: 10px 0 0 0; padding: 0; }
+.portfolio-three-column .display-post                  { width: 100%; margin: 0; }
+.portfolio-three-column h1,.portfolio-three-column h2,
+.portfolio-three-column h3,.portfolio-three-column h4,
+.portfolio-three-column h5,.portfolio-three-column h6  { width: 100%; float: left; margin: 10px 0 10px 0; padding: 0; font-size: 1.2em; line-height: 1.5em; }
+.portfolio-three-column p                              { font-size: 1em; margin: 0.5em 0 0 0; }
+.portfolio-three-column p:first-child                  { font-size: 1em; margin: 0; }
+.portfolio-three-column ul                             { font-size: 1em; margin: 0; }
+/*------------------ Four Column Portfolio -----------------*/
+.portfolio-four-column-wrap                          { padding: 0; }
+.portfolio-four-column.col-1                         { width: 22%; float: left; margin: 1.5em 2% 2em 0; }
+.portfolio-four-column.col-2,
+.portfolio-four-column.col-3                         { width: 22%; float: left; margin: 1.5em 2% 2em 2%; }
+.portfolio-four-column.col-4                         { width: 22%; float: left; margin: 1.5em 0 2em 2%; }
+.portfolio-four-column .display-caption              { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-four-column .display-caption h5           { width: 100%; float: left; margin: 10px 0 0 0; padding: 0; }
+.portfolio-four-column .display-description          { width: 100%; float: left; margin: 10px 0 0 0; }
+.portfolio-four-column .display-post                 { width: 100%; margin: 10px 0 0 0; }
+.portfolio-four-column h1,.portfolio-four-column h2,
+.portfolio-four-column h3,.portfolio-four-column h4,
+.portfolio-four-column h5,.portfolio-four-column h6  { width: 100%; margin: 10px 0 0 0; padding: 0; font-size: 1em; line-height: 1em; }
+.portfolio-four-column p                             { font-size: 0.85em; margin: 0.5em 0 0.5em 0; }
+.portfolio-four-column p:first-child                 { font-size: 0.85em; margin: 0 0 0.5em 0; }
+.portfolio-four-column ul                            { font-size: 0.85em; margin: 0 1% 0 1%; }
+.portfolio-error                                     { font-weight: bold; font-style: italic; padding: 2em 0 2em 0; }
+/*------------------ Portfolio grid-----------------*/
+/* ---- 2 column specific ---- */
+.portfolio-grid-2                      { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-grid-2 .portfolio-container { width: calc(50% - 10px); float: left; position: relative; margin: 5px; padding: 0; }
+/* ---- 3 column specific ---- */
+.portfolio-grid-3                      { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-grid-3 .portfolio-container { width: calc(33.333% - 10px); float: left; position: relative; margin: 5px; padding: 0; font-size: .75em; }
+/* ---- 4 column specific ---- */
+.portfolio-grid-4                      { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-grid-4 .portfolio-container { width: calc(25% - 4px); float: left; position: relative; margin: 2px; padding: 0; font-size: .75em; }
+/* ---- 5 column specific ---- */
+.portfolio-grid-5                      { width: 100%; float: left; margin: 0; padding: 0; }
+.portfolio-grid-5 .portfolio-container { width: calc(20% - 4px); float: left; position: relative; margin: 2px; padding: 0; font-size: .7em; }
+/* ----------- styles for all grid columns ---------- */
+.portfolio-container img                                    { display: block; width: 100%; height: auto; }
+.portfolio-container .image-overlay                         { position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; width: 0; height: 100%; transition: .5s ease; }
+.portfolio-container:hover .image-overlay,
+.portfolio-container:focus .image-overlay                   { width: 100%; }
+.portfolio-container .image-overlay .overlay-wrap           { position: absolute; overflow: hidden; top: 0; bottom: 0; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center;
+																height: 100%; transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
+.portfolio-container .image-overlay .links                  { width: 100%; float: left; clear: both; margin: 0; padding: 0; text-align: center; }
+.portfolio-container .image-overlay .links a                { margin: 0 0 0 10px; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
+.portfolio-container:hover .image-overlay .links a          { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
+.portfolio-container .image-overlay .links a:hover svg path { fill: rgba(255,255,255,0.5); transition-property: color; transition: .25s ease; }
+.portfolio-container .image-overlay .title                  { width: 100%; clear: both; float: left; margin: 0; padding: 0; text-align: center; font-size: 1em; line-height: 1.25em; }
+.portfolio-container .image-overlay .content                { width: calc(100% - 10px); float: left; clear: both; margin: 0; padding: 0 5px 0 5px; text-align: center; font-size: .875em; line-height: 1.25em; opacity: 0; }
+.portfolio-container:hover .image-overlay .content          { opacity: 1; }
+/* ----------- styles for 3 column masonry ---------- */
+.masonry-gallery *                                                        { box-sizing: border-box; }
+.masonry-gallery                                                          { background: #ffffff; width: 100%; float: left; margin: 30px 0 20px 0; padding: 0; }
+.masonry-gallery:after                                                    { content: ''; display: block; clear: both; }
+.masonry-grid-sizer,
+.masonry-grid-item                                                        { width: calc(33.333% - 5px); margin: 0; padding: 2.5px; }
+.masonry-grid-item                                                        { float: left; position: relative; }
+.masonry-grid-item img                                                    { display: block; max-width: 100%; }
+.masonry-grid-item .masonry-image-overlay                                 { position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; height: calc(100% - 5px); margin: 0 0 2.5px 2.5px; width: 0%; opacity: 1; transition: .5s ease; }
+.masonry-grid-item:hover .masonry-image-overlay                           { opacity: 1; width: calc(100% - 5px); }
+.masonry-grid-item .masonry-image-overlay .masonry-overlay-wrap           { position: relative; overflow: hidden; top: 0; left: 0; bottom: 0; right: 0; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.masonry-grid-item:hover .masonry-image-overlay .masonry-overlay-wrap     { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
+.masonry-grid-item .masonry-image-overlay .masonry-links                  { width: 100%; clear: both; margin: 0 auto 0 auto; padding: 0; text-align: center; }
+.masonry-grid-item .masonry-image-overlay .masonry-links a                { margin: 0 0 0 10px; padding: 2px 5px 2px 5px; opacity: 1; text-align: center; font-size: 16px; transition-property: color; transition: .5s ease; }
+.masonry-grid-item:hover .masonry-image-overlay .masonry-links a          { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
+.masonry-grid-item .masonry-image-overlay .masonry-links a:hover svg path { fill: rgba(255,255,255,0.5); cursor: pointer; transition-property: color; transition: .25s ease; }
+.masonry-grid-item .masonry-image-overlay .title                          { width: 100%; clear: both; float: left; margin: 0; padding: 0; text-align: center; font-size: 16px; line-height: 1.25em; }
+.masonry-grid-item .masonry-image-overlay .content                        { width: calc(100% - 10px); float: left; clear: both; margin: 0; padding: 0 5px 0 5px; text-align: center; font-size: 14px; line-height: 1.25em; opacity: 0; }
+.masonry-grid-item:hover .masonry-image-overlay .content                  { opacity: 1; }
+/* ========================================================================== 900 px */
+@media only screen and (max-width:900px) {
+	/* four column portfolios */
+	.portfolio-four-column-wrap .thin-border { display: none; }
+	.portfolio-four-column.col-1,
+	.portfolio-four-column.col-2,
+	.portfolio-four-column.col-3,
+	.portfolio-four-column.col-4             { width: 100%; float: left; margin: 25px 0 0 0; padding: 0 0 25px 0; }
+}
+/* ===================================================================== 700 */
+@media only screen and (max-width:700px) {
+	.portfolio-one-column .left-col                    { width: 100%; }
+	.portfolio-one-column .right-col                   { width: 100%; float: left; padding: 0 0 1em 0; }
+	.portfolio-one-column .display-caption,
+	.portfolio-one-column .display-description         { display:none; }
+	.portfolio-two-column-wrap .thin-border            { display: none; }
+	.portfolio-two-column.left-col,
+	.portfolio-two-column.right-col                    { width: 100%; float: left; margin: 25px 0 0 0; padding: 0 0 25px 0; }
+	.portfolio-three-column-wrap .thin-border          { display: none; }
+	.portfolio-three-column.left-col,
+	.portfolio-three-column.center-col,
+	.portfolio-three-column.right-col                  { width: 100%; margin: 25px 0 0 0; padding: 0 0 25px 0; }
+	.portfolio-grid-2 .portfolio-container,
+	.portfolio-grid-3 .portfolio-container,
+	.portfolio-grid-4 .portfolio-container,
+	.portfolio-grid-5 .portfolio-container             { width: calc(100% - 10px); font-size: 1em; }
+	.masonry-grid-item .masonry-image-overlay .title   { font-size: 13px;}
+	.masonry-grid-item .masonry-image-overlay .content { font-size: 11px; }
+}
+/* ===================================================================== 480 */
+@media only screen and (max-width:480px) {
+	.portfolio-two-column                { width: 100%; }
+	.portfolio-three-column              { width: 100%; }
+	.portfolio-four-column               { width: 100%; }
+	.masonry-grid-sizer,
+	.masonry-grid-item                   { width: calc(50% - 5px); }
+}

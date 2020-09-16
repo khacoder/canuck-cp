@@ -1,0 +1,125 @@
+/**
+ * editor-style.css file for Theme, note uses default font and gray-pink styles
+ *
+ * @package     Canuck CP ClassicPress Theme
+ * @copyright   Copyright (C) 2020 or later Kevin Archibald
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html
+ * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('./font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('./font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+  url('./font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+  url('./font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+  url('./font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+  url('./font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* special styles for the editor panel */
+.mce-content-body p,.mce-content-body div,
+.mce-content-body h1,.mce-content-body h2,
+.mce-content-body h3,.mce-content-body h4,
+.mce-content-body h5,.mce-content-body h6  { line-height: 1.5em!important; }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> General */
+h1, h2, h3, h4, h5, h6, body, #page-title-wide .page-title-wrap h1 {font-family: 'Open Sans', sans-serif; }
+body        { width: 100%; font-size: 100%; font-weight: normal; line-height: 1.5em; word-wrap: break-word; margin: 0; padding: 0; }
+/* ---------------- clear fixes ----------------------- */
+.clearfix   { clear: both; }
+.clearleft  { clear: left; }
+.clearright {clear: right;}
+/* ---------------- Headers --------------------------- */
+h1,h2,h3,h4,h5,h6 { line-height: 1.5em; margin: 10px 0 0 0; padding: 0; font-weight: 300; }
+h1                { font-size: 2.75em; }
+h2                { font-size: 2.25em; }
+h3                { font-size: 1.75em; }
+h4                { font-size: 1.5em; }
+h5                { font-size: 1.25em; }
+h6                { font-size: 1.125em; }
+span.title        { font-size: 1.25em; }
+/* ---------------- basic paragraph ------------------- */
+p             { font-size: 1em; margin: 0; padding: 0.75em 0 0 0; line-height: 1.5em; }
+p:first-child { margin: 0; padding: 0; }
+/* ---------------- Misc HTML tags -------------------- */
+address                  { font-size: 1em; font-style: italic; }
+blockquote, blockquote p { margin-left: 1em; font-style: italic; font-weight: 600; line-height: 1.5em; vertical-align: bottom; }
+blockquote p:before      { padding: 0 0.5em 0 0; font-size: 0.75em; font-family: FontAwesome; content:'\f10d'; line-height: 1.5em;  vertical-align: top; }
+pre                      { margin: 1em 0 0 0; padding: 1em; font-size: 1em; border-radius: 10px; overflow-x: auto; }
+label                    { font-size: 1em; }
+code                     {  font-size: 1em; }
+q                        { font-style: italic; }
+q:before, q:after        { content:'"'; }
+/* ------------- unordered list ----------------------- */
+ul          { margin: 0 0 0 1.5em; padding: 0; line-height: 1.5em; }
+ul li       { font-size: 1em; list-style: disc; list-style-position: outside; }
+ul li li    { font-size: 1.0em; list-style: circle; list-style-position: outside; }
+ul li li li { font-size: 1.0em; list-style: square; list-style-position: outside; }
+/* -------------- special lists ----------------------- */
+ul.recent-posts li { list-style: none; }
+/* -------------- ordered list ------------------------ */
+ol          { margin: 0 0 0 1.5em; padding: 0; line-height: 1.5em; }
+ol li       { font-size: 1em; list-style: decimal; list-style-position: outside; }
+ol li li    { font-size: 1em; list-style: lower-roman; list-style-position: outside; }
+ol li li li { font-size: 1em; list-style: decimal; list-style-position: outside; }
+/* -------------- ordered/unordered combo lists ------- */
+ol ul li    { list-style: disc; list-style-position: inside; }
+ol ul ul li { list-style: circle; list-style-position: inside; }
+ul ol li    { list-style: decimal; list-style-position: inside; }
+ul ol ul li { list-style: circle; list-style-position: inside; }
+ul ul ol li { list-style: decimal; list-style-position: inside; }
+/* --------------definition list ---------------------- */
+dt { margin: 0; padding: 0; font-size: 1em; font-weight: bold; }
+dl { margin: 0; padding: 0; font-size: 1.0em; }
+dd { margin-left: 1em; font-size: 1em; }
+/* ------ links default ------------------------------- */
+a                                    {	transition: .5s ease; }
+a:link, a:active, a:visited, a:hover { text-decoration: none; }
+/* ------------------ table styles -------------------- */
+table { font-size: 1em; border-collapse: collapse; border-spacing: 0; }
+thead { font-weight: bold; text-align: center; }
+th    { padding: 0.625em; }
+tfoot { font-weight: bold; }
+tbody { text-align: left; }
+tr    { padding: 0.625em; }
+td    { padding: 0.625em; text-align: left; }
+/* ----------------------------------scroll to top ---- */
+body .scrolltotop              { padding: 8px 10px 10px 10px; font-size: 20px; display: none; position: fixed; bottom: 20px; right: 20px; border-radius: 3px; z-index: 999999; }
+body.sticky .scrolltotop       { display: inline-block; }
+body.sticky .scrolltotop:hover { transition: .5s ease; }
+/* ---------------------------- animations -------------*/
+@keyframes fadeIn          { from { opacity: 0; } to { opacity: 1; } }
+@keyframes searchHeightOn  { from { height: 0; } to { height: 25px; } }
+@keyframes searchHeightOff { from { height: 25px; } to { height: 0; } }
+@keyframes menuDropDown    { from { opacity: 0; } to { opacity: 1; } }
+@keyframes menuDropOut     { from { opacity: 1; } to { opacity: 0; } }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Post Styles */
+/* ---------------------------------------------------------------- General Post Styles */
+/* ---------------- WordPress read-more */
+.post-content-tf .read-more-wrap               { width: 100%; float: left; margin: 10px 0 10px 0; text-align: left; }
+.read-more-wrap a.read-more                    { display: inline-block; margin: 10px 0 0 0; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: 0.999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
+.read-more-wrap a.read-more:before             { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.read-more-wrap a.read-more:hover              { cursor: pointer; }
+.read-more-wrap a.read-more:hover:before       { height: 100%; opacity: 1; }
+.post-content-sf .read-more-wrap               { width: 100%; float: left; margin: 5px 0 5px 0; text-align: right; }
+.post-content-sf .read-more-wrap a.read-more   { margin: 5px 0 0 0; padding: 3px 15px 3px 15px; }
+.post-content-grid .read-more-wrap             { width: 100%; float: left; margin: 5px 0 5px 0; text-align: right; font-size: .875em; }
+.post-content-grid .read-more-wrap a.read-more { margin: 5px 0 0 0; padding: 3px 15px 3px 15px; }
+/* --------- post image styling ------- */
+img                                            { max-width: 100%; height: auto; margin: 0; padding: 0; }
+img.border                                     { max-width: 98%!important; height: auto!important; border-radius: 5px!important; padding: 0!important; margin-top: 0.625em!important; margin-bottom: 0.625em!important; }
+.image-post-feature                            { width: 100%; float: left; margin: 0; }
+.wp-caption                                    { display: block; max-width: 100%; margin: 0.5em 0 0.5em 0; }
+.wp-caption.border                             { max-width: 98%!important; height: auto!important; border-radius: 5px!important; padding: 0!important; margin-top: 0.625em!important; margin-bottom: 0.625em!important; }
+.wp-caption img                                { max-width: 100%; height: auto; padding: 0; margin: 0; }
+.post-content .wp-caption p                    { margin: 0; padding: 0; }
+.wp-caption-text                               { text-align: center; margin: 0; padding: 0.25em; font-size: 1em; font-style: italic; }
+.wp-block-image .aligncenter img               { margin: 0 auto 0 auto; }
+/* ---- WordPress alignment classes ---- */
+.alignleft,.wp-caption.alignleft               { float: left; margin: 0.5em 1em 0 0; padding: 0; }
+.alignright,.wp-caption.alignright             { float: right; margin: 0.5em 0 0 1em; padding: 0; }
+.aligncenter                                   { display: block; margin-left: auto; margin-right: auto; }
+.alignnone                                     { margin-right: 1em; }
+img.wp-smiley                                  { padding: 0; margin: 0; border: none; float: none; }

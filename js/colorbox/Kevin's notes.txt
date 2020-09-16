@@ -1,0 +1,8 @@
+changed
+current: " image {current} of {total}"
+to
+current: " {current} of {total}"
+
+in both expanded and minified
+
+This helps with the iPhone by reducing the text
