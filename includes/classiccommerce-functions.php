@@ -14,102 +14,103 @@
  */
 
 /**
- * Alter WooCommerce shop posts per page.
+ * Change number of products that are displayed per page.
  *
  * @param integer $cols is columns to use.
  */
-function canuckcp_woo_posts_per_page( $cols ) {
-	return 12;
+function cc_new_loop_shop_per_page( $cols ) {
+	$cols = 12; // insert the number to be shown per page.
+	return $cols;
 }
-add_filter( 'loop_shop_per_page', 'canuckcp_woo_posts_per_page' );
+add_filter( 'loop_shop_per_page', 'cc_new_loop_shop_per_page', 20 );
 
 /**
  * Alter shop columns.
  *
  * @param integer $columns is columns to use.
  */
-function canuckcp_woo_shop_columns( $columns ) {
+function canuckcp_cc_shop_columns( $columns ) {
 	return 4;
 }
-add_filter( 'loop_shop_columns', 'canuckcp_woo_shop_columns' );
+add_filter( 'loop_shop_columns', 'canuckcp_cc_shop_columns' );
 
 /**
  * Add correct body class for shop columns.
  *
  * @param string $classes are css classes.
  */
-function canuckcp_woo_shop_columns_body_class( $classes ) {
+function canuckcp_cc_shop_columns_body_class( $classes ) {
 	if ( is_shop() || is_product_category() || is_product_tag() ) {
 		$classes[] = 'columns-4';
 	}
 	return $classes;
 }
-add_filter( 'body_class', 'canuckcp_woo_shop_columns_body_class' );
+add_filter( 'body_class', 'canuckcp_cc_shop_columns_body_class' );
 
 /**
  * Change pagination pointers.
  *
  * @param array $args is array of html.
  */
-function canuckcp_woo_pagination_args( $args ) {
-	$args['prev_text'] = '<i class="fa fa-angle-left"></i>';
-	$args['next_text'] = '<i class="fa fa-angle-right"></i>';
+function canuckcp_cc_pagination_args( $args ) {
+	$args['prev_text'] = '<i class="font-icon">' . canuckcp_svg( 'angle-double-left', $icon_width = '14', $icon_color = '#7f7f7f' ) . '</i>';
+	$args['next_text'] = '<i class="fa fa-angle-right">' . canuckcp_svg( 'angle-double-right', $icon_width = '14', $icon_color = '#7f7f7f' ) . '</i>';
 	return $args;
 }
-add_filter( 'woocommerce_pagination_args', 'canuckcp_woo_pagination_args' );
+add_filter( 'woocommerce_pagination_args', 'canuckcp_cc_pagination_args' );
 
 /**
  * Change sale text.
  */
-function canuckcp_woo_sale_flash() {
+function canuckcp_cc_sale_flash() {
 	return '<span class="onsale">' . esc_html__( 'Sale', 'canuck-cp' ) . '</span>';
 }
-add_filter( 'woocommerce_sale_flash', 'canuckcp_woo_sale_flash' );
+add_filter( 'woocommerce_sale_flash', 'canuckcp_cc_sale_flash' );
 
 /**
  * Set related products to display 4 products.
  *
  * @param array $args is array of data.
  */
-function canuckcp_woo_related_posts_per_page( $args ) {
+function canuckcp_cc_related_posts_per_page( $args ) {
 	$args['posts_per_page'] = 8;
 	return $args;
 }
-add_filter( 'woocommerce_output_related_products_args', 'canuckcp_woo_related_posts_per_page' );
+add_filter( 'woocommerce_output_related_products_args', 'canuckcp_cc_related_posts_per_page' );
 
 /**
  * Filter up-sells columns
  *
  * @param integer $columns is columns to use.
  */
-function canuckcp_woo_single_loops_columns( $columns ) {
+function canuckcp_cc_single_loops_columns( $columns ) {
 	return 4;
 }
-add_filter( 'woocommerce_up_sells_columns', 'canuckcp_woo_single_loops_columns' );
+add_filter( 'woocommerce_up_sells_columns', 'canuckcp_cc_single_loops_columns' );
 
 /**
  * Filter related args.
  *
  * @param array $args is array of data.
  */
-function canuckcp_woo_related_columns( $args ) {
+function canuckcp_cc_related_columns( $args ) {
 	$args['columns'] = 4;
 	return $args;
 }
-add_filter( 'woocommerce_output_related_products_args', 'canuckcp_woo_related_columns', 10 );
+add_filter( 'woocommerce_output_related_products_args', 'canuckcp_cc_related_columns', 10 );
 
 /**
  * Filter body classes to add column class.
  *
  * @param string $classes are css classes.
  */
-function canuckcp_woo_single_loops_columns_body_class( $classes ) {
+function canuckcp_cc_single_loops_columns_body_class( $classes ) {
 	if ( is_singular( 'product' ) ) {
 		$classes[] = 'columns-4';
 	}
 	return $classes;
 }
-add_filter( 'body_class', 'canuckcp_woo_single_loops_columns_body_class' );
+add_filter( 'body_class', 'canuckcp_cc_single_loops_columns_body_class' );
 
 /**
  * Add the cart link to menu
@@ -147,7 +148,7 @@ function canuckcp_menu_cart_item() {
 	$html    = WC()->cart->get_cart_total();
 	$html    = str_replace( 'amount', '', $html );
 	$output .= '<a href="' . esc_url( $url ) . '" class="' . esc_attr( $css_class ) . '">';
-	$output .= '<span class="fa fa-shopping-bag"></span>';
+	$output .= '<span class="font-icon">' . canuckcp_svg( 'shopping-cart', $icon_width = '14', $icon_color = '#7f7f7f' ) . '</span>';
 	$output .= wp_kses_post( $html );
 	$output .= '</a>';
 	return $output;
@@ -167,16 +168,16 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'canuckcp_main_menu_cart_link_f
 /**
  * Set up layout options for the shop page
  */
-function canuckcp_woo_shop_options() {
+function canuckcp_cc_shop_options() {
 	global $wp_customize;
 	// Add panel.
 	$wp_customize->add_panel(
-		'canuckcp_woo',
+		'canuckcp_cc',
 		array(
 			'priority'    => 9,
 			'capability'  => 'edit_theme_options',
-			'title'       => esc_html__( 'Canuck WooCommerce Options', 'canuck-cp' ),
-			'description' => esc_html__( 'Theme specific options when WooCommerce is installed.', 'canuck-cp' ),
+			'title'       => esc_html__( 'Canuck ClassicCommerce Options', 'canuck-cp' ),
+			'description' => esc_html__( 'Theme specific options when ClassicCommerce is installed.', 'canuck-cp' ),
 		)
 	);
 	// Add sections in panel.
@@ -185,9 +186,9 @@ function canuckcp_woo_shop_options() {
 		array(
 			'priority'    => 1,
 			'capability'  => 'edit_theme_options',
-			'title'       => esc_html__( 'WooCommerce Shop Page Layouts', 'canuck-cp' ),
+			'title'       => esc_html__( 'ClassicCommerce Shop Page Layouts', 'canuck-cp' ),
 			'description' => esc_html__( 'Pick the layout you want. Sidebars will be in the Appearance->Widgets Panel.', 'canuck-cp' ),
-			'panel'       => 'canuckcp_woo',
+			'panel'       => 'canuckcp_cc',
 		)
 	);
 	$wp_customize->add_setting(
@@ -235,4 +236,4 @@ function canuckcp_woo_shop_options() {
 		)
 	);
 }
-add_action( 'customize_register', 'canuckcp_woo_shop_options' );
+add_action( 'customize_register', 'canuckcp_cc_shop_options' );

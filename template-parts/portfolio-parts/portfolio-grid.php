@@ -16,7 +16,7 @@ $display_post_content       = ( ( '' === get_post_meta( $post->ID, 'canuckcp_met
 $display_post_content_title = ( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_include_post_content_title', true ) ? false : true ) );
 $display_image_caption      = ( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_include_image_caption', true ) ? false : true ) );
 $display_image_description  = ( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_include_image_description', true ) ? false : true ) );
-$canuckcp_portfolio_type      = sanitize_text_field( ( '' === get_post_meta( $post->ID, 'canuckcp_portfolio_type', true ) ? 'grid3' : get_post_meta( $post->ID, 'canuckcp_portfolio_type', true ) ) );
+$canuckcp_portfolio_type    = sanitize_text_field( ( '' === get_post_meta( $post->ID, 'canuckcp_portfolio_type', true ) ? 'grid3' : get_post_meta( $post->ID, 'canuckcp_portfolio_type', true ) ) );
 $include_pinterest_pinit    = get_theme_mod( 'canuckcp_include_pinit' ) ? true : false;
 $category_id                = get_cat_ID( $category );
 $args                       = array(

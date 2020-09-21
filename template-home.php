@@ -21,7 +21,7 @@ if ( 'button_nav' === $canuckcp_home_feature ) {
 			<?php
 			if ( '' === $canuckcp_feature_category ) {
 				?>
-				<span class="error"><?php esc_html_e( 'You need to select a category in the \"Canuck Home Page => Home Feature Options\" panel!', 'canuck-cp' ); ?></span>
+				<span class="error"><?php esc_html_e( 'You need to select a category in the "Canuck Home Page => Home Feature Options" panel!', 'canuck-cp' ); ?></span>
 				<?php
 			} else {
 				get_template_part( '/template-parts/feature-slider-parts/slider', 'button-nav-3to1' );

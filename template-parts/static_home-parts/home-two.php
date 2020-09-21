@@ -78,14 +78,14 @@ if ( '' !== $sec2_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload"
+									<img data-pin-no-hover="true" class="lazyload"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section2_box1_image ); ?>"
 										alt="<?php echo esc_attr( $section2_box1_title ); ?>" />
 									<?php
 								} else {
 									?>
-									<img src="<?php echo esc_url( $section2_box1_image ); ?>" alt="<?php echo esc_attr( $section2_box1_title ); ?>" />
+									<img data-pin-no-hover="true" src="<?php echo esc_url( $section2_box1_image ); ?>" alt="<?php echo esc_attr( $section2_box1_title ); ?>" />
 									<?php
 								}
 								?>
@@ -111,14 +111,14 @@ if ( '' !== $sec2_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload no-link"
+									<img data-pin-no-hover="true" class="lazyload no-link"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section2_box1_image ); ?>"
 										alt="<?php echo esc_attr( $section2_box1_title ); ?>" />
 									<?php
 								} else {
 									?>
-									<img class ="no-link" src="<?php echo esc_url( $section2_box1_image ); ?>" alt="<?php echo esc_attr( $section2_box1_title ); ?>" />
+									<img data-pin-no-hover="true" class ="no-link" src="<?php echo esc_url( $section2_box1_image ); ?>" alt="<?php echo esc_attr( $section2_box1_title ); ?>" />
 									<?php
 								}
 								?>
@@ -193,14 +193,14 @@ if ( '' !== $sec2_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload"
+									<img data-pin-no-hover="true" class="lazyload"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section2_box2_image ); ?>"
 										alt="<?php echo esc_attr( $section2_box2_title ); ?>" />
 									<?php
 								} else {
 									?>
-									<img src="<?php echo esc_url( $section2_box2_image ); ?>" alt="<?php echo esc_attr( $section2_box2_title ); ?>" />
+									<img data-pin-no-hover="true" src="<?php echo esc_url( $section2_box2_image ); ?>" alt="<?php echo esc_attr( $section2_box2_title ); ?>" />
 									<?php
 								}
 								?>
@@ -226,14 +226,14 @@ if ( '' !== $sec2_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload no-link"
+									<img data-pin-no-hover="true" class="lazyload no-link"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section2_box2_image ); ?>"
 										alt="<?php echo esc_attr( $section2_box2_title ); ?>" />
 									<?php
 								} else {
 									?>
-									<img class ="no-link" src="<?php echo esc_url( $section2_box2_image ); ?>" alt="<?php echo esc_attr( $section2_box2_title ); ?>" />
+									<img data-pin-no-hover="true" class ="no-link" src="<?php echo esc_url( $section2_box2_image ); ?>" alt="<?php echo esc_attr( $section2_box2_title ); ?>" />
 									<?php
 								}
 								?>
@@ -307,14 +307,14 @@ if ( '' !== $sec2_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload" 
+									<img data-pin-no-hover="true" class="lazyload" 
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section2_box3_image ); ?>"
 										alt="<?php echo esc_attr( $section2_box3_title ); ?>" />
 									<?php
 								} else {
 									?>
-									<img src="<?php echo esc_url( $section2_box3_image ); ?>" alt="<?php echo esc_attr( $section2_box3_title ); ?>" />
+									<img data-pin-no-hover="true" src="<?php echo esc_url( $section2_box3_image ); ?>" alt="<?php echo esc_attr( $section2_box3_title ); ?>" />
 									<?php
 								}
 								?>
@@ -340,14 +340,14 @@ if ( '' !== $sec2_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload no-link"
+									<img data-pin-no-hover="true" class="lazyload no-link"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section2_box3_image ); ?>"
 										alt="<?php echo esc_attr( $section2_box3_title ); ?>" />
 									<?php
 								} else {
 									?>
-									<img class ="no-link" src="<?php echo esc_url( $section2_box3_image ); ?>" alt="<?php echo esc_attr( $section2_box3_title ); ?>" />
+									<img data-pin-no-hover="true" class ="no-link" src="<?php echo esc_url( $section2_box3_image ); ?>" alt="<?php echo esc_attr( $section2_box3_title ); ?>" />
 									<?php
 								}
 								?>

@@ -465,56 +465,6 @@ function canuckcp_get_customizer_option_partameters() {
 			'transport'   => 'refresh',
 			'sanitize'    => 'canuckcp_sanitize_flex_trans',
 		),
-		'canuckcp_flex_gallery_auto'                       => array(
-			'name'        => 'canuckcp_flex_gallery_auto',
-			'title'       => esc_html__( 'Gallery Slider Auto Mode', 'canuck-cp' ),
-			'option_type' => 'checkbox',
-			'description' => esc_html__( 'If checked the slider will start automatically.', 'canuck-cp' ),
-			'section'     => 'general_flex',
-			'priority'    => 5,
-			'default'     => 0, // Leave as 0.
-			'transport'   => 'refresh',
-			'sanitize'    => 'wp_validate_boolean',
-		),
-		'canuckcp_flex_gallery_effect'                     => array(
-			'name'        => 'canuckcp_flex_gallery_effect',
-			'title'       => esc_html__( 'Gallery Slider Transition Effect', 'canuck-cp' ),
-			'option_type' => 'select',
-			'choices'     => array(
-				'slide' => esc_html__( 'Slide', 'canuck-cp' ),
-				'fade'  => esc_html__( 'Fade', 'canuck-cp' ),
-			),
-			'description' => esc_html__( 'Use either a slide or fade to switch slides.', 'canuck-cp' ),
-			'section'     => 'general_flex',
-			'priority'    => 6,
-			'default'     => 'fade',
-			'transport'   => 'refresh',
-			'sanitize'    => 'canuckcp_sanitize_flex_effect',
-		),
-		'canuckcp_flex_gallery_pause'                      => array(
-			'name'        => 'canuckcp_flex_gallery_pause',
-			'title'       => esc_html__( 'Gallery Slider Pause Time', 'canuck-cp' ),
-			'option_type' => 'select',
-			'choices'     => canuckcp_flex_slider_pause_choices(),
-			'description' => esc_html__( 'How long before the slide changes in milliseconds.', 'canuck-cp' ),
-			'section'     => 'general_flex',
-			'priority'    => 7,
-			'default'     => '5000',
-			'transport'   => 'refresh',
-			'sanitize'    => 'canuckcp_sanitize_flex_pause',
-		),
-		'canuckcp_flex_gallery_trans'                      => array(
-			'name'        => 'canuckcp_flex_gallery_trans',
-			'title'       => esc_html__( 'Gallery Slider Transition Time', 'canuck-cp' ),
-			'option_type' => 'select',
-			'choices'     => canuckcp_flex_slider_transition_choices(),
-			'description' => esc_html__( 'How long for the slide to switch from start of change to end of change in milliseconds.', 'canuck-cp' ),
-			'section'     => 'general_flex',
-			'priority'    => 8,
-			'default'     => '600',
-			'transport'   => 'refresh',
-			'sanitize'    => 'canuckcp_sanitize_flex_trans',
-		),
 		'canuckcp_disable_widget_slider'                   => array(
 			'name'        => 'canuckcp_disable_widget_slider',
 			'title'       => esc_html__( 'Disable the widget slider', 'canuck-cp' ),
@@ -7100,10 +7050,6 @@ function canuckcp_general_options_backup() {
 	$canuckcp_flex_slider_effect    = esc_html( get_theme_mod( 'canuckcp_flex_slider_effect', 'fade' ) );
 	$canuckcp_flex_slider_pause     = intval( get_theme_mod( 'canuckcp_flex_slider_pause', '5000' ) );
 	$canuckcp_flex_slider_trans     = intval( get_theme_mod( 'canuckcp_flex_slider_trans', '600' ) );
-	$canuckcp_flex_gallery_auto     = get_theme_mod( 'canuckcp_flex_gallery_auto', false ) ? 'Checked' : 'Unchecked';
-	$canuckcp_flex_gallery_effect   = esc_html( get_theme_mod( 'canuckcp_flex_gallery_effect', 'fade' ) );
-	$canuckcp_flex_gallery_pause    = intval( get_theme_mod( 'canuckcp_flex_gallery_pause', '5000' ) );
-	$canuckcp_flex_gallery_trans    = intval( get_theme_mod( 'canuckcp_flex_gallery_trans', '600' ) );
 	$canuckcp_disable_widget_slider = get_theme_mod( 'canuckcp_disable_widget_slider', false ) ? 'Checked' : 'Unchecked';
 	$canuckcp_disable_colorboxjs    = get_theme_mod( 'canuckcp_disable_colorboxjs', false ) ? 'Checked' : 'Unchecked';
 	$canuckcp_disable_fitvidsjs     = get_theme_mod( 'canuckcp_disable_fitvidsjs', false ) ? 'Checked' : 'Unchecked';

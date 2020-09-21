@@ -10,9 +10,9 @@
  * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
  */
 
-if ( ! dynamic_sidebar( 'canuckcp_woo_sidebar_b' ) ) {
+if ( ! dynamic_sidebar( 'canuckcp_cc_sidebar_a' ) ) {
 	?>
-	<h2><?php esc_html_e( 'Woo Sidebar b', 'canuck-cp' ); ?></h2>
+	<h2><?php esc_html_e( 'CC Sidebar A', 'canuck-cp' ); ?></h2>
 	<p><?php esc_html_e( 'Go to Appearance => Widgets and drag a widget over to this sidebar.', 'canuck-cp' ); ?></p>
 	<?php
 }

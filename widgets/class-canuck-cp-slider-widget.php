@@ -38,7 +38,7 @@ class Canuck_CP_Slider_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 		$widget_ops = array(
-			'classname'   => 'canuckcp_slider_widget_class',
+			'classname'   => 'canuckcp-slider-widget-class',
 			'description' => esc_html__( 'Display slider of featured images', 'canuck-cp' ),
 		);
 		parent::__construct( 'canuckcp_slider_widget', esc_html__( 'Canuck CP Slider Widget', 'canuck-cp' ), $widget_ops );
@@ -226,7 +226,7 @@ function canuckcp_widget_slider_no_thumbs( $slider_category, $pagination, $slide
 	$canuckcp_feature_pic_count = 0;
 	if ( 0 !== $category_id && $custom_posts ) {
 		?>
-		<div class="splide canuck-slider-widget" data-splide=<?php echo '{"type":"' . esc_attr( $slider_animation ) . '","arrows":1,"pagination":' . intval( $pagination ) . ',"rewind":1,"interval":' . intval( $slider_pause ) . ',"speed":' . intval( $slider_transition ) . ',"autoplay":' . esc_attr( $slider_auto ) . '}'; ?>>
+		<div class="splide canuck-cp-slider-widget" data-splide=<?php echo '{"type":"' . esc_attr( $slider_animation ) . '","arrows":1,"pagination":' . intval( $pagination ) . ',"rewind":1,"interval":' . intval( $slider_pause ) . ',"speed":' . intval( $slider_transition ) . ',"autoplay":' . esc_attr( $slider_auto ) . '}'; ?>>
 			<div id="widget-flex-splide-no-nav" class="splide__track widget feature bottom">
 				<ul class="splide__list">
 					<?php

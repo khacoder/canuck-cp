@@ -89,7 +89,7 @@ if ( 0 !== $category_id && $custom_posts ) {
 	<div class="error"><?php esc_html_e( 'You have not set up your Feature posts so I can not find any images - see user documentation.', 'canuck-cp' ); ?></div>
 	<?php
 }
-if ( 0 === $canuckcp_feature_pic_count ) {
+if ( isset( $canuckcp_feature_pic_count ) && 0 === $canuckcp_feature_pic_count ) {
 	?>
 	<div class="error">
 		<h3><?php esc_html_e( 'Error: There were no feature images found for your slider. Did you select the correct category?', 'canuck-cp' ); ?></h3>

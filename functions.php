@@ -38,7 +38,7 @@ if ( false === get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false 
 }
 require get_template_directory() . '/includes/media-grabber.php';
 if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/includes/woocommerce-functions.php';
+	require get_template_directory() . '/includes/classiccommerce-functions.php';
 }
 
 if ( ! function_exists( 'canuckcp_load_js' ) ) {
@@ -250,8 +250,6 @@ if ( ! function_exists( 'canuckcp_theme_supports' ) ) {
 			add_theme_support( 'wc-product-gallery-zoom' );
 			add_theme_support( 'wc-product-gallery-lightbox' );
 		}
-		// Gutenberg.
-		add_theme_support( 'align-wide' );
 	}
 	add_action( 'after_setup_theme', 'canuckcp_theme_supports' );
 }
@@ -270,41 +268,6 @@ function canuckcp_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'canuckcp_content_width', 1600 );// phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
 }
 add_action( 'after_setup_theme', 'canuckcp_content_width', 0 );
-
-/**
- * Load Gertiberg styles.
- */
-function canuckcp_gutenberg_load_styles() {
-	/**
-	 * Support for Gutenberg editor editor style
-	 *
-	 * This function a editor style sheet designed for the Gutenberg editor panel.
-	 * It contains styles to present Gutenberg as the theme will present these blocks.
-	 */
-	require_once get_template_directory() . '/css/skin-guttenberg-css.php';
-	$display_font = get_theme_mod( 'canuckcp_display_font_options', 'auto' );
-	// Load theme fonts.
-	$theme_fonts = canuckcp_fonts();
-	if ( 'google' === $theme_fonts['header']['type'] ) {
-		wp_enqueue_style( 'canuck-cp-google-1', 'https://fonts.googleapis.com/css?family=' . $theme_fonts['header']['enqueue'] . '&display=' . $display_font, array(), CANUCKCP_VERSION );
-	}
-	if ( 'google' === $theme_fonts['body']['type'] ) {
-		if ( $theme_fonts['header']['enqueue'] !== $theme_fonts['body']['enqueue'] ) {
-			wp_enqueue_style( 'canuck-cp-google-2', 'https://fonts.googleapis.com/css?family=' . $theme_fonts['body']['enqueue'] . '&display=' . $display_font, array(), CANUCKCP_VERSION );
-		}
-	}
-	if ( 'google' === $theme_fonts['page']['type'] ) {
-		if ( $theme_fonts['header']['enqueue'] !== $theme_fonts['page']['enqueue'] && $theme_fonts['body']['enqueue'] !== $theme_fonts['page']['enqueue'] ) {
-			wp_enqueue_style( 'canuck-cp-google-3', 'https://fonts.googleapis.com/css?family=' . $theme_fonts['page']['enqueue'] . '&display=' . $display_font, array(), CANUCKCP_VERSION );
-		}
-	}
-	wp_enqueue_style( 'canuck-cp-block-editor-styles', get_theme_file_uri( '/css/gutenberg-editor-style.css' ), false, CANUCKCP_VERSION, 'all' );
-	$ka_gutenberg_css       = canuckcp_custom_css_gutenberg();
-	$ka_guttenberg_skin_css = canuckcp_guttenberg_skin_css();
-	wp_add_inline_style( 'canuck-cp-block-editor-styles', $ka_gutenberg_css );
-	wp_add_inline_style( 'canuck-cp-block-editor-styles', $ka_guttenberg_skin_css );
-}
-add_action( 'enqueue_block_editor_assets', 'canuckcp_gutenberg_load_styles' );
 
 if ( ! function_exists( 'canuckcp_custom_gallery_sizes' ) ) {
 	/**

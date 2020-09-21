@@ -12,17 +12,13 @@
  */
 
 global $post, $canuckcp_feature_category;
-$canuckcp_flex_effect = sanitize_text_field( get_theme_mod( 'canuckcp_flex_slider_effect', 'fade' ) );
-$canuckcp_flex_pause  = sanitize_text_field( get_theme_mod( 'canuckcp_flex_slider_pause', '5000' ) );
-$canuckcp_flex_trans  = sanitize_text_field( get_theme_mod( 'canuckcp_flex_slider_trans', '600' ) );
-$canuckcp_flex_auto   = intval( get_theme_mod( 'canuckcp_flex_slider_auto', 1 ) );
-$category_id          = get_cat_ID( $canuckcp_feature_category );
-$args                 = array(
+$category_id  = get_cat_ID( $canuckcp_feature_category );
+$args         = array(
 	'category'    => $category_id,
 	'numberposts' => 20,
 );
-$custom_posts         = get_posts( $args );
-$use_lazyload         = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
+$custom_posts = get_posts( $args );
+$use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 if ( 0 !== $category_id && $custom_posts ) {
 	?>
 	<div id="canuck-cp-feature-thumb-wrapper-id" class="canuck-cp-feature-thumb-wrapper">

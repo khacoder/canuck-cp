@@ -81,10 +81,10 @@ function canuckcp_skin_css() {
 	$skin_css .= '.header-wide-image .header-topstrip-left a { color: #7f7f7f; }' . PHP_EOL;
 	$skin_css .= '.header-topstrip-left a:hover,.header-topstrip-left a:focus { outline: none; background-color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.header-topstrip-left a:hover svg path,.header-topstrip-left a:focus svg path { fill: #ffffff; transition: .75s ease; }' . PHP_EOL;
-	$skin_css .= '.canuckcp-show-search-trigger:hover svg path,.canuckcp-show-search-trigger a:focus svg path { fill: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.canuckcp-search .searchform .search-field { background-color: ' . $primary_accent . '; color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.canuckcp-show-search-trigger a:focus,.canuckcp-show-search-trigger:hover { outline: none; border: none; background-color: ' . $primary_accent . '; transition: .75s ease; }' . PHP_EOL;
-	$skin_css .= '.canuckcp-search-icon-form:hover svg path { fill: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.canuck-cp-show-search-trigger:hover svg path,.canuck-cp-show-search-trigger a:focus svg path { fill: #ffffff; }' . PHP_EOL;
+	$skin_css .= '.canuck-cp-search .searchform .search-field { background-color: ' . $primary_accent . '; color: #ffffff; }' . PHP_EOL;
+	$skin_css .= '.canuck-cp-show-search-trigger a:focus,.canuck-cp-show-search-trigger:hover { outline: none; border: none; background-color: ' . $primary_accent . '; transition: .75s ease; }' . PHP_EOL;
+	$skin_css .= '.canuck-cp-search-icon-form:hover svg path { fill: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.header-wide-no-feature .header-logo-menu-strip nav a,.header-wide-slider .header-logo-menu-strip nav a { color: #474747; }' . PHP_EOL;
 	$skin_css .= '.header-wide-image .header-logo-menu-strip nav a { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.header-wide-no-feature .header-logo-menu-strip nav a:hover,.header-wide-slider .header-logo-menu-strip nav a:hover,.header-wide-image .header-logo-menu-strip nav a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;

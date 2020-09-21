@@ -5,9 +5,9 @@ Author URI: https://kevinsspace.ca/
 Contributors: kevinhaig
 Theme URI: https://canuckdemo.kevinsspace.ca/
 Donate: https://canuckdemo.kevinsspace.ca/donate/
-Requires at least: 5.2
+Requires at least: 1.1
 Requires PHP: 5.6
-Tested up to: 5.5
+Tested up to: 1.2
 Stable tag: 0.0.1
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -18,7 +18,14 @@ Canuck CP is distributed under the terms of the GNU GPL
 Canuck CP is a full featured WordPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
 
 == Upgrade Notice ==
-* Versions 0.1.1
+* Version 0.0.2
+* removed all references to blocks
+* changed all prefixes and text domains to the Classic Press system
+* changed woocommerce-functions.php to classiccommerce-funxtions.php and changed content scripts to classicpress where appropriate
+* removed thumbnail gallery options
+* general debugging from testing
+
+* Version 0.0.1
 * split from Canuck WordPress Theme version 1.2.8
 
 == Description ==
@@ -107,7 +114,7 @@ License URI: see the license.txt file for license details.
 * License: GPLv2 or later http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 = Font Icons =
-* Font Awesome Font Icone - License: CC BY 4.0, URL: https://creativecommons.org/licenses/by/4.0/
+* Font Awesome Font Icons - License: CC BY 4.0, URL: https://creativecommons.org/licenses/by/4.0/
 
 = Splide Slider =
 * https://github.com/Splidejs/splide - Copyright (c) 2020 Naotoshi Fujita

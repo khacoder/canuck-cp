@@ -82,9 +82,9 @@ $canuckcp_blog_desc             = get_theme_mod( 'canuckcp_home_description', ''
 		<a href="#main-header" class="scrolltotop"><i class="font-icon chevron-up"><?php echo canuckcp_svg( 'chevron-up', '12', '#ffffff' );// phpcs:ignore ?></i></a>
 		<?php
 		if ( 'background_image' === $canuckcp_blog_feature ) {
-			$image_url = get_header_image();// phpcs:ignore global prefix
-			if ( false == $image_url ) {// phpcs:ignore loose comparison ok.
-				$image_url = get_parent_theme_file_uri( '/images/headerdefault.jpg' );// phpcs:ignore global prefix
+			$image_url = get_header_image();// phpcs:ignore 
+			if ( false == $image_url ) {// phpcs:ignore 
+				$image_url = get_parent_theme_file_uri( '/images/headerdefault.jpg' );// phpcs:ignore 
 			}
 			?>
 			<div class="header-image-wrap">
@@ -98,7 +98,7 @@ $canuckcp_blog_desc             = get_theme_mod( 'canuckcp_home_description', ''
 						<?php
 					} else {
 						?>
-						<h1><?php echo get_bloginfo( 'name' );// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h1>
+						<h1><?php echo get_bloginfo( 'name' );// phpcs:ignore ?></h1>
 						<?php
 					}
 					if ( '' !== $canuckcp_blog_desc ) {
@@ -107,7 +107,7 @@ $canuckcp_blog_desc             = get_theme_mod( 'canuckcp_home_description', ''
 						<?php
 					} else {
 						?>
-						<span><?php echo get_bloginfo( 'description' );// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+						<span><?php echo get_bloginfo( 'description' );// phpcs:ignore ?></span>
 						<?php
 					}
 					?>

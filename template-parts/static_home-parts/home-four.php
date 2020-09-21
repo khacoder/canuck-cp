@@ -78,8 +78,7 @@ if ( '' !== $sec4_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload"
-										data-pin-no-hover="true"
+									<img class="lazyload" data-pin-no-hover="true"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section4_box1_image ); ?>"
 										alt="<?php echo esc_attr( $section4_box1_title ); ?>" />
@@ -194,8 +193,7 @@ if ( '' !== $sec4_bg_image ) {
 								<?php
 								if ( true === $use_lazyload ) {
 									?>
-									<img class="lazyload"
-										data-pin-no-hover="true"
+									<img class="lazyload" data-pin-no-hover="true"
 										src="<?php echo esc_url( get_template_directory_uri() ) . '/images/placeholder15.png';// phpcs:ignore ?>"
 										data-src="<?php echo esc_url( $section4_box2_image ); ?>"
 										alt="<?php echo esc_attr( $section4_box2_title ); ?>" />

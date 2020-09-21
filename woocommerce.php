@@ -1,7 +1,7 @@
 <?php
 /**
- * This file is the Woo Commerce template filr, used
- * for displaying Woo Commerce content.
+ * This file is the ClassicCommerce template file, used
+ * for displaying ClassicCommerce content.
  *
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
@@ -23,7 +23,7 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 		if ( 'left_sidebar' === $canuckcp_layout_option ) {
 			?>
 			<aside id="two-column-sidebar-left" class="toggle-sb-a">
-				<?php get_template_part( '/template-parts/sidebars/sidebar', 'woo-a' ); ?>
+				<?php get_template_part( '/template-parts/sidebars/sidebar', 'cc-a' ); ?>
 			</aside>
 			<div id="two-column-content">
 				<?php woocommerce_content(); ?>
@@ -32,13 +32,13 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 		} elseif ( 'both_sidebars' === $canuckcp_layout_option ) {
 			?>
 			<aside id="three-column-sidebar-left" class="toggle-sb-a">
-				<?php get_template_part( '/template-parts/sidebars/sidebar', 'woo-a' ); ?>
+				<?php get_template_part( '/template-parts/sidebars/sidebar', 'cc-a' ); ?>
 			</aside>
 			<div id="three-column-content">
 				<?php woocommerce_content(); ?>
 			</div>
 			<aside id="three-column-sidebar-right" class="toggle-sb-b">
-				<?php get_template_part( '/template-parts/sidebars/sidebar', 'woo-b' ); ?>
+				<?php get_template_part( '/template-parts/sidebars/sidebar', 'cc-b' ); ?>
 			</aside>
 			<?php
 		} elseif ( 'fullwidth' === $canuckcp_layout_option ) {
@@ -53,7 +53,7 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 				<?php woocommerce_content(); ?>
 			</div>
 			<aside id="two-column-sidebar-right" class="toggle-sb-b">
-				<?php get_template_part( '/template-parts/sidebars/sidebar', 'woo-a' ); ?>
+				<?php get_template_part( '/template-parts/sidebars/sidebar', 'cc-a' ); ?>
 			</aside>
 			<?php
 		}

@@ -12,10 +12,6 @@ global $content_width;
 $post_style   = esc_html( get_theme_mod( 'canuckcp_blog_style', 'top_feature' ) );
 $images       = array();
 $images       = canuckcp_get_gallery_images();
-$auto         = intval( get_theme_mod( 'canuckcp_flex_gallery_auto', 0 ) );
-$effect       = esc_html( get_theme_mod( 'canuckcp_flex_gallery_effect', 'fade' ) );
-$pause        = intval( get_theme_mod( 'canuckcp_flex_gallery_pause', 5000 ) );
-$trans_time   = intval( get_theme_mod( 'canuckcp_flex_gallery_trans', 600 ) );
 $use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 if ( false !== $images ) {
 	?>
@@ -29,14 +25,16 @@ if ( false !== $images ) {
 					$imagecount = 1;
 					$minheight  = 1000;
 					foreach ( $images as $image ) {
-						$thumb                              = wp_get_attachment_image_src( $image, 'canuckcp_gallery' );
-						$imagedata[ $imagecount ]['url']    = $thumb[0];
-						$imagedata[ $imagecount ]['width']  = $thumb[1];
-						$imagedata[ $imagecount ]['height'] = $thumb[2];
-						if ( $thumb[2] < $minheight ) {
-							$minheight = $thumb[2];
+						$thumb = wp_get_attachment_image_src( $image, 'canuckcp_gallery' );
+						if ( false !== $thumb ) {
+							$imagedata[ $imagecount ]['url']    = $thumb[0];
+							$imagedata[ $imagecount ]['width']  = $thumb[1];
+							$imagedata[ $imagecount ]['height'] = $thumb[2];
+							if ( $thumb[2] < $minheight ) {
+								$minheight = $thumb[2];
+							}
+							$imagecount++;
 						}
-						$imagecount++;
 					}
 					$count = count( $imagedata );
 					for ( $i = 1; $i < $count + 1; $i++ ) {
@@ -68,20 +66,19 @@ if ( false !== $images ) {
 					<?php
 					// Set up the carousel.
 					foreach ( $images as $image ) {
-						?>
-						<li class="splide__slide">
-							<?php
-							if ( 'top_feature' === $post_style ) {
-								$thumb = wp_get_attachment_image_src( $image, 'canuckcp_gallery_thumb' );
-							} else {
-								$thumb = wp_get_attachment_image_src( $image, 'canuckcp_gallery_thumb' );
-							}
+						if ( 'top_feature' === $post_style ) {
+							$thumb = wp_get_attachment_image_src( $image, 'canuckcp_gallery_thumb' );
+						} else {
+							$thumb = wp_get_attachment_image_src( $image, 'canuckcp_gallery_thumb' );
+						}
+						if ( false !== $thumb ) {
 							$image_url = $thumb[0];
-							// Set up the link.
 							?>
-							<img src="<?php echo esc_url( $image_url ); ?>" title="" role="button" tabindex="0" alt="<?php esc_attr_e( 'splide thumb', 'canuck-cp' ); ?>" />
-						</li>
-						<?php
+							<li class="splide__slide">
+								<img src="<?php echo esc_url( $image_url ); ?>" title="" role="button" tabindex="0" alt="<?php esc_attr_e( 'splide thumb', 'canuck-cp' ); ?>" />
+							</li>
+							<?php
+						}
 					}
 					?>
 				</ul>
