@@ -17,7 +17,7 @@
  */
 function canuckcp_get_customizer_groups() {
 	$groups = array(
-		'canuckcp_general'      => array(
+		'canuckcp_general' => array(
 			'name'        => 'canuckcp_general',
 			'title'       => esc_html__( 'Canuck CP General', 'canuck-cp' ),
 			'description' => '',
@@ -386,7 +386,6 @@ function canuckcp_get_customizer_option_partameters() {
 	}
 	$options = array(
 		// Panel:canuckcp_general Section:general_misc_options.
-		
 		// Panel:canuckcp_general Section:general_contact_form.
 		'canuckcp_use_contact_form'                        => array(
 			'name'        => 'canuckcp_use_contact_form',
@@ -603,7 +602,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'transport'   => 'refresh',
 			'sanitize'    => 'wp_validate_boolean',
 		),
-		// Panel:canuckcp_social section: social_links
+		// Panel:canuckcp_social section: social_links.
 		'canuckcp_social_type1'                            => array(
 			'name'        => 'canuckcp_social_type1',
 			'title'       => esc_html__( 'Social Link 1 Name', 'canuck-cp' ),
@@ -788,7 +787,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'transport'   => 'refresh',
 			'sanitize'    => 'esc_url_raw',
 		),
-		// Panel:canuckcp_social section: social_share
+		// Panel:canuckcp_social section: social_share.
 		'canuckcp_use_social_share'                        => array(
 			'name'        => 'canuckcp_use_social_share',
 			'title'       => esc_html__( 'Use Canuck CP Social Share', 'canuck-cp' ),
