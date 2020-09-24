@@ -2,6 +2,10 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 0.0.3
+-----------------------------------
+* 
+
 Version 0.0.2
 -----------------------------------
 * removed all references to blocks
@@ -9,6 +13,7 @@ Version 0.0.2
 * changed woocommerce-functions.php to classiccommerce-funxtions.php and changed content scripts to classicpress where appropriate
 * removed thumbnail gallery options
 * general debugging from testing
+* added contact form
 
 Version 0.0.1
 -----------------------------------
