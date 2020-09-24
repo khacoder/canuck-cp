@@ -130,6 +130,14 @@ function canuckcp_show_page_custom_meta_box() {
 		</select>
 	</p>
 	<?php
+	// **************** Exclude Share Option ****************************************************.
+	$exclude_share = ( '' === get_post_meta( $post->ID, 'canuckcp_exclude_share', true ) ? false : true );
+	?>
+	<p>
+		<span style="clear:both;width:200px;float:left;" class="meta-exclude-page-share">Exclude Share Buttons</span>
+		<input type="checkbox" name="exclude_page_share" id="exclude_page-share-id" <?php checked( $exclude_share, true ); ?>>
+	</p>
+	<?php
 	// Additional options available when Template = Feature Template.
 	if ( 'template-feature.php' === $page_template ) {
 		?>
@@ -333,7 +341,16 @@ function canuckcp_save_page_custom_meta( $post_id ) {
 		// Delete meta if default is used.
 		delete_post_meta( $post_id, 'canuckcp_metabox_sidebar_b' );
 	}
-
+	// Exclude share buttons.
+	$exclude_share_old = get_post_meta( $post_id, 'canuckcp_exclude_share', true ) ? true : false;
+	$exclude_share_new = ( isset( $_POST['exclude_page_share'] ) ? true : false );// Input var okay.
+	if ( true === $exclude_share_new && false === $exclude_share_old ) {
+		// If a new meta value was added and there was no previous value, add it.
+		add_post_meta( $post_id, 'canuckcp_exclude_share', true, true );
+	} elseif ( false === $exclude_share_new && true === $exclude_share_old ) {
+		// If there is no new meta value but an old value exists, delete it.
+		delete_post_meta( $post_id, 'canuckcp_exclude_share' );
+	}
 	// Additional options available when Template = Feature Template.
 	if ( 'template-feature.php' === $page_template ) {
 		// Feature category.

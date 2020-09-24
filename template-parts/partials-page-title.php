@@ -26,7 +26,9 @@ if ( false === $canuckcp_exclude_page_title && ! post_password_required() ) {
 		if ( true === $canuckcp_include_breadcrumbs ) {
 			?>
 			<div class="breadcrumbs-center">
-				<?php canuckcp_custom_breadcrumbs(); ?>
+				<?php
+					canuckcp_custom_breadcrumbs();
+				?>
 			</div>
 			<?php
 		}

@@ -190,6 +190,9 @@ function canuckcp_skin_css() {
 	$skin_css .= '.format-quote .entry-content blockquote { border-left: 5px solid #7f7f7f; background: #eaeaea; }' . PHP_EOL;
 	$skin_css .= '.post-format-image-overlay-content a { color: rgba(255,255,255,1); }' . PHP_EOL;
 	$skin_css .= '.post-format-image-overlay-content a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;
+	/* ***************************************************************************** Contact Form Styles */
+	$skin_css .= '.canuck-cp-widget-contact-submit,.canuck-cp-contact-submit { color: ' . $primary_accent . '; border: 1px solid ' . $primary_accent . '; background-color: #ffffff; }' . PHP_EOL;
+	$skin_css .= '.canuck-cp-widget-contact-submit:hover,.canuck-cp-contact-submit:hover  { color: #ffffff; background-color: ' . $primary_accent . '; }' . PHP_EOL;
 	/* ********************************************************************************** Comment Styles */
 	$skin_css .= '.post-title-comments { color: #474747; }' . PHP_EOL;
 	$skin_css .= '.pingback,.trackback { border-top: 1px solid #7f7f7f; }' . PHP_EOL;

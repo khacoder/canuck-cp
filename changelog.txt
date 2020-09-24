@@ -8,7 +8,7 @@ Version 0.0.2
 * changed all prefixes and text domains to the Classic Press system
 * changed woocommerce-functions.php to classiccommerce-funxtions.php and changed content scripts to classicpress where appropriate
 * removed thumbnail gallery options
-
+* general debugging from testing
 
 Version 0.0.1
 -----------------------------------

@@ -13,7 +13,7 @@ $post_style   = esc_html( get_theme_mod( 'canuckcp_blog_style', 'top_feature' ) 
 $use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 if ( '' !== $embed ) {
 	?>
-	<div class="video-post-feature">
+	<div class="post-format-video-feature">
 		<?php
 		if ( 'top_feature' !== $post_style && 'side_feature' !== $post_style ) {
 			$background_image_url = get_template_directory_uri() . '/images/video.jpg';
@@ -43,7 +43,7 @@ if ( '' !== $embed ) {
 	<?php
 } else {
 	?>
-	<div class="video-post-feature">
+	<div class="post-format-video-feature">
 		<?php
 		$feature_image_url = get_template_directory_uri() . '/images/novideo.jpg';
 		if ( true === $use_lazyload ) {

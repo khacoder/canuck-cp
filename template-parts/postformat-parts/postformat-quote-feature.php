@@ -22,7 +22,7 @@ if ( isset( $quote_data[0] ) ) {
 $post_style = esc_html( get_theme_mod( 'canuckcp_blog_style', 'top_feature' ) );
 if ( has_post_thumbnail() && false !== $embed ) {
 	$background_image_url = get_the_post_thumbnail_url( $post->ID, 'canuckcp_med15' );
-} elseif ( false !== $embed ) {
+} else {
 	$background_image_url = get_template_directory_uri() . '/images/quote800.jpg';
 }
 if ( false !== $embed ) {
@@ -61,6 +61,12 @@ if ( false !== $embed ) {
 			}
 			?>
 		</div>
+	</div>
+	<?php
+} else {
+	?>
+	<div class="quote-post-feature">
+		<img <?php echo $add_nopin;// phpcs:ignore ?> src="<?php echo esc_url( $background_image_url ); ?>" alt="<?php esc_attr_e( 'quote background', 'canuck-cp' ); ?>">
 	</div>
 	<?php
 }

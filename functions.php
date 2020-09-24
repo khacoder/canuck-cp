@@ -36,9 +36,15 @@ require get_template_directory() . '/widgets/class-canuck-cp-archives-widget.php
 if ( false === get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false ) {
 	require get_template_directory() . '/widgets/class-canuck-cp-slider-widget.php';
 }
+if ( false === get_theme_mod( 'canuckcp_use_contact_form' ) ? true : false ) {
+	require get_template_directory() . '/widgets/class-canuck-cp-contact-form-widget.php';
+}
 require get_template_directory() . '/includes/media-grabber.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/includes/classiccommerce-functions.php';
+}
+if ( false !== get_theme_mod( 'canuckcp_breadcrumbs' ) ? true : false ) {
+	require get_template_directory() . '/includes/class-canuckcp-breadcrumb-trail.php';
 }
 
 if ( ! function_exists( 'canuckcp_load_js' ) ) {
@@ -60,6 +66,7 @@ if ( ! function_exists( 'canuckcp_load_js' ) ) {
 		$disable_widget_slider   = get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false;
 		$include_pinterest_pinit = get_theme_mod( 'canuckcp_include_pinit' ) ? true : false;
 		$use_lazyload            = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
+		$use_recaptcha           = get_theme_mod( 'canuckcp_use_recaptcha' ) ? true : false;
 		if ( ! is_admin() ) {
 			if ( true === $use_lazyload ) {
 				// Lazyload plugin, doc ready included in minified file.
@@ -99,6 +106,12 @@ if ( ! function_exists( 'canuckcp_load_js' ) ) {
 			if ( true === $include_pinterest_pinit ) {
 				wp_enqueue_script( 'pinit-js', get_template_directory_uri() . '/js/pinit.js', array( 'jquery' ), CANUCKCP_VERSION, true );
 			}
+			// use reCaptcha.
+			if ( true === $use_recaptcha ) {
+				// CaptchaCallback is in the doc ready so it is loaded first.
+				wp_enqueue_script( 'canuckcp-recaptcha-doc-ready', get_template_directory_uri() . '/js/canuckcp_recaptcha.js', array( 'jquery' ), CANUCKCP_VERSION, false );
+				wp_enqueue_script( 'canuckcp-google-recaptcha', 'https://www.google.com/recaptcha/api.js?onload=CanuckCPCaptchaCallback&render=explicit', array( 'canuckcp-recaptcha-doc-ready' ), CANUCKCP_VERSION, false );
+			}
 			// Load threaded comments.
 			if ( is_singular() && comments_open() && 1 === ( get_option( 'thread_comments' ) ) ) {
 				wp_enqueue_script( 'comment-reply' );
@@ -108,7 +121,7 @@ if ( ! function_exists( 'canuckcp_load_js' ) ) {
 				'canuck-cp-custom_js',
 				'accessibleNavigationScreenReaderText',
 				array(
-					'expandMain'    => __( 'Open Main Menu', 'canuck-cp' ),
+					'expandMain'    => __( '````````````````````````Open Main Menu', 'canuck-cp' ),
 					'collapseMain'  => __( 'Close Main Menu', 'canuck-cp' ),
 					'expandChild'   => __( 'Expand Submenu', 'canuck-cp' ),
 					'collapseChild' => __( 'Collapse Submenu', 'canuck-cp' ),

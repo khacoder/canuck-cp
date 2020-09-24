@@ -229,47 +229,6 @@ function canuckcp_home_area_setup() {
 }
 
 /**
- * Function to use Justin Tadlocks Breadcrumb Trail
- */
-function canuckcp_custom_breadcrumbs() {
-	// Breadcrumb args.
-	$breadcrumb_args = array(
-		'container'     => 'nav',
-		'before'        => '',
-		'after'         => '',
-		'show_on_front' => false,
-		'network'       => false,
-		'show_title'    => true,
-		'show_browse'   => false,
-		'echo'          => true,
-		'labels'        => array(
-			'browse'              => esc_html__( 'Browse:', 'canuck-cp' ),
-			'aria_label'          => esc_attr_x( 'Breadcrumbs', 'breadcrumbs aria label', 'canuck-cp' ),
-			'home'                => '<i class="fa fa-home" style="font-size: 1em;margin:0;padding:0;" title="' . esc_attr__( 'Home', 'canuck-cp' ) . '"></i>',
-			'error_404'           => esc_html__( '404 Not Found', 'canuck-cp' ),
-			'archives'            => esc_html__( 'Archives', 'canuck-cp' ),
-			// Translators: %s is the search query. The HTML entities are opening and closing curly quotes.
-			'search'              => esc_html__( 'Search results for &#8220;%s&#8221;', 'canuck-cp' ),
-			// Translators: %s is the page number.
-			'paged'               => esc_html__( 'Page %s', 'canuck-cp' ),
-			// Translators: Minute archive title. %s is the minute time format.
-			'archive_minute'      => esc_html__( 'Minute %s', 'canuck-cp' ),
-			// Translators: Weekly archive title. %s is the week date format.
-			'archive_week'        => esc_html__( 'Week %s', 'canuck-cp' ),
-			// "%s" is replaced with the translated date/time format.
-			'archive_minute_hour' => '%s',
-			'archive_hour'        => '%s',
-			'archive_day'         => '%s',
-			'archive_month'       => '%s',
-			'archive_year'        => '%s',
-		),
-	);
-	if ( function_exists( 'breadcrumb_trail' ) ) {
-		breadcrumb_trail( $breadcrumb_args );
-	}
-}
-
-/**
  * Extract embed from selected content
  *
  * Modified from wp_extract_urls() in /wp-includes/functions.php
@@ -600,5 +559,203 @@ if ( ! function_exists( 'canuckcp_strip_first_block_gallery' ) ) {
 			$content = str_replace( $text_to_search[0], '', $content );
 		}
 		return $content;
+	}
+}
+
+/**
+ * Share on pages helper.
+ *
+ * @param string $share_label is the label for the share output.
+ */
+function canuckcp_page_share( $share_label = '' ) {
+	$canuckcp_use_social_share = get_theme_mod( 'canuckcp_use_social_share' ) ? true : false;
+	$canuckcp_share_on_pages   = get_theme_mod( 'canuckcp_share_on_pages' ) ? true : false;
+	if ( $canuckcp_use_social_share && $canuckcp_share_on_pages ) {
+		$share_html = '<div class="canuck-cp-share-page">';
+		if ( '' !== $share_label ) {
+			$share_html .= '<span class="share-text-page">' . $share_label . '</span>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_pinit' ) ? true : false ) {
+			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share">
+							<a class="pinterest-share" data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" data-pin-round="true" data-pin-hover="false">
+							</a></span>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_facebook' ) ? true : false ) {
+			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . get_the_permalink() . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener">
+							<i>' . canuckcp_svg( 'facebook-square', '16px', '#21759b' ) . '</i></a>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
+			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';
+		}
+		$share_html .= '</div>';
+		return $share_html;
+	} else {
+		return false;
+	}
+}
+
+/**
+ * Share on posts helper.
+ *
+ * @param string $share_label is the label for the share output.
+ */
+function canuckcp_post_share( $share_label = '' ) {
+	$canuckcp_use_social_share = get_theme_mod( 'canuckcp_use_social_share' ) ? true : false;
+	$canuckcp_share_on_posts   = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
+	if ( $canuckcp_use_social_share && $canuckcp_share_on_posts ) {
+		$share_html = '<div class="canuck-cp-share-post">';
+		if ( '' !== $share_label ) {
+			$share_html .= '<span class="share-text-post">' . $share_label . '</span>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_pinit' ) ? true : false ) {
+			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share"><a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" data-pin-round="true" data-pin-hover="false"></a></span>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_facebook' ) ? true : false ) {
+			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . get_the_permalink() . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'facebook-square', '16px', '#21759b' ) . '</i></a>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
+			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';
+		}
+		$share_html .= '</div>';
+		return $share_html;
+	} else {
+		return false;
+	}
+}
+
+/**
+ * Share on post meta helper.
+ *
+ * @param string $share_label is the label for the share output.
+ */
+function canuckcp_post_share_meta( $share_label = '' ) {
+	$canuckcp_use_social_share = get_theme_mod( 'canuckcp_use_social_share' ) ? true : false;
+	$canuckcp_share_on_posts   = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
+	if ( $canuckcp_use_social_share && $canuckcp_share_on_posts ) {
+		$share_html = '<div class="canuck-cp-share-meta">';
+		if ( '' !== $share_label ) {
+			$share_html .= '<span class="share-text-post">' . $share_label . '</span>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_pinit' ) ? true : false ) {
+			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share"><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-round="true" data-pin-custom="true"><img class="pinterest-no-hover" src="../wp-content/themes/canuck-cp/images/pinterest-p.svg"><img class="pinterest-hover-effect" src="../wp-content/themes/canuck-cp/images/pinterest-p-red.svg"></a></span>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_facebook' ) ? true : false ) {
+			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . get_the_permalink() . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'facebook-f', '8px', '#000000' ) . '</i></a>';
+		}
+		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
+			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter', '14px', '#00000' ) . '</i></a>';
+		}
+		$share_html .= '</div>';
+		return $share_html;
+	} else {
+		return false;
+	}
+}
+
+/**
+ * This function sends the email notification after the contact form has been submitted
+ *
+ * @param string $author name of author.
+ * @param string $author_email author's email address.
+ * @param string $message string.
+ */
+function canuckcp_email_notification( $author, $author_email, $message ) {
+	// enter for email other then admin email.
+	$contact_email = get_theme_mod( 'canuckcp_contact_email', '' );
+	// Add filter to use html in contact area.
+	add_filter( 'wp_mail_content_type', 'canuckcp_wp_mail_content_type' );
+	// Get email address.
+	if ( isset( $contact_email ) && '' !== $contact_email ) {
+		$emailto = is_email( $contact_email );
+	} else {
+		$emailto = is_email( get_option( 'admin_email' ) );
+	}
+	$subject_trans = esc_html__( 'You have received a message from your website!', 'canuck-cp' );
+	$subject       = $subject_trans;
+	$body_trans    = 'Name: ' . esc_html( $author ) . '<br/><br/>'
+					. 'Email: ' . is_email( $author_email ) . '<br/><br/>'
+					. 'Comments: <br/><br/>'
+					. wp_kses_post( $message );
+	$body          = $body_trans;
+	$headers_trans = 'From: ' . esc_html( $author ) . ' <' . is_email( $author_email ) . '>';
+	$headers       = $headers_trans;
+	// Send email.
+	wp_mail( $emailto, $subject, $body, $headers );
+	// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578.
+	remove_filter( 'wp_mail_content_type', 'canuckcp_wp_mail_content_type' );
+}
+
+/**
+ * This function sets up wp_mail() to use html
+ */
+function canuckcp_wp_mail_content_type() {
+	return 'text/html';
+}
+
+/**
+ * Add the honeypot, a hidden textarea field.
+ */
+function canuckcp_add_comment_honeypot() {
+	echo '<p class="comment-custom"><textarea name="additional-comment"></textarea></p>';
+}
+
+/**
+ * Check if the more_comment field is set. If it's not empty, it's spam. Otherwise, return the status already set.
+ *
+ * @param bool|string $approved The approval status that will be modified if the honeypot is filled.
+ *
+ * @return string
+ */
+function canuckcp_check_comment_honeypot( $approved ) {
+	return empty( $_POST['additional-comment'] ) ? $approved : 'spam';// phpcs:ignore
+}
+
+add_action( 'comment_form', 'canuckcp_add_comment_honeypot' );
+add_filter( 'pre_comment_approved', 'canuckcp_check_comment_honeypot' );
+
+if ( get_theme_mod( 'canuckcp_use_recaptcha', false ) ? true : false ) {
+	/**
+	 * Google recaptcha add before the submit button.
+	 *
+	 * @param array $submit_field .
+	 */
+	function canuckcp_add_google_recaptcha( $submit_field ) {
+		$site_key                     = get_theme_mod( 'canuckcp_recaptcha_sitekey', '' );
+		$submit_field['submit_field'] = '<div class="g-recaptcha" data-sitekey="' . $site_key . '"></div><br>' . $submit_field['submit_field'];
+		return $submit_field;
+	}
+	if ( ! is_user_logged_in() ) {
+		add_filter( 'comment_form_defaults', 'canuckcp_add_google_recaptcha' );
+	}
+
+	/**
+	 * Google recaptcha check, validate and catch the spammer.
+	 *
+	 * @param string $captcha is the captcha response.
+	 */
+	function canuckcp_is_valid_captcha( $captcha ) {
+		$secret_key      = get_theme_mod( 'canuckcp_recaptcha_secretkey', '' );
+		$request         = wp_safe_remote_get( 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $captcha );
+		$verify_response = wp_remote_retrieve_body( $request );
+		$response_data   = json_decode( $verify_response );
+		if ( $response_data['success'] ) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	/**
+	 * Verify recaptcha check.
+	 */
+	function canuckcp_verify_google_recaptcha() {
+		$recaptcha = $_POST['g-recaptcha-response'];// phpcs:ignore
+		if ( empty( $recaptcha ) ) {
+			wp_die( esc_html__( "ERROR: please select 'I am not a robot'!><p><a href='javascript:history.back()'>« Back</a></p>", 'canuck-cp' ) );
+		} elseif ( ! canuckcp_is_valid_captcha( $recaptcha ) ) {
+			wp_die( esc_html__( 'Sorry, there was a problem submitting your comment.', 'canuck-cp' ) );
+		}
+	}
+	if ( ! is_user_logged_in() ) {
+		add_action( 'pre_comment_on_post', 'canuckcp_verify_google_recaptcha' );
 	}
 }
