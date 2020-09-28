@@ -53,7 +53,6 @@ Text Domain: canuck-cp
  * Comment Styles ----------------------- ~ 0716
  * Misc Styles / Accessibility ---------- ~ 0773
  * Colorbox Styles ---------------------- ~ 0838
- * Flex Slider Styles ------------------- ~ 0887
  * Masonry Styles ----------------------- ~ 0988
  * Other plugin styles ------------------ ~ 1004
  * Media Queries ------------------900--- ~ 1016
@@ -138,7 +137,7 @@ body.sticky .scrolltotop:hover { transition: .5s ease; }
 .sticky-spacer                                                 { width: 100%; float: left; margin-top: 160px; line-height: 0; }
 /* -------------------------------- Header top strip --------------- */
 .header-topstrip-wide                            { width: 100%; float: left; margin: 0; padding: 0; }
-.header-topstrip-wrap                            { max-width: 1100px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; height: 40px; }
+.header-topstrip-wrap                            { max-width: 1300px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; height: 40px; }
 .header-topstrip-wrap .header-topstrip-left      { width: 50%; float: left;  margin: 0; padding: 0;text-align: left; font-size: 14px; line-height: 40px; vertical-align: middle; overflow: hidden; }
 .header-wide-no-feature .header-topstrip-left a,
 .header-wide-slider .header-topstrip-left a      { margin: 0; padding: 10px; font-size: 14px; vertical-align: middle; transition: .75s ease; }
@@ -151,7 +150,7 @@ body.sticky .scrolltotop:hover { transition: .5s ease; }
 .header-top-strip-social                         { width: calc(100% - 30px); margin: 0; padding: 0; float: left; }
 /* ---------------------------- header navigation bar ------------------ */
 .header-logo-menu-wide  { width: 100%; float: left; margin: 0; padding: 0; }
-.header-logo-menu-strip { max-width: 1100px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; z-index: 9999; }
+.header-logo-menu-strip { max-width: 1300px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; z-index: 9999; }
 /* ----------------------------------------- Logo ----------------- */
 .header-logo-menu-strip .header-image-left           { width: 230px; height: 100px; float: left; margin: 10px 20px 10px 0; padding: 0; text-align: left; }
 .header-wide-no-feature .header-image-left a,
@@ -259,7 +258,7 @@ body.sticky .header-wide-image button                        { background: none;
 #main-menu-right                                            { width: 100%; float: right; margin: auto 0 auto 0; padding: 0; }
 #main-menu-right ul                                         { float: right; margin: 0; padding: 0; line-height: 1.75em; }
 #main-menu-right ul li                                      { float: left; margin: 0; padding: 10px 20px 0 0; }
-#main-menu-right ul li a                                    { padding: 0 5px 0 5px; }
+#main-menu-right ul li a                                    { padding: 5px 10px 5px 10px; }
 #main-menu-right ul li.menu-item-has-children > a:after     { display: inline-block; content: "\005E"; transform: rotate(180deg); margin: 0 0 5px 5px; font-size: 8px; font-weight: bold; vertical-align: middle; line-height: 1em; }
 #main-menu-right ul ul li.menu-item-has-children > a:after  { position: absolute; top: 100%; left: -9999em;	padding: 0;	margin: 0; }
 #main-menu-right ul li > ul                                 { position: absolute; top: 100%; left: -9999em;	padding: 0;	margin: 0; }
@@ -275,26 +274,26 @@ body.sticky .header-wide-image button                        { background: none;
 #main-menu-right ul ul ul li > a:hover                      { margin: 0; }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Page Titles */
 #page-title-wide                 { width: 100%; float: left; }
-.page-title-wrap                 { max-width: 1100px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; overflow: hidden; z-index: 1; }
+.page-title-wrap                 { max-width: 1300px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; overflow: hidden; z-index: 1; }
 .page-title-wrap h1.center-title { width: 100%; float: left; line-height: 1em; padding: 0.75em 0 0.75em 0; margin: 0; text-align: center; vertical-align: baseline; }
 .breadcrumbs-center              { display: block; max-width: 1000px; margin: 0 auto 1em auto; font-size: 0.75em; line-height: 1em; text-align: center; padding: 0 0 1em 0; }
 .breadcrumbs-center a            { transition: .5s ease; }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Layouts */
 #main-section                    { width: 100%; clear: both; float: left; background-color: #FFFFFF; padding: 20px 0 20px 0; }
 #main-section-home               { width: 100%; clear: both; float: left; background-color: rgba(255,255,255,0); margin: 0; padding: 0; }
-#content-wrap                    { max-width: 1100px; margin: 0 auto 0 auto; padding: 10px 30px 0 30px; overflow: hidden; z-index: 1; }
+#content-wrap                    { max-width: 1300px; margin: 0 auto 0 auto; padding: 10px 30px 0 30px; overflow: hidden; z-index: 1; }
 #content-wrap-home               { width: 100%; clear: both; float: left; background-color: rgba(255,255,255,0); margin: 0; padding: 0; }
 #main-section-home #content-wrap { max-width: 100%; margin: 0 auto 0 auto; padding: 0; overflow: hidden; z-index: 1; }
 #fullwidth                       { clear: both; width: 100%; float: left; margin: 0; padding: 0; background-color: #FFFFFF; }
 #fullwidth-home                  { clear: both; width: 100%; float: left; margin: 0; padding: 0; }
-#fullwidth .page                 { max-width: 1100px; margin: 0 auto 0 auto; padding: 30px; }
-#fullwidth.search .page          { max-width: 1100px; margin: 0 auto 0 auto; padding: 0; }
+#fullwidth .page                 { max-width: 1300px; margin: 0 auto 0 auto; padding: 30px; }
+#fullwidth.search .page          { max-width: 1300px; margin: 0 auto 0 auto; padding: 0; }
 #fullwidth .page .page-entry     { width: 100%; float: left; margin: 0; padding: 0; }
 #fullwidth.search article        { width: 100%; float: left; margin: 0 0 40px 0; }
 #feature-slider-wide             { width: 100%; clear: both; float: left; margin: 0; padding: 0; }
 #feature-slider-wrap             { width: 100%; clear: both; float: left; margin: 0; padding: 0; background-color: #ffffff; }
-#feature-slider-wrap .widget     { clear: both; display: block; max-width: 1100px; margin: 20px auto 20px auto; padding: 0; }
-.canuck-cp-feature-thumb-wrapper { max-width: 1100px; margin: 0 auto 0 auto; padding: 10px 30px 0 30px; overflow: hidden; z-index: 1; }
+#feature-slider-wrap .widget     { clear: both; display: block; max-width: 1300px; margin: 20px auto 20px auto; padding: 0; }
+.canuck-cp-feature-thumb-wrapper { max-width: 1300px; margin: 0 auto 0 auto; padding: 10px 30px 0 30px; overflow: hidden; z-index: 1; }
 .canuck-cp-feature-15to1         { width: 100%; float: left; margin: 0 0 20px 0; padding: 0; }
 /* ---------------------------------------------------------------- two column layouts */
 #two-column-content                { float: left; width: 65%; margin: 0; padding: 0 0 25px 0; }
@@ -308,21 +307,21 @@ body.sticky .header-wide-image button                        { background: none;
 #three-column-sidebar-right          { float: left; width: 21%; margin: 0 0 0 2%; padding: 0 0 20px 2%; }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Sidebars */
 .widget ul                          { padding: 0; margin: 0; }
-.widget li                          { list-style: none; padding: 0.5em 0 0 0; }
-.widget select                      { display:block; width: 95%; float: left; }
+.widget li                          { list-style: none; padding: 5px 0 0 0; }
+.widget select                      { display:block; width: 95%; float: left; padding: 5px 10px 5px 10px; }
 .widget option                      { display: block; max-width: 100%; overflow: hidden; }
 #two-column-sidebar-right .widget,
-#three-column-sidebar-right .widget { float: left; width: 95%; margin: 0 0 1em 0; padding: 0 0 0.5em 5%; }
+#three-column-sidebar-right .widget { float: left; width: 95%; margin: 0 0 20px 0; padding: 0 0 20px 5%; }
 #two-column-sidebar-left .widget,
-#three-column-sidebar-left .widget  { float: left; width: 95%; margin: 0 0 1em 0; padding: 0 5% 0.5em 0; }
-#two-column-sidebar-right h2,
-#two-column-sidebar-left h2,
-#three-column-sidebar-right h2,
-#three-column-sidebar-left h2       { font-size: 1em; padding: 0; }
+#three-column-sidebar-left .widget  { float: left; width: 95%; margin: 0 0 20px 0; padding: 0 5% 20px 0; }
+#two-column-sidebar-right h3,
+#two-column-sidebar-left h3,
+#three-column-sidebar-right h3,
+#three-column-sidebar-left h3       { padding: 0 0 10px 0; }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Footer */
 #canuck-cp-footer  { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .footer-overlay { width: 100%; float: left; margin: 0; padding: 25px 0 25px 0; }
-#footer-wrap    { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 30px 30px 0 30px; text-decoration: none; font-size: 1em; line-height: 1em; overflow: hidden; }
+#footer-wrap    { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 30px 30px 0 30px; text-decoration: none; font-size: 1em; line-height: 1em; overflow: hidden; }
 #footer-wrap h3 { font-size: 1.25em; line-height: 2em; padding: 0; margin: 0; }
 /* ------------------------------------------------- Footer top strip --------------- */
 .footer-topstrip-wrap                        { width: 100%; float: left; margin: 0 0 40px 0; padding: 0; overflow: hidden; }
@@ -462,7 +461,7 @@ img.wp-smiley                                  { padding: 0; margin: 0; border: 
 .post-wrap-sf                                               { width: 60%; float: left; margin: 0; padding: 0; }
 .post-overlay-sf                                            { width: 100%; float: left; margin: 0; padding: 0; }
 .post-header-sf                                             { width: 100%; float: left; margin: 0 0 20px 0; padding: 0; }
-.post-header-sf .post-title                                 { width: 100%; float: left; margin: 0; padding: 0; font-size: 1.5em; line-height: 1.5em; }
+.post-header-sf .post-title                                 { width: 100%; float: left; margin: 0; padding: 0; font-size: 1.75em; line-height: 1.5em; }
 .post-content-sf                                            { clear: both; }
 /* --------------------------------------------------------------- Post Archive Options */
 .archive article                   { margin: 40px 0 0 0; }
@@ -594,7 +593,7 @@ img.wp-smiley                                  { padding: 0; margin: 0; border: 
 span.canuck-cp-span-custom3 { display: none; }
 /* -------------------------------------------------------------------------------- widgets --- */
 .canuck-cp-contact-widget-class          { width: 100%; float: left; margin: 0; padding: 0; }
-h3.widget-title                          { width: 100%; float: left; margin: 0 0 10px 0; font-size: 1.25em; line-height: 1em; }
+h3.widget-title                          { width: 100%; float: left; margin: 0 0 10px 0; font-size: 1.5em; line-height: 1em; }
 .widget-contact-description              { width: 100%; float: left; margin: 0 0 10px 0; }
 .canuck-cp-widget-contact-input-label    { width: 100%; float: left; }
 .canuck-cp-widget-contact-input          { width: 90%; float: left; }
@@ -732,7 +731,7 @@ table#wp-calendar tr #next a { font-size: 0.917em; font-weight: bold; padding-to
 .nav-links .page-numbers.dots:hover { font-weight: bold; border: none; }
 /* -------------- search form ------------------*/
 .searchform               { max-width: 200px; margin: 0; }
-.searchform .search-field { width: 70%; border: none; padding: 0.25em; }
+.searchform .search-field { width: 70%; border: none; padding: 5px 10px 5px 10px; }
 .fa-search                { background: none; border: none; font-size: 1em; margin: 0; padding: 0; }
 .fa-search:before         { content: "\f002"; }
 .fa-search:hover          { cursor: pointer; }
@@ -917,7 +916,7 @@ table#wp-calendar tr #next a { font-size: 0.917em; font-weight: bold; padding-to
 	#footer-wrap ul               { font-size: .875em; padding: 0; margin: 0; }
 	#footer-wrap ul li            { list-style: none; }
 	#footer-wrap .widget          { margin: 1em 0 0 0; }
-	#footer-wrap                  { max-width: 1100px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; overflow: hidden; z-index: 1; }
+	#footer-wrap                  { max-width: 1300px; margin: 0 auto 0 auto; padding: 0 30px 0 30px; overflow: hidden; z-index: 1; }
 	.footer-col-wrap              { width: 100%; padding: 15px 0 15px 0; margin: 0; overflow: hidden; z-index: 1; }
 	.footer-col-wrap .widget      { clear: both; margin: 10px 0 0 0; }
 	.footercol-3-1                { float: left; width: 30%; margin: 0 1% 0 0; padding: 0 2% 0 0; }

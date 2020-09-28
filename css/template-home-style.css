@@ -11,7 +11,7 @@
 /* ========================= Static Home Section 1 ============================ */
 .home-1-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-1-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-1-wrap                          { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
+.home-1-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
 .home-1-shortcode, .home-1-widget     { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; }
 .home-1-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
 .home-1-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
@@ -23,7 +23,7 @@
 /*  ========================= Static Home Section 2 ============================ */
 .home-2-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-2-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-2-wrap                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-2-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 .home-2-wrap .servicebox         { display: block; width: 33.333%; float: left; padding: 0; text-align: center; }
 .home-2-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.5em; line-height: 1.5em; margin-bottom: 5px; padding:0; }
 .home-2-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
@@ -55,7 +55,7 @@
 /* ========================= Static Home Section 3 ============================ */
 .home-3-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-3-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-3-wrap                          { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
+.home-3-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
 .home-3-shortcode,.home-3-widget      { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; text-align: center; }
 .home-3-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
 .home-3-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
@@ -67,7 +67,7 @@
 /* ========================= Static Home Section 4 ============================ */
 .home-4-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-4-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-4-wrap                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-4-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 .home-4-wrap .servicebox         { display: block; width: 50%; float: left; padding: 0; text-align: center; }
 .home-4-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.5em; line-height: 1.5em; margin-bottom: 5px; padding:0; }
 .home-4-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
@@ -99,7 +99,7 @@
 /* ========================= Static Home Section 5 ============================ */
 .home-5-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-5-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-5-wrap                          { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.55em; line-height: 1.5em; overflow: hidden; }
+.home-5-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.55em; line-height: 1.5em; overflow: hidden; }
 .home-5-shortcode,.home-5-widget      { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; }
 .home-5-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
 .home-5-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
@@ -111,7 +111,7 @@
 /* ========================= Static Home Section 6 ============================ */
 .home-6-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-6-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-6-wrap                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-6-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 .home-6-wrap .servicebox         { display: block; width: 50%; float: left; padding: 0; text-align: center; }
 .home-6-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.5em; line-height: 1.5em; margin-bottom: 5px; padding:0; }
 .home-6-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
@@ -143,7 +143,7 @@
 /* ========================= Static Home Section 7 ============================ */
 .home-7-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-7-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-7-wrap                          { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
+.home-7-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
 .home-7-shortcode,.home-7-widget      { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; }
 .home-7-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
 .home-7-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
@@ -155,7 +155,7 @@
 /* ========================= Static Home Section 8 ============================ */
 .home-8-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-8-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-8-wrap                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-8-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 .home-8-wrap .servicebox         { display: block; width: 25%; float: left; padding: 0; text-align: center; }
 .home-8-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.25em; line-height: 1.25em; margin-bottom: 5px; padding:0; }
 .home-8-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
@@ -186,7 +186,7 @@
 /* ========================= Static Home Section 9 ============================ */
 .home-9-wide                                                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-9-wide-overlay                                             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-9-wrap                                                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 5px; text-decoration: none; overflow: hidden; }
+.home-9-wrap                                                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 5px; text-decoration: none; overflow: hidden; }
 .home-9-title                                                    { width: 100%; float: left; text-align: center; margin: 0; padding: 0; }
 .home-9-text                                                     { width: 100%; float: left; text-align: center; margin: 15px 0 50px 0; padding: 0; }
 .home-9-columns-3                                                { width: 100%; float: left; margin: 0; padding: 0; }
@@ -208,7 +208,7 @@
 /* ========================= Static Home Section 10 ============================ */
 .home-10-wide         { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-10-wide-overlay { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-10-wrap         { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-10-wrap         { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 /* media on the left */
 .home-10-media     { width: calc(50% - 20px); float: left; margin: 0; padding: 0 10px 0 10px; }
 .home-10-shortcode { width: 100%; float: left; margin: 0; padding: 0; }
@@ -227,7 +227,7 @@
 /* ========================= Static Home Section 11 ============================ */
 .home-11-wide         { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-11-wide-overlay { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-11-wrap         { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-11-wrap         { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 /* media on the right */
 .home-11-media     { width: calc(50% - 20px); float: right; margin: 0; padding: 0 10px 0 10px; }
 .home-11-shortcode { width: 100%; float: right; margin: 0; padding: 0; }
@@ -284,7 +284,7 @@
 /*  ========================= Static Home Section 14 ============================ */
 .home-14-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-14-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-14-wrap                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-14-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 .home-14-wrap .servicebox         { display: block; width: 33.333%; float: left; padding: 0; text-align: center; }
 .home-14-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.5em; line-height: 1.5em; margin-bottom: 5px; padding:0; }
 .home-14-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
@@ -316,7 +316,7 @@
 /* ========================= Static Home Section 15 ============================ */
 .home-15-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
 .home-15-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
-.home-15-wrap                     { clear: both; display: block; max-width: 1100px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
+.home-15-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 .home-15-wrap .servicebox         { display: block; width: 25%; float: left; padding: 0; text-align: center; }
 .home-15-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.25em; line-height: 1.25em; margin-bottom: 5px; padding:0; }
 .home-15-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }

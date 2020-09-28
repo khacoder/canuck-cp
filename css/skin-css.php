@@ -79,8 +79,8 @@ function canuckcp_skin_css() {
 	$skin_css .= '.header-wide-no-feature .header-topstrip-left a,.header-wide-slider .header-topstrip-left a { color: #474747; }' . PHP_EOL;
 	$skin_css .= '.header-wide-image .header-topstrip-left { color: #eaeaea; }' . PHP_EOL;
 	$skin_css .= '.header-wide-image .header-topstrip-left a { color: #7f7f7f; }' . PHP_EOL;
-	$skin_css .= '.header-topstrip-left a:hover,.header-topstrip-left a:focus { outline: none; background-color: ' . $primary_accent . '; }' . PHP_EOL;
-	$skin_css .= '.header-topstrip-left a:hover svg path,.header-topstrip-left a:focus svg path { fill: #ffffff; transition: .75s ease; }' . PHP_EOL;
+	$skin_css .= '.header-topstrip-left a:hover,.header-topstrip-left a:focus,.footer-topstrip-left a:hover,.footer-topstrip-left a:focus { outline: none; background-color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.header-topstrip-left a:hover svg path,.header-topstrip-left a:focus svg path,.footer-topstrip-left a:hover svg path,.footer-topstrip-left a:focus svg path { fill: #ffffff; transition: .75s ease; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-show-search-trigger:hover svg path,.canuck-cp-show-search-trigger a:focus svg path { fill: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-search .searchform .search-field { background-color: ' . $primary_accent . '; color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-show-search-trigger a:focus,.canuck-cp-show-search-trigger:hover { outline: none; border: none; background-color: ' . $primary_accent . '; transition: .75s ease; }' . PHP_EOL;
@@ -122,9 +122,9 @@ function canuckcp_skin_css() {
 	$skin_css .= '.breadcrumbs-center a { color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.breadcrumbs-center a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	/* *********************************************************************************** Sidebars */
-	$skin_css .= '.widget select { background-color: #474747; border: 1px solid #eaeaea; color: #eaeaea; }' . PHP_EOL;
-	$skin_css .= '#two-column-sidebar-right .widget,#three-column-sidebar-right .widget { box-shadow: -2px 2px 2px rgba(0,0,0,0.2); }' . PHP_EOL;
-	$skin_css .= '#two-column-sidebar-left .widget,#three-column-sidebar-left .widget { box-shadow: 2px 2px 2px rgba(0,0,0,0.2); }' . PHP_EOL;
+	$skin_css .= '.widget select { background-color: #ffffff; border: 1px solid #474747; color: #474747; }' . PHP_EOL;
+	$skin_css .= '#two-column-sidebar-right .widget h3.widget-title,#three-column-sidebar-right .widget h3.widget-title { border-bottom: 5px solid ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '#two-column-sidebar-left .widget h3.widget-title,#three-column-sidebar-left .widget h3.widget-title { border-bottom: 5px solid ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '#two-column-sidebar-right .widget a,#three-column-sidebar-right .widget a,#two-column-sidebar-left .widget a,#three-column-sidebar-left .widget a { color: ' . $primary_accent . ';}' . PHP_EOL;
 	$skin_css .= '#two-column-sidebar-right .widget a:hover,#three-column-sidebar-right .widget a:hover,#two-column-sidebar-left .widget a:hover,#three-column-sidebar-left .widget a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= '#two-column-sidebar-right .tag-cloud-link,#three-column-sidebar-right .tag-cloud-link,#two-column-sidebar-left .tag-cloud-link,#three-column-sidebar-left .tag-cloud-link { color: ' . $primary_accent . '; border: 1px solid ' . $primary_accent . '; }' . PHP_EOL;
@@ -157,7 +157,7 @@ function canuckcp_skin_css() {
 	$skin_css .= '.read-more-wrap a.read-more:hover { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= 'img.border { border: 8px solid #ffffff!important; box-shadow: 0px 0px 5px 0 rgba(71,71,71,0.25)!important; }' . PHP_EOL;
 	$skin_css .= '.wp-caption.border { border: 8px solid #ffffff!important; box-shadow: 0px 0px 5px 0 rgba(71,71,71,0.25)!important; }' . PHP_EOL;
-	$skin_css .= '.post-header-grid .post-title a { color: #474747; }' . PHP_EOL;
+	$skin_css .= '.post-header-grid .post-title a { color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.post-header-grid .post-title a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.two-stamp-post .post-overlay-stamp { color: #ffffff; background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.6) ); }' . PHP_EOL;
 	$skin_css .= '.two-stamp-post .stamp-title { color: #ffffff; }' . PHP_EOL;
@@ -173,12 +173,12 @@ function canuckcp_skin_css() {
 	$skin_css .= '.three-stamp-post .post-overlay-stamp .pmeta-post-comments,.three-stamp-post .post-overlay-stamp .pmeta-timestamp { color: rgba( 255,255,255,.75); }' . PHP_EOL;
 	$skin_css .= '.three-stamp-post .post-overlay-stamp .pmeta-post-comments a,.three-stamp-post .post-overlay-stamp .pmeta-timestamp a { color: rgba( 255,255,255,.75); }' . PHP_EOL;
 	$skin_css .= '.three-stamp-post .post-overlay-stamp .pmeta-post-comments a:hover,.three-stamp-post .post-overlay-stamp .pmeta-timestamp a:hover { color: ' . $primary_accent . '; }' . PHP_EOL;
-	$skin_css .= '.post-header-tf .post-title a { color: #474747; }' . PHP_EOL;
-	$skin_css .= '.post-header-tf .post-title a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.post-header-tf .post-title a,.post-header-sf .post-title a { color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.post-header-tf .post-title a:hover,.post-header-sf .post-title a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.post-meta-sf { border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); }' . PHP_EOL;
-	$skin_css .= '.pmeta-timestamp,.pmeta-author,.pmeta-post-comments,.pmeta-categories,.pmeta-taglist,.pmeta-sticky,.pmeta-edit { color: #7f7f7f; }' . PHP_EOL;
-	$skin_css .= '.pmeta-author a,.pmeta-post-comments a, .pmeta-categories a,.pmeta-taglist a,.pmeta-edit a { color: #7f7f7f; }' . PHP_EOL;
-	$skin_css .= '.pmeta-author a:hover,.pmeta-post-comments a:hover, .pmeta-categories a:hover,.pmeta-taglist a:hover,.pmeta-edit a:hover { color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.pmeta-sticky { color: #7f7f7f; }' . PHP_EOL;
+	$skin_css .= '.pmeta-timestamp a,.pmeta-author a,.pmeta-post-comments a, .pmeta-categories a,.pmeta-taglist a,.pmeta-edit a { color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.pmeta-timestamp a:hover,.pmeta-author a:hover,.pmeta-post-comments a:hover, .pmeta-categories a:hover,.pmeta-taglist a:hover,.pmeta-edit a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.pmeta-timestamp i,.pmeta-author i,.pmeta-post-comments i, .pmeta-categories i,.pmeta-taglist i, .pmeta-sticky i,.pmeta-edit i { color: #7f7f7f; }' . PHP_EOL;
 	$skin_css .= '.audio-post-feature { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.audio-post-feature-overlay { color: #ffffff; }' . PHP_EOL;
@@ -223,7 +223,7 @@ function canuckcp_skin_css() {
 	$skin_css .= '.nav-links .page-numbers.dots,.nav-links .page-numbers.dots:hover { background-color: #ffffff; color: #808080; }' . PHP_EOL;
 	$skin_css .= '.nav-links .page-numbers:hover { background-color: #ffffff; color: ' . $primary_accent . '; border: 1px solid ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.nav-links .page-numbers.current { background-color: #ffffff; color: ' . $primary_accent . '; border: 1px solid ' . $primary_accent . '; }' . PHP_EOL;
-	$skin_css .= '.searchform .search-field { background-color: #474747; color: #eaeaea; }' . PHP_EOL;
+	$skin_css .= '.searchform .search-field { background-color: #ffffff; color: #474747; border: 1px solid #474747; }' . PHP_EOL;
 	$skin_css .= '.fa-search { color: #e3e3e3; }' . PHP_EOL;
 	$skin_css .= '.fa-search:hover { color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.postpagenav .left { color: #7f7f7f; }' . PHP_EOL;

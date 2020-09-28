@@ -601,8 +601,6 @@ function canuckcp_custom_css() {
 	$ka_css .= '#footer-wrap a,#copyright a,#footer-wrap #social-menu-id-footer li a { color: ' . $footer_link_color . ';}' . PHP_EOL;
 	$ka_css .= '#footer-wrap a:hover,#copyright a:hover { color: ' . $footer_hover_color . ';}' . PHP_EOL;
 	$ka_css .= '#footer-wrap .footer-topstrip-left { color: ' . $footer_text_color . ';}' . PHP_EOL;
-	$ka_css .= '#footer-wrap .footer-topstrip-left a { color: ' . $footer_link_color . ';}' . PHP_EOL;
-	$ka_css .= '#footer-wrap .footer-topstrip-left a:hover { background-color: ' . $footer_text_color . '; color: ' . $footer_background_color . ';}' . PHP_EOL;
 	$ka_css .= '#canuck-cp-footer #wp-calendar thead th, #canuck-cp-footer #calendar_wrap td#today { background-color:' . $footer_background_color . '; }' . PHP_EOL;
 	$ka_css .= '#footer-wrap #wp-calendar tbody td a,#footer-wrap #wp-calendar #prev a, #footer-wrap #wp-calendar #next a { color:' . $footer_link_color . '; }' . PHP_EOL;
 	$ka_css .= '#canuck-cp-footer #calendar_wrap td#today { border: 1px solid' . $footer_link_color . '; }' . PHP_EOL;

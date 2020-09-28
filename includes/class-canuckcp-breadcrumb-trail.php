@@ -1,5 +1,18 @@
 <?php
 /**
+ * Updates to Breadcrumb Trail
+ * This plugin has been integrated into Canuck CP.
+ * The original author has not updated it in over 3 years, and it really should be ported to ClassicPress.
+ * I felt the best course of action was to integrate it into the theme before it is changed to incorporate some gutenberg stuff.
+ * Basically the text domain was changed to canuck-cp, and the code was modified for compliance with phpcs.
+ *
+ * @package     Canuck CP ClassicPress Theme
+ * @copyright   Copyright (C) 2020 or later Kevin Archibald
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html
+ * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ */
+
+/**
  * Breadcrumb Trail - A breadcrumb menu script for WordPress.
  *
  * Breadcrumb Trail is a script for showing a breadcrumb trail for any type of page.  It tries to
@@ -20,19 +33,6 @@
  * @copyright Copyright (c) 2008 - 2017, Justin Tadlock
  * @link      https://themehybrid.com/plugins/breadcrumb-trail
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- */
-
-/**
- * Updates to Breadcrumb Trail
- * This plugin has been integrated into Canuck CP.
- * The original author has not updated it in over 3 years, and it really should be ported to ClassicPress.
- * I felt the best course of action was to integrate it into the theme before it is changed to incorporate some gutenberg stuff.
- * Basically the text domain was changed to canuck-cp, and the code was modified for compliance with phpcs.
- *
- * @package     Canuck CP ClassicPress Theme
- * @copyright   Copyright (C) 2020 or later Kevin Archibald
- * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
  */
 
 /**
