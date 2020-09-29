@@ -14,19 +14,7 @@ $use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 	<div class="stamp-feature">
 		<?php
 		if ( ! post_password_required() ) {
-			if ( has_post_format( 'audio' ) ) {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'audio-feature' );
-			} elseif ( has_post_format( 'gallery' ) ) {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'gallery-feature' );
-			} elseif ( has_post_format( 'image' ) && has_post_thumbnail() ) {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'image-feature' );
-			} elseif ( has_post_format( 'quote' ) ) {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'quote-feature' );
-			} elseif ( has_post_format( 'video' ) ) {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'video-feature' );
-			} else {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'standard-feature' );
-			}
+			get_template_part( '/template-parts/blog-parts/blog', 'feature-image' );
 		} else {
 			$background_image_url = get_template_directory_uri() . '/images/password800.jpg';// phpcs:ignore
 			if ( true === $use_lazyload ) {

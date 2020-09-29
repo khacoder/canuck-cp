@@ -39,7 +39,6 @@ if ( false === get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false 
 if ( false === get_theme_mod( 'canuckcp_use_contact_form' ) ? true : false ) {
 	require get_template_directory() . '/widgets/class-canuck-cp-contact-form-widget.php';
 }
-require get_template_directory() . '/includes/media-grabber.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/includes/classiccommerce-functions.php';
 }

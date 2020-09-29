@@ -125,18 +125,8 @@ class Canuck_CP_Recent_Posts_Widget extends WP_Widget {
 						$thumb     = wp_get_attachment_image_src( get_post_thumbnail_id( $recent['ID'], 'thumbnail' ) );
 						$image_url = esc_url( $thumb[0] );
 					} else {
-						if ( has_post_format( 'audio', $recent['ID'] ) ) {
-							$image_url = get_template_directory_uri() . '/images/audio150.jpg';
-						} elseif ( has_post_format( 'gallery', $recent['ID'] ) ) {
-							$image_url = get_template_directory_uri() . '/images/gallery150.jpg';
-						} elseif ( has_post_format( 'quote', $recent['ID'] ) ) {
-							$image_url = get_template_directory_uri() . '/images/quote150.jpg';
-						} elseif ( has_post_format( 'video', $recent['ID'] ) ) {
-							$image_url = get_template_directory_uri() . '/images/video150.jpg';
-						} else {
-							$integer   = rand( 1, 5 );// phpcs:ignore
-							$image_url = get_template_directory_uri() . '/images/standard' . $integer . '_150.jpg';
-						}
+						$integer   = rand( 1, 5 );// phpcs:ignore
+						$image_url = get_template_directory_uri() . '/images/standard' . $integer . '_150.jpg';
 					}
 				} else {
 					$image_url = get_template_directory_uri() . '/images/password150.jpg';
