@@ -1,6 +1,6 @@
 <?php
 /**
- * Canuck Archives Widget
+ * Canuck CP Archives Widget
  *
  * This file is a widget and was modified from the WordPress Archives Widget.
  * Post count options have been removed because the filters cause this not to work.
@@ -15,8 +15,8 @@
  * @wordpress plugin
  * Plugin Name: Canuck Category Widget
  * Plugin URI: http://kevinsspace.ca/canuckdemo/
- * Description: A widget for the Canuck Theme that allows the user to remove categories from the list.
- * Version: 1.2.8
+ * Description: A widget for the Canuck CP Theme that allows the user to remove categories from the list.
+ * Version: 0.0.3
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later

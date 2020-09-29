@@ -28,7 +28,7 @@ if ( '' !== $canuckcp_footer_background_image ) {
 }
 if ( true === $canuckcp_showfooter || true === $canuckcp_showcopyright || true === $canuckcp_show_footer_top_strip ) {
 	?>
-	<footer <?php echo $footerstring; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+	<footer <?php echo $footerstring; // phpcs:ignore ?>>
 		<div class="footer-overlay">
 			<div id="footer-wrap">
 				<?php

@@ -2,6 +2,12 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 0.0.3
+-----------------------------------
+* changed max width from 1100px to 1300px
+* changed some of the styling for links and the sidebars
+* remove post formats
+
 Version 0.0.2
 -----------------------------------
 * removed all references to blocks
@@ -9,6 +15,7 @@ Version 0.0.2
 * changed woocommerce-functions.php to classiccommerce-funxtions.php and changed content scripts to classicpress where appropriate
 * removed thumbnail gallery options
 * general debugging from testing
+* added contact form
 
 Version 0.0.1
 -----------------------------------

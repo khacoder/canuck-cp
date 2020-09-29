@@ -1,6 +1,6 @@
 <?php
 /**
- * Canuck Author Widget
+ * Canuck CP Author Widget
  *
  * This file is a widget that will allow you to set up a bio for your authors
  *
@@ -12,8 +12,8 @@
  * @wordpress-plugin
  * Plugin Name: Canuck Author Widget
  * Plugin URI: http://kevinsspace.ca/canuckdemo/
- * Description: A widget for the Canuck Theme that displays a WordPress Author
- * Version: 1.2.8
+ * Description: A widget for the Canuck CP Theme that displays a WordPress Author
+ * Version: 0.0.3
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later

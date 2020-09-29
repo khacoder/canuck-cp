@@ -17,19 +17,19 @@ if ( have_posts() ) {
 		if ( 0 === $canuckcp_post_count || is_int( $canuckcp_post_count / 3 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-three-col-left grid-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'grid' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'grid' ); ?>
 			</article>
 			<?php
 		} elseif ( 1 === $canuckcp_post_count || is_int( ( $canuckcp_post_count - 1 ) / 3 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-three-col-center grid-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'grid' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'grid' ); ?>
 			</article>	
 			<?php
 		} elseif ( 2 === $canuckcp_post_count || is_int( ( $canuckcp_post_count + 1 ) / 3 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-three-col-right grid-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'grid' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'grid' ); ?>
 			</article>
 			<div class="clearfix"></div>
 			<?php

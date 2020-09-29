@@ -17,19 +17,19 @@ if ( have_posts() ) {
 		if ( 0 === $canuckcp_post_count || is_int( $canuckcp_post_count / 3 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-three-stamp-left three-stamp-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'stamp' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'stamp' ); ?>
 			</article>
 			<?php
 		} elseif ( 1 === $canuckcp_post_count || is_int( ( $canuckcp_post_count - 1 ) / 3 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-three-stamp-center three-stamp-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'stamp' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'stamp' ); ?>
 			</article>	
 			<?php
 		} elseif ( 2 === $canuckcp_post_count || is_int( ( $canuckcp_post_count + 1 ) / 3 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-three-stamp-right three-stamp-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'stamp' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'stamp' ); ?>
 			</article>
 			<div class="clearfix"></div>
 			<?php

@@ -328,7 +328,7 @@ function canuckcp_fonts() {
 	$fonts       = array(
 		'Open Sans'           => array(
 			'type'    => 'google',
-			'enqueue' => 'Open+Sans:300,400',
+			'enqueue' => 'Open+Sans:400',
 			'family'  => "'Open Sans', 'Lucida Sans', sans-serif",
 		),
 		'default'             => array(

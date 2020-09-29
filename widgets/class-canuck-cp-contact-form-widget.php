@@ -14,7 +14,7 @@
  * Plugin Name: Canuck CP Contact Widget
  * Plugin URI: http://kevinsspace.ca
  * Description: A widget for the Canuck CP Theme that allows the user to set up a contact form.
- * Version: 1.0.0
+ * Version: 0.0.3
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later
@@ -50,7 +50,7 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname'   => 'canuck-cp-contact-widget-class',
-			'description' => esc_html__( 'Allow a user to set up a contact form.', 'testimonial-basics' ),
+			'description' => esc_html__( 'Allow a user to set up a contact form.', 'canuck-cp' ),
 		);
 		parent::__construct( 'canuckcp_contact_form_widget', 'Canuck CP Contact Form Widget', $widget_ops );
 	}
@@ -148,7 +148,7 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 					$canuckcp_widget_contact_name = '';
 				}
 				if ( '' === $canuckcp_widget_contact_name ) {
-					$canuckcp_widget_popup_error .= '\n - Name required';
+					$canuckcp_widget_popup_error .= esc_html__( '\n - Name required', 'canuck-cp' );
 				}
 				// Validate email.
 				if ( ! empty( $_POST['canuckcp_widget_contact_email'] ) ) {
@@ -157,7 +157,7 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 					$canuckcp_widget_contact_email = '';
 				}
 				if ( ! is_email( $canuckcp_widget_contact_email ) ) {
-					$canuckcp_widget_popup_error .= '\n - Valid email required ';
+					$canuckcp_widget_popup_error .= esc_html__( '\n - Valid email required ', 'canuck-cp' );
 				}
 				// Captcha Check.
 				if ( true === $use_recaptcha ) {
@@ -167,13 +167,13 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 						$captcha_response = false;
 					}
 					if ( false === $captcha_response ) {
-						$canuckcp_widget_popup_error .= '\n - Please show you are a human and check the captcha box';
+						$canuckcp_widget_popup_error .= esc_html__( '\n - Please show you are a human and check the captcha box', 'canuck-cp' );
 					} else {
 						$request         = wp_safe_remote_get( 'https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptcha_secretkey . '&response=' . $captcha_response );
 						$verify_response = wp_remote_retrieve_body( $request );
 						$response_data   = json_decode( $verify_response );
 						if ( false === $response_data->success ) {
-							$canuckcp_widget_popup_error .= '\n - Captcha failed - please try again';
+							$canuckcp_widget_popup_error .= esc_html__( '\n - Captcha failed - please try again', 'canuck-cp' );
 						}
 					}
 				}
@@ -195,22 +195,22 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 					$canuckcp_widget_contact_message = wp_kses_post( wp_unslash( $_POST['canuckcp_widget_contact_message'] ) ); // Input var okay.
 				}
 				if ( '' === $canuckcp_widget_contact_message ) {
-					$canuckcp_widget_popup_error .= '\n - Message required';
+					$canuckcp_widget_popup_error .= esc_html__( '\n - Message required', 'canuck-cp' );
 				}
 				// Validation complete.
 				if ( '' === $canuckcp_widget_popup_error ) {
 					// Send notification email.
 					canuckcp_email_notification( $canuckcp_widget_contact_name, $canuckcp_widget_contact_email, $canuckcp_widget_contact_message );
-					// Optional supmitted popup message.
+					$message = esc_html__( 'Message Submitted - Thank You!', 'canuck-cp' );
 					?>
-					<script type="text/javascript">alert( "Mesage Submitted - Thank You!" );</script>
+					<script type="text/javascript">alert( <?php echo $message;// phpcs:ignore ?> );</script>
 					<?php
 					// Reset Variables.
 					$canuckcp_widget_contact_name    = '';
 					$canuckcp_widget_contact_email   = '';
 					$canuckcp_widget_contact_message = '';
 				} else {
-					$widget_error_message = 'There were errors so the message was not sent: \n' . $canuckcp_widget_popup_error;
+					$widget_error_message = esc_html__( 'There were errors so the message was not sent: \n', 'canuck-cp' ) . $canuckcp_widget_popup_error;
 					?>
 					<script>alert("<?php echo $widget_error_message; // phpcs:ignore ?>")</script>
 					<?php
@@ -219,7 +219,6 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 		}
 		?>
 		<div class="canuck-cp-widget-contact-form">
-			<span class="widget-contact-description">Request an appointment or send a message.</span>
 			<form method="POST">
 				<?php
 				wp_nonce_field( 'canuckcp_widget_contact_nonce_action', 'canuckcp_widget_contact_nonce_name' );
@@ -248,7 +247,7 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 				<?php
 				if ( true === $use_honeypot ) {
 					?>
-					<span class="canuck-cp-span-custom3"><?php echo esc_html( 'This input should not be filled out' ); ?>
+					<span class="canuck-cp-span-custom3"><?php echo esc_html__( 'This input should not be filled out', 'canuck-cp' ); ?>
 						<input class="custom-3" type="text" maxlength="100" name="canuckcp_widget_contact_custom3" value="" tabindex="-1" autocomplete="off" />
 					</span>
 					<?php

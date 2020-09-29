@@ -12,7 +12,7 @@
  */
 
 // Theme version.
-define( 'CANUCKCP_VERSION', '0.0.1' );
+define( 'CANUCKCP_VERSION', '0.0.3' );
 /**
  * ---- load files ---------------
  */
@@ -39,7 +39,6 @@ if ( false === get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false 
 if ( false === get_theme_mod( 'canuckcp_use_contact_form' ) ? true : false ) {
 	require get_template_directory() . '/widgets/class-canuck-cp-contact-form-widget.php';
 }
-require get_template_directory() . '/includes/media-grabber.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/includes/classiccommerce-functions.php';
 }
@@ -64,6 +63,7 @@ if ( ! function_exists( 'canuckcp_load_js' ) ) {
 		$disable_smoothscroll    = get_theme_mod( 'canuckcp_disable_smoothscroll' ) ? true : false;
 		$disable_scrollreveal    = get_theme_mod( 'canuckcp_disable_scrollreveal' ) ? true : false;
 		$disable_widget_slider   = get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false;
+		$disable_splide          = get_theme_mod( 'canuckcp_disable_splide' ) ? true : false;
 		$include_pinterest_pinit = get_theme_mod( 'canuckcp_include_pinit' ) ? true : false;
 		$use_lazyload            = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 		$use_recaptcha           = get_theme_mod( 'canuckcp_use_recaptcha' ) ? true : false;
@@ -94,9 +94,11 @@ if ( ! function_exists( 'canuckcp_load_js' ) ) {
 			}
 			// Load custom js.
 			wp_enqueue_script( 'canuck-cp-custom_js', get_template_directory_uri() . '/js/doc-ready-scripts.js', array( 'jquery' ), CANUCKCP_VERSION, true );
-			// Load flex slider, doc ready included in minified file.
-			wp_enqueue_script( 'jquery-splide-slider', get_template_directory_uri() . '/js/splide/js/splide.min.js', array(), CANUCKCP_VERSION, true );
-			wp_enqueue_script( 'canuckcp-widget-splide-js', get_template_directory_uri() . '/js/splide/splide-doc-ready-scripts.js', array( 'jquery-splide-slider' ), CANUCKCP_VERSION, true );
+			if ( true !== $disable_splide ) {
+				// Load splide slider.
+				wp_enqueue_script( 'jquery-splide-slider', get_template_directory_uri() . '/js/splide/js/splide.min.js', array(), CANUCKCP_VERSION, true );
+				wp_enqueue_script( 'canuckcp-splide-js', get_template_directory_uri() . '/js/splide/splide-doc-ready-scripts.js', array( 'jquery-splide-slider' ), CANUCKCP_VERSION, true );
+			}
 			if ( 'template-masonry.php' === $page_template || 'template-portfolio.php' === $page_template ) {
 				wp_enqueue_script( 'jquery-masonry' );
 				wp_enqueue_script( 'imagesloaded' );
@@ -163,7 +165,8 @@ if ( ! function_exists( 'canuckcp_styles' ) ) {
 			}
 		}
 		// Load skins.
-		$skinfile = get_theme_mod( 'canuckcp_color_scheme', 'gray-pink' );
+		$skinfile       = get_theme_mod( 'canuckcp_color_scheme', 'gray-pink' );
+		$disable_splide = get_theme_mod( 'canuckcp_disable_splide' ) ? true : false;
 		// Load option css.
 		$ka_css      = canuckcp_custom_css();
 		$ka_skin_css = canuckcp_skin_css();
@@ -178,12 +181,15 @@ if ( ! function_exists( 'canuckcp_styles' ) ) {
 			}
 			wp_add_inline_style( 'canuck-cp-parent', $ka_css );
 			wp_add_inline_style( 'canuck-cp-parent', $ka_skin_css );
-			/** Note that fontawesome and owl styles are loaded here in case they are not loaded in the child theme
-			 *  It is better to load in the child theme (with the same handle) as all styles will then be loaded before the child theme style.
-			 */
-			wp_enqueue_style( 'splide-style', get_template_directory_uri() . '/js/splide/css/themes/splide-sea-green.css', array(), CANUCKCP_VERSION );
+			if ( true !== $disable_splide ) {
+				// Load splide slider.
+				wp_enqueue_style( 'splide-style', get_template_directory_uri() . '/js/splide/css/themes/splide-sea-green.css', array(), CANUCKCP_VERSION );
+			}
 		} else {
-			wp_enqueue_style( 'splide-style', get_template_directory_uri() . '/js/splide/css/themes/splide-sea-green.css', array(), CANUCKCP_VERSION );
+			if ( true !== $disable_splide ) {
+				// Load splide slider.
+				wp_enqueue_style( 'splide-style', get_template_directory_uri() . '/js/splide/css/themes/splide-sea-green.css', array(), CANUCKCP_VERSION );
+			}
 			wp_enqueue_style( 'canuck-cp-style', get_stylesheet_uri(), array(), CANUCKCP_VERSION );
 			if ( 'template-portfolio.php' === $page_template ) {
 				wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-portfolio-style.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
@@ -238,13 +244,10 @@ if ( ! function_exists( 'canuckcp_theme_supports' ) ) {
 		add_image_size( 'canuckcp_feature', 1100, 367, true );
 		add_image_size( 'canuckcp_small15', 300, 200, true );
 		add_image_size( 'canuckcp_med15', 800, 533, true );
-		add_image_size( 'canuckcp_gallery', 600, 331, true );
 		add_image_size( 'canuckcp_gallery_thumb', 90, 60, true );
 		set_post_thumbnail_size( 1100, 733, true );
 		// Enable translation.
 		load_theme_textdomain( 'canuck-cp', get_template_directory() . '/languages' );
-		// HTML5 markup for comment lists, comment forms, search forms and galleries.
-		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'gallery', 'caption' ) );
 		// Title tags.
 		add_theme_support( 'title-tag' );
 		// Custom logo support.

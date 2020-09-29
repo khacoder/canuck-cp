@@ -33,7 +33,7 @@ if ( has_nav_menu( 'canuckcp_social' ) || '' !== $contact_hours || '' !== $conta
 				}
 				if ( '' !== $contact_page ) {
 					?>
-					<a class="contact-page" href="<?php echo esc_url( $contact_page ); ?>" title="<?php esc_attr_e( 'contact page', 'canuck-cp' ); ?>"><i><?php echo canuckcp_svg( 'envelope', '12', '#7f7f7f' );// phpcs:ignore ?></i></a>
+					<a class="contact-page" href="<?php echo esc_url( $contact_page ); ?>" title="<?php esc_attr_e( 'contact page', 'canuck-cp' ); ?>"><i><?php echo canuckcp_svg( 'envelope', '12', '#ffffff' );// phpcs:ignore ?></i></a>
 					<?php
 				}
 				?>

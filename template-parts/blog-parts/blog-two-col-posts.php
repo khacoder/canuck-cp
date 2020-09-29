@@ -18,14 +18,14 @@ if ( have_posts() ) {
 		if ( is_int( $canuckcp_post_count / 2 ) ) {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-two-col-right grid-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'grid' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'grid' ); ?>
 			</article>
 			<div class="clearfix"></div>
 			<?php
 		} else {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-two-col-left grid-post' ); ?>>
-				<?php get_template_part( '/template-parts/postformat-parts/postformat', 'grid' ); ?>
+				<?php get_template_part( '/template-parts/blog-parts/blog', 'grid' ); ?>
 			</article>
 			<?php
 		}
