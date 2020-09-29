@@ -12,7 +12,7 @@
  */
 
 // Theme version.
-define( 'CANUCKCP_VERSION', '0.0.1' );
+define( 'CANUCKCP_VERSION', '0.0.3' );
 /**
  * ---- load files ---------------
  */
@@ -249,8 +249,6 @@ if ( ! function_exists( 'canuckcp_theme_supports' ) ) {
 		set_post_thumbnail_size( 1100, 733, true );
 		// Enable translation.
 		load_theme_textdomain( 'canuck-cp', get_template_directory() . '/languages' );
-		// HTML5 markup for comment lists, comment forms, search forms and galleries.
-		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'gallery', 'caption' ) );
 		// Title tags.
 		add_theme_support( 'title-tag' );
 		// Custom logo support.
