@@ -244,7 +244,6 @@ if ( ! function_exists( 'canuckcp_theme_supports' ) ) {
 		add_image_size( 'canuckcp_feature', 1100, 367, true );
 		add_image_size( 'canuckcp_small15', 300, 200, true );
 		add_image_size( 'canuckcp_med15', 800, 533, true );
-		add_image_size( 'canuckcp_gallery', 600, 331, true );
 		add_image_size( 'canuckcp_gallery_thumb', 90, 60, true );
 		set_post_thumbnail_size( 1100, 733, true );
 		// Enable translation.
