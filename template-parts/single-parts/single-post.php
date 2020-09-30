@@ -9,26 +9,18 @@
  */
 
 global $canuckcp_single_layout_option;
-
-if ( have_posts() ) {
-	while ( have_posts() ) {
-		the_post();
-		?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-			<?php
-			if ( 'fullwidth' === $canuckcp_single_layout_option ) {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'side-feature' );
-			} else {
-				get_template_part( '/template-parts/postformat-parts/postformat', 'top-feature' );
-			}
-			?>
-		</article>
-		<div class="clearfix"></div>
-		<div class="comments-wrap">
-			<?php comments_template( '/comments.php', true ); ?>
-		</div>
-		<?php
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+	<?php
+	if ( 'fullwidth' === $canuckcp_single_layout_option ) {
+		get_template_part( '/template-parts/partials', 'general-posts-side-feature' );
+	} else {
+		get_template_part( '/template-parts/partials', 'general-posts-top-feature' );
 	}
-} else {
-	get_template_part( '/template-parts/partials', 'post-or-page-not-found' );
-}
+	?>
+</article>
+<div class="clearfix"></div>
+<div class="comments-wrap">
+	<?php comments_template( '/comments.php', true ); ?>
+</div>
+<?php

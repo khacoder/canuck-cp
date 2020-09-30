@@ -2,6 +2,10 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 0.0.4
+-----------------------------------
+* fixed some bugs in single.php
+
 Version 0.0.3
 -----------------------------------
 * changed max width from 1100px to 1300px

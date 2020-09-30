@@ -231,8 +231,6 @@ if ( ! function_exists( 'canuckcp_theme_supports' ) ) {
 	 */
 	function canuckcp_theme_supports() {
 		global $canuckcp_block_editor_loaded;
-		// Post formats.
-		add_theme_support( 'post-formats', array( 'audio', 'gallery', 'image', 'quote', 'video' ) );
 		// Custom Backgrounds.
 		add_theme_support( 'custom-background' );
 		// Feeds.

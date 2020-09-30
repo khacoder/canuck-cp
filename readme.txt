@@ -8,7 +8,7 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Stable tag: 0.0.1
+Stable tag: 0.0.4
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,22 @@ Canuck CP is distributed under the terms of the GNU GPL
 Canuck CP is a full featured WordPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
 
 == Upgrade Notice ==
+
+Version 0.0.4
+-------------
+* fixed some bugs in single.php
+* remove postformat support in functions.php
+* removed postformat code in partials-general-posts-side-feature.php
+* removed postformat code in partials-general-posts-top-feature.php 
+
+Version 0.0.3
+-------------
+* changed max width from 1100px to 1300px
+* changed some of the styling for links and the sidebars
+* remove post formats
+
 * Version 0.0.2
+---------------
 * removed all references to blocks
 * changed all prefixes and text domains to the Classic Press system
 * changed woocommerce-functions.php to classiccommerce-funxtions.php and changed content scripts to classicpress where appropriate
@@ -26,6 +41,7 @@ Canuck CP is a full featured WordPress theme offering the user many options to c
 * general debugging from testing
 
 * Version 0.0.1
+---------------
 * split from Canuck WordPress Theme version 1.2.8
 
 == Description ==

@@ -11,7 +11,7 @@
  * Plugin Name: Canuck Author Widget
  * Plugin URI: http://kevinsspace.ca/canuckdemo/
  * Description: A widget for the Canuck Theme that displays a flex slider.
- * Version: 0.0.3
+ * Version: 0.0.4
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later
