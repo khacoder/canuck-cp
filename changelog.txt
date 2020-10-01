@@ -2,6 +2,11 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 0.0.5
+-----------------------------------
+* put the loop back in to single.php
+* added single-side-feature.php and single-top-feature.php as full content template parts to be used by single.php
+
 Version 0.0.4
 -----------------------------------
 * fixed some bugs in single.php
