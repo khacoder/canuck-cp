@@ -8,8 +8,8 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 0.0.5
-Stable tag: 0.0.5
+Version: 0.0.6
+Stable tag: 0.0.6
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,18 +31,17 @@ metabox options. Comprehensive user documentation is available in the Admin Pane
 = Layout Options =
 * left sidebar, right sidebar, both sidebars, fullwidth
 * Each page can use a different layout
-* optionally include breadcrumbs, by installing the Breadcrumb Trail WordPress Plugin
+* optionally include breadcrumbs
 * optionally include featured images on WordPress core templates: archive, category, tag, and search
 
 = Static Home Page Options =
 * Feature area can be a slider, image, or no feature
-* 13 Home Page Areas and 13 Home Page Sections, with the flexibility of putting any section in any area.
+* 15 Home Page Areas and 15 Home Page Sections, with the flexibility of putting any section in any area.
 * colored background or image with opacity settings for both optios
 * optionally use parallax effects for images
 
 = Blog Options =
 * post style options : top feature, side feature, two column grid, three column grid. two stamp grid, three stamp grid
-* post formats: audio, gallery, image, quote, video
 * options to exclude post meta: date,author,category,tags
 * sticky posts displayed at the top of your blog
 
@@ -71,7 +70,7 @@ metabox options. Comprehensive user documentation is available in the Admin Pane
 
 = Feature Template =
 * slider with content
-* sliders: button-nav, top carousel nav, bottom carousel nav
+* sliders: button-nav, bottom carousel nav
 
 = Portfolio Template =
 * unlimited portfolio pages
@@ -100,14 +99,8 @@ License URI: see the license.txt file for license details.
 
 == Other Licensed Add Ons ==
 
-= Hybrid Media Grabber =
-* Justin Tadlock <justin@justintadlock.com>
-* Copyright (c) 2008 - 2015, Justin Tadlock
-* http://themehybrid.com/hybrid-core
-* License: GPLv2 or later http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-
 = Font Icons =
-* Font Awesome Font Icons - License: CC BY 4.0, URL: https://creativecommons.org/licenses/by/4.0/
+* Font Awesome Font Icons svg's - License: CC BY 4.0, URL: https://creativecommons.org/licenses/by/4.0/
 
 = Splide Slider =
 * https://github.com/Splidejs/splide - Copyright (c) 2020 Naotoshi Fujita
@@ -164,9 +157,10 @@ License URI: see the license.txt file for license details.
 * Class Canuck_Custom_Radio_Image_Control incorporates code from
   The Kirki Customizer Framework, Copyright Aristeides Stathopoulos (@aristath),
   Licensed under the terms of the GNU GPL, Version 2 (or later).
-* Woocommerce WordPress Plugin, Copyright 2015 by the contributors
+* ClassicPress Plugin, Copyright 2015 by the contributors
   License: GPLv3 License URI: https://www.gnu.org/licenses/gpl-3.0.html
   Contributors: automattic, mikejolley, jameskoster, claudiosanches, claudiulodro, kloon, rodrigosprimo, jshreve, coderkevin
+  Note that this plugin is forked from WooCommerce
 
 == Installation ==
 * Upload to the themes directory of your wordpress setup. Ensure all sub directories are maintained.
@@ -177,8 +171,8 @@ License URI: see the license.txt file for license details.
 
 == Frequently Asked Questions ==
 = How do I change background or text colors? =
-* To make style changes the author recommend you add your new styles to the Custom CSS panel in customizer.
-* For extensive style changes the author recommend the use of the Child Theme Starter available from the authors site.
+* To make style changes the author recommends you add your new styles to the Custom CSS panel in customizer.
+* For extensive style changes the author recommends the use of the Child Theme Starter available from the authors site.
 
 = Page Load Speed is Slow =
 * Optimize your images using a program like Photoshop or Corel Photo Paint.
@@ -187,7 +181,7 @@ License URI: see the license.txt file for license details.
 
 = Is there theme documentation or tutorials available? =
 * The theme documentation is available in Appearance->Canuck.
-* Theme toutorials are available at the author site kevinsspace.ca.
+* Theme toutorials are not presently available.
 
 == Changelog ==
 * see changelog.txt supplied with the theme

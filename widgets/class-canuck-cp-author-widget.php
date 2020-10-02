@@ -13,7 +13,7 @@
  * Plugin Name: Canuck Author Widget
  * Plugin URI: http://kevinsspace.ca/canuckdemo/
  * Description: A widget for the Canuck CP Theme that displays a WordPress Author
- * Version: 0.0.5
+ * Version: 0.0.6
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later
