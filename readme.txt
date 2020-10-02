@@ -8,6 +8,7 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
+Version: 0.0.5
 Stable tag: 0.0.5
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +16,7 @@ License URI:https://www.gnu.org/licenses/gpl-2.0.html
 Canuck CP ClassicPress Theme, Copyright 2020 or later Kevin Archibald
 Canuck CP is distributed under the terms of the GNU GPL
 
-Canuck CP is a full featured WordPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
+Canuck CP is a full featured ClassicPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
 
 == Upgrade Notice ==
 * see changelog.txt

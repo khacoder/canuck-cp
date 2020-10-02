@@ -64,8 +64,8 @@ function canuckcp_skin_css() {
 	$skin_css .= 'blockquote p:before { color: #7f7f7f; }' . PHP_EOL;
 	$skin_css .= 'pre { font-family: monospace; border-radius: 10px; font-size: 1em; margin: 1em 0 0 0; padding: 1em; overflow-x: auto; border: solid 5px #474747; color: #474747; background: #e3e3e3; }' . PHP_EOL;
 	$skin_css .= 'code { background: #e3e3e3; }' . PHP_EOL;
-	$skin_css .= 'a { color: #7f7f7f; }' . PHP_EOL;
-	$skin_css .= 'a:hover { color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= 'a { color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= 'a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= 'th { border: 1px solid #474747; background-color: #e3e3e3; }' . PHP_EOL;
 	$skin_css .= 'tfoot { background-color: #e3e3e3; }' . PHP_EOL;
 	$skin_css .= 'td { border: 1px solid #474747; }' . PHP_EOL;
@@ -205,7 +205,7 @@ function canuckcp_skin_css() {
 	$skin_css .= '.comment-list .bypostauthor .comment-author cite:before { background-color: #808080; color: #ffffff; }' . PHP_EOL;
 	$skin_css .= 'p.no-comments { border-top: 1px solid #7f7f7f; }' . PHP_EOL;
 	$skin_css .= '.comment-form-author input,.comment-form-email input,.comment-form-url input { background-color: ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .5 ) . '; }' . PHP_EOL;
-	$skin_css .= '#respond textarea { background-color: ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .5 ) . '; }' . PHP_EOL;
+	$skin_css .= '#respond textarea { background-color: #ffffff; border: 1px solid #474747; }' . PHP_EOL;
 	$skin_css .= '.comment-form .form-submit input#submit.submit { border: 1px solid ' . $primary_accent . '; color: #474747; background-color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.comment-form .form-submit input#submit.submit:hover { color: #ffffff; background-color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '#respond .error { color: red; }' . PHP_EOL;
