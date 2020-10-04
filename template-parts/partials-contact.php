@@ -8,11 +8,8 @@
  * @author    Kevin Archibald <www.kevinsspace.ca/contact/>
  */
 
-$include_pinterest_pinit      = get_theme_mod( 'canuckcp_include_pinit' ) ? true : false;
-$post_share_buttons_at_bottom = false;
 if ( ! post_password_required() ) {
 	if ( have_posts() ) : while ( have_posts() ) : the_post();// phpcs:ignore
-			$canuckcp_exclude_page_share = get_post_meta( $post->ID, 'canuckcp_exclude_share', true ) ? true : false;
 			if ( '' !== trim( the_content() ) ) {
 				?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -21,9 +18,6 @@ if ( ! post_password_required() ) {
 					</div>
 				</div>
 				<?php
-			}
-			if ( ! $canuckcp_exclude_page_share && ! $post_share_buttons_at_bottom ) {
-				echo canuckcp_page_share();// phpcs:ignore
 			}
 	endwhile;
 	endif;
@@ -172,11 +166,6 @@ if ( ! post_password_required() ) {
 				?>
 			</form>
 		</div>
-	<?php
-	if ( ! $canuckcp_exclude_page_share && $post_share_buttons_at_bottom ) {
-		echo canuckcp_page_share();// phpcs:ignore
-	}
-	?>
 	</div>
 	<?php
 }

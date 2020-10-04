@@ -8,8 +8,10 @@
  * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
  */
 
-$use_excerpts = get_theme_mod( 'canuckcp_use_excerpts', false );
-$use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
+$use_excerpts                = get_theme_mod( 'canuckcp_use_excerpts', false );
+$use_lazyload                = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
+$canuckcp_share_on_posts     = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
+$canuckcp_exclude_post_share = get_post_meta( $post->ID, 'canuckcp_exclude_post_share', true ) ? true : false;
 ?>
 <div class="side-feature-wrap">
 	<?php
@@ -44,6 +46,9 @@ $use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 			if ( ! post_password_required() ) {
 				the_content( esc_html__( 'Read more', 'canuck-cp' ) );
 				canuckcp_post_meta_pages();
+				if ( ! $canuckcp_exclude_post_share && $canuckcp_share_on_posts && canuckcp_post_share() ) {
+					echo canuckcp_post_share();// phpcs:ignore
+				}
 			} else {
 				echo get_the_password_form(); // phpcs:ignore
 			}
@@ -52,5 +57,7 @@ $use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 	</div>
 </div>
 <div class="post-meta-sf">
-	<?php canuckcp_post_meta_full(); ?>
+	<?php
+	canuckcp_post_meta_full();
+	?>
 </div>

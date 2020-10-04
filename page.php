@@ -15,6 +15,7 @@ $canuckcp_include_breadcrumbs = get_theme_mod( 'canuckcp_breadcrumbs' ) ? true :
 $canuckcp_exclude_page_title  = get_post_meta( $post->ID, 'canuckcp_metabox_title', true ) ? true : false;
 $canuckcp_sidebar_a           = esc_html( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_a', true ) ? 'default-a' : get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_a', true ) ) );
 $canuckcp_sidebar_b           = esc_html( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_b', true ) ? 'default-b' : get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_b', true ) ) );
+$canuckcp_exclude_page_share  = get_post_meta( $post->ID, 'canuckcp_exclude_share', true ) ? true : false;
 get_header( 'no-feature' );
 get_template_part( '/template-parts/partials', 'page-title' );
 ?>
@@ -27,7 +28,12 @@ get_template_part( '/template-parts/partials', 'page-title' );
 				<?php get_template_part( '/template-parts/sidebars/sidebar', $canuckcp_sidebar_a ); ?>
 			</aside>
 			<div id="two-column-content">
-				<?php get_template_part( '/template-parts/partials', 'page-post' ); ?>
+				<?php
+				get_template_part( '/template-parts/partials', 'page-post' );
+				if ( ! $canuckcp_exclude_page_share && canuckcp_page_share() ) {
+					echo canuckcp_page_share();// phpcs:ignore
+				}
+				?>
 			</div>
 			<?php
 		} elseif ( 'both_sidebars' === $canuckcp_layout_option ) {
@@ -36,7 +42,12 @@ get_template_part( '/template-parts/partials', 'page-title' );
 				<?php get_template_part( '/template-parts/sidebars/sidebar', $canuckcp_sidebar_a ); ?>
 			</aside>
 			<div id="three-column-content">
-				<?php get_template_part( '/template-parts/partials', 'page-post' ); ?>
+				<?php
+				get_template_part( '/template-parts/partials', 'page-post' );
+				if ( ! $canuckcp_exclude_page_share && canuckcp_page_share() ) {
+					echo canuckcp_page_share();// phpcs:ignore
+				}
+				?>
 			</div>
 			<aside id="three-column-sidebar-right" class="toggle-sb-b">
 				<?php get_template_part( '/template-parts/sidebars/sidebar', $canuckcp_sidebar_b ); ?>
@@ -45,13 +56,23 @@ get_template_part( '/template-parts/partials', 'page-title' );
 		} elseif ( 'fullwidth' === $canuckcp_layout_option ) {
 			?>
 			<div id="fullwidth">
-				<?php get_template_part( '/template-parts/partials', 'page-post' ); ?>
+				<?php
+				get_template_part( '/template-parts/partials', 'page-post' );
+				if ( ! $canuckcp_exclude_page_share && canuckcp_page_share() ) {
+					echo canuckcp_page_share();// phpcs:ignore
+				}
+				?>
 			</div>
 			<?php
 		} else {
 			?>
 			<div id="two-column-content">
-				<?php get_template_part( '/template-parts/partials', 'page-post' ); ?>
+				<?php
+				get_template_part( '/template-parts/partials', 'page-post' );
+				if ( ! $canuckcp_exclude_page_share && canuckcp_page_share() ) {
+					echo canuckcp_page_share();// phpcs:ignore
+				}
+				?>
 			</div>
 			<aside id="two-column-sidebar-right" class="toggle-sb-b">
 				<?php get_template_part( '/template-parts/sidebars/sidebar', $canuckcp_sidebar_a ); ?>

@@ -5,7 +5,7 @@ Author: Kevin Archibald
 Author URI: https://kevinsspace.ca/
 Description: Canuck remains a full featured theme with all options avaiable in the free version of the theme, there is no up sell version. Set up a great landing page with any of 15 sections that can be stacked in any orde. No other page builder is required. All theme options can be backed up to a private page so content is preserved during theme switch. Canuck has unlimited Portfolio pages that can be setp in any of 9 layouts. Canuck also has a Feature template and a Mosaic Portfolio template, offering unlimited set up of these pages. For bloggers, Canuck offers audio, gallery, image, quote, and video post formats and users can choose one of 6 layouts for the main blog index. Set each page up with one sidebar, two sidebars, or full width. There is extensive documentation available in the Appearance->Canuck theme page and instructional videos available at the Author site.
 Tags: one-column,two-columns,three-columns,left-sidebar,right-sidebar,grid-layout,flexible-header,custom-background,custom-colors,custom-header,custom-menu,custom-logo,editor-style,featured-image-header,featured-images,footer-widgets,full-width-template,sticky-post,theme-options,threaded-comments,translation-ready,blog,e-commerce,portfolio
-Version: 0.0.6
+Version: 0.0.7
 Requires at least: 1.1
 Tested up to: 1.2
 Requires PHP: 5.6
@@ -229,6 +229,40 @@ body.sticky .header-logo-menu-strip div.header-image-left  a img                
 .social-vimeo:hover,.social-vimeo:focus                           { outline: none; background-color: #1AB7EA; }
 .social-whatsapp:hover,.social-whatsapp:focus                     { outline: none; background-color: #47AD5D; }
 .social-youtube:hover,.social-youtube:focus                       { outline: none; background-color: #c4302b; }
+/* ----------------------------------------------------------- Social share link styles  */
+.canuck-cp-share-page                                                     { float: left; clear: both; margin: 10px 0 0 0; padding: 12px 5px 5px 5px; background-color: #ffffff; border-radius: 5px; }
+.canuck-cp-share-page span                                                { float: left; margin: -2px 0 0 0;  padding: 0; }
+.canuck-cp-share-page span.share-text-page                                { float: left; margin: -6px 5px 0 0; padding: 0; }
+.canuck-cp-share-page .pinterest-share                                    { float: left; margin: 0; }
+.canuck-cp-share-page a                                                   { float: left; margin: 0; margin: -2px 0 0 5px; padding: 0; cursor: pointer; }
+.canuck-cp-share-page a i                                                 { font-style: normal; }
+.canuck-cp-share-page a.facebook-share .icon-svg-class                    { background-color: #ffffff; }
+.canuck-cp-share-page a.twitter-share .icon-svg-class                     { background-color: #ffffff; }
+.canuck-cp-share-page a.facebook-share:hover .icon-path-class             { fill: #21759b; }
+.canuck-cp-share-page a.twitter-share:hover .icon-path-class              { fill: #33ccff; }
+.canuck-cp-share-post                                                     { float: left; clear: both; margin: 10px 0 0 0; padding: 12px 5px 5px 5px; background-color: #ffffff; border-radius: 5px; }
+.canuck-cp-share-post span                                                { float: left; margin: -2px 0 0 0;  padding: 0; }
+.canuck-cp-share-post span.share-text-post                                { float: left; margin: -6px 5px 0 0; padding: 0; }
+.canuck-cp-share-post .pinterest-share                                    { float: left; margin: 0; }
+.canuck-cp-share-post a                                                   { float: left; margin: 0; margin: -2px 0 0 5px; padding: 0; cursor: pointer; }
+.canuck-cp-share-post a i                                                 { font-style: normal; }
+.canuck-cp-share-post a.facebook-share .icon-svg-class                    { background-color: #ffffff; }
+.canuck-cp-share-post a.twitter-share .icon-svg-class                     { background-color: #ffffff; }
+.canuck-cp-share-post a.facebook-share:hover .icon-path-class             { fill: #21759b; }
+.canuck-cp-share-post a.twitter-share:hover .icon-path-class              { fill: #33ccff; }
+.canuck-cp-share-meta                                                     { float: left; margin: 5px 0 0 0; padding: 0 5px 0 5px; }
+.canuck-cp-share-meta span                                                { float: left; margin: -2px 0 0 0;  padding: 0; }
+.canuck-cp-share-meta span.share-text-post                                { float: left; margin: -6px 5px 0 0; padding: 0; }
+.canuck-cp-share-meta .pinterest-share                                    { float: left; margin: 0; }
+.canuck-cp-share-meta .pinterest-share a img.pinterest-hover-effect       { display: none;  position:relative; left:0; top:0; }
+.pinterest-share a:hover img.pinterest-no-hover                           { display: none; }
+.pinterest-share a:hover img.pinterest-hover-effect                       { display:inline-block;}
+.canuck-cp-share-meta a                                                   { float: left; margin: 0; margin: -2px 0 0 5px; padding: 0; cursor: pointer; }
+.canuck-cp-share-meta a i                                                 { font-style: normal; }
+.canuck-cp-share-meta a.facebook-share .icon-svg-class                    { background-color: #ffffff; }
+.canuck-cp-share-meta a.twitter-share .icon-svg-class                     { background-color: #ffffff; }
+.canuck-cp-share-meta a.facebook-share:hover .icon-path-class             { fill: #21759b; }
+.canuck-cp-share-meta a.twitter-share:hover .icon-path-class              { fill: #33ccff; }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Navigation */
 /* -------------------------------------------------------- header nav */
 .header-logo-menu-strip .nav-container                       { width: calc(100% - 250px); clear: none; float: left; height: 120px; margin: 0; padding: 0; line-height: 1em; overflow: hidden; display: flex; }
