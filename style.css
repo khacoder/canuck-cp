@@ -229,6 +229,40 @@ body.sticky .header-logo-menu-strip div.header-image-left  a img                
 .social-vimeo:hover,.social-vimeo:focus                           { outline: none; background-color: #1AB7EA; }
 .social-whatsapp:hover,.social-whatsapp:focus                     { outline: none; background-color: #47AD5D; }
 .social-youtube:hover,.social-youtube:focus                       { outline: none; background-color: #c4302b; }
+/* ----------------------------------------------------------- Social share link styles  */
+.canuck-cp-share-page                                                     { float: left; clear: both; margin: 10px 0 0 0; padding: 12px 5px 5px 5px; background-color: #ffffff; border-radius: 5px; }
+.canuck-cp-share-page span                                                { float: left; margin: -2px 0 0 0;  padding: 0; }
+.canuck-cp-share-page span.share-text-page                                { float: left; margin: -6px 5px 0 0; padding: 0; }
+.canuck-cp-share-page .pinterest-share                                    { float: left; margin: 0; }
+.canuck-cp-share-page a                                                   { float: left; margin: 0; margin: -2px 0 0 5px; padding: 0; cursor: pointer; }
+.canuck-cp-share-page a i                                                 { font-style: normal; }
+.canuck-cp-share-page a.facebook-share .icon-svg-class                    { background-color: #ffffff; }
+.canuck-cp-share-page a.twitter-share .icon-svg-class                     { background-color: #ffffff; }
+.canuck-cp-share-page a.facebook-share:hover .icon-path-class             { fill: #21759b; }
+.canuck-cp-share-page a.twitter-share:hover .icon-path-class              { fill: #33ccff; }
+.canuck-cp-share-post                                                     { float: left; clear: both; margin: 10px 0 0 0; padding: 12px 5px 5px 5px; background-color: #ffffff; border-radius: 5px; }
+.canuck-cp-share-post span                                                { float: left; margin: -2px 0 0 0;  padding: 0; }
+.canuck-cp-share-post span.share-text-post                                { float: left; margin: -6px 5px 0 0; padding: 0; }
+.canuck-cp-share-post .pinterest-share                                    { float: left; margin: 0; }
+.canuck-cp-share-post a                                                   { float: left; margin: 0; margin: -2px 0 0 5px; padding: 0; cursor: pointer; }
+.canuck-cp-share-post a i                                                 { font-style: normal; }
+.canuck-cp-share-post a.facebook-share .icon-svg-class                    { background-color: #ffffff; }
+.canuck-cp-share-post a.twitter-share .icon-svg-class                     { background-color: #ffffff; }
+.canuck-cp-share-post a.facebook-share:hover .icon-path-class             { fill: #21759b; }
+.canuck-cp-share-post a.twitter-share:hover .icon-path-class              { fill: #33ccff; }
+.canuck-cp-share-meta                                                     { float: left; margin: 5px 0 0 0; padding: 0 5px 0 5px; }
+.canuck-cp-share-meta span                                                { float: left; margin: -2px 0 0 0;  padding: 0; }
+.canuck-cp-share-meta span.share-text-post                                { float: left; margin: -6px 5px 0 0; padding: 0; }
+.canuck-cp-share-meta .pinterest-share                                    { float: left; margin: 0; }
+.canuck-cp-share-meta .pinterest-share a img.pinterest-hover-effect       { display: none;  position:relative; left:0; top:0; }
+.pinterest-share a:hover img.pinterest-no-hover                           { display: none; }
+.pinterest-share a:hover img.pinterest-hover-effect                       { display:inline-block;}
+.canuck-cp-share-meta a                                                   { float: left; margin: 0; margin: -2px 0 0 5px; padding: 0; cursor: pointer; }
+.canuck-cp-share-meta a i                                                 { font-style: normal; }
+.canuck-cp-share-meta a.facebook-share .icon-svg-class                    { background-color: #ffffff; }
+.canuck-cp-share-meta a.twitter-share .icon-svg-class                     { background-color: #ffffff; }
+.canuck-cp-share-meta a.facebook-share:hover .icon-path-class             { fill: #21759b; }
+.canuck-cp-share-meta a.twitter-share:hover .icon-path-class              { fill: #33ccff; }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Navigation */
 /* -------------------------------------------------------- header nav */
 .header-logo-menu-strip .nav-container                       { width: calc(100% - 250px); clear: none; float: left; height: 120px; margin: 0; padding: 0; line-height: 1em; overflow: hidden; display: flex; }

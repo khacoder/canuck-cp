@@ -568,9 +568,8 @@ if ( ! function_exists( 'canuckcp_strip_first_block_gallery' ) ) {
  * @param string $share_label is the label for the share output.
  */
 function canuckcp_page_share( $share_label = '' ) {
-	$canuckcp_use_social_share = get_theme_mod( 'canuckcp_use_social_share' ) ? true : false;
-	$canuckcp_share_on_pages   = get_theme_mod( 'canuckcp_share_on_pages' ) ? true : false;
-	if ( $canuckcp_use_social_share && $canuckcp_share_on_pages ) {
+	$canuckcp_share_on_pages = get_theme_mod( 'canuckcp_share_on_pages' ) ? true : false;
+	if ( $canuckcp_share_on_pages ) {
 		$share_html = '<div class="canuck-cp-share-page">';
 		if ( '' !== $share_label ) {
 			$share_html .= '<span class="share-text-page">' . $share_label . '</span>';
@@ -600,9 +599,8 @@ function canuckcp_page_share( $share_label = '' ) {
  * @param string $share_label is the label for the share output.
  */
 function canuckcp_post_share( $share_label = '' ) {
-	$canuckcp_use_social_share = get_theme_mod( 'canuckcp_use_social_share' ) ? true : false;
-	$canuckcp_share_on_posts   = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
-	if ( $canuckcp_use_social_share && $canuckcp_share_on_posts ) {
+	$canuckcp_share_on_posts = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
+	if ( $canuckcp_share_on_posts ) {
 		$share_html = '<div class="canuck-cp-share-post">';
 		if ( '' !== $share_label ) {
 			$share_html .= '<span class="share-text-post">' . $share_label . '</span>';
@@ -615,35 +613,6 @@ function canuckcp_post_share( $share_label = '' ) {
 		}
 		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
 			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';
-		}
-		$share_html .= '</div>';
-		return $share_html;
-	} else {
-		return false;
-	}
-}
-
-/**
- * Share on post meta helper.
- *
- * @param string $share_label is the label for the share output.
- */
-function canuckcp_post_share_meta( $share_label = '' ) {
-	$canuckcp_use_social_share = get_theme_mod( 'canuckcp_use_social_share' ) ? true : false;
-	$canuckcp_share_on_posts   = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
-	if ( $canuckcp_use_social_share && $canuckcp_share_on_posts ) {
-		$share_html = '<div class="canuck-cp-share-meta">';
-		if ( '' !== $share_label ) {
-			$share_html .= '<span class="share-text-post">' . $share_label . '</span>';
-		}
-		if ( get_theme_mod( 'canuckcp_include_pinit' ) ? true : false ) {
-			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share"><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-round="true" data-pin-custom="true"><img class="pinterest-no-hover" src="../wp-content/themes/canuck-cp/images/pinterest-p.svg"><img class="pinterest-hover-effect" src="../wp-content/themes/canuck-cp/images/pinterest-p-red.svg"></a></span>';
-		}
-		if ( get_theme_mod( 'canuckcp_include_facebook' ) ? true : false ) {
-			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . get_the_permalink() . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'facebook-f', '8px', '#000000' ) . '</i></a>';
-		}
-		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
-			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter', '14px', '#00000' ) . '</i></a>';
 		}
 		$share_html .= '</div>';
 		return $share_html;

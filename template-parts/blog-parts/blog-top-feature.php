@@ -15,6 +15,7 @@ $use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
+		$canuckcp_exclude_post_share = get_post_meta( $post->ID, 'canuckcp_exclude_post_share', true ) ? true : false;
 		?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class( 'canuck-cp-one-col top-feature-post' ); ?> >
 			<?php
@@ -61,7 +62,9 @@ if ( have_posts() ) {
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 						</h2>
 						<div class="post-meta-tf">
-							<?php canuckcp_post_meta_full(); ?>
+							<?php
+							canuckcp_post_meta_full();
+							?>
 						</div>
 					</div>
 					<div class="post-content-tf entry-content">

@@ -8,8 +8,10 @@
  * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
  */
 
-$use_excerpts = get_theme_mod( 'canuckcp_use_excerpts', false );
-$use_lazyload = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
+$use_excerpts                = get_theme_mod( 'canuckcp_use_excerpts', false );
+$use_lazyload                = get_theme_mod( 'canuckcp_use_lazyload' ) ? true : false;
+$canuckcp_share_on_posts     = get_theme_mod( 'canuckcp_share_on_posts' ) ? true : false;
+$canuckcp_exclude_post_share = get_post_meta( $post->ID, 'canuckcp_exclude_post_share', true ) ? true : false;
 if ( ! post_password_required() ) {
 	if ( has_post_thumbnail() ) {
 		$feature_image_url = get_the_post_thumbnail_url( $post->ID, 'large' );
@@ -53,7 +55,9 @@ if ( ! post_password_required() ) {
 				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 			</h2>
 			<div class="post-meta-tf">
-				<?php canuckcp_post_meta_full(); ?>
+				<?php
+				canuckcp_post_meta_full();
+				?>
 			</div>
 		</div>
 		<div class="post-content-tf entry-content">
@@ -61,6 +65,9 @@ if ( ! post_password_required() ) {
 			if ( ! post_password_required() ) {
 				the_content( esc_html__( 'Read more', 'canuck' ) );
 				canuckcp_post_meta_pages();
+				if ( ! $canuckcp_exclude_post_share && $canuckcp_share_on_posts && canuckcp_post_share() ) {
+						echo canuckcp_post_share();// phpcs:ignore
+				}
 			} else {
 				echo get_the_password_form();// phpcs:ignore
 			}

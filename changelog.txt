@@ -4,7 +4,9 @@
 
 Version 0.0.7
 -----------------------------------
-* 
+* set up sharring options on single posts and pages
+* cleaned up code on templates
+* added Update Manager class foor distribution
 
 Version 0.0.6
 -----------------------------------

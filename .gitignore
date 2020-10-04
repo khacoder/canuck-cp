@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# Exclude the following when creating zip archive (git archive)
+.gitignore export-ignore
+.gitattributes export-ignore

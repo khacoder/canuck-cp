@@ -64,14 +64,16 @@ if ( have_posts() ) {
 							}
 							canuckcp_post_meta_pages();
 						} else {
-							echo get_the_password_form(); // phpcs:ignore
+							echo get_the_password_form();// phpcs:ignore
 						}
 						?>
 					</div>
 				</div>
 			</div>
 			<div class="post-meta-sf">
-				<?php canuckcp_post_meta_full(); ?>
+				<?php
+				canuckcp_post_meta_full();
+				?>
 			</div>
 		</article>
 		<div class="clearfix"></div>

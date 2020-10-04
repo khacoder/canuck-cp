@@ -547,8 +547,15 @@ function canuckcp_show_post_custom_meta_box() {
 		<input type="text" name="custom_link" id="custom-link-id" value="<?php echo esc_url( $custom_link ); ?>" size="30" />
 	</p>
 	<?php
+	// **************** Exclude Share Option ****************************************************.
+	$exclude_post_share = ( '' === get_post_meta( $post->ID, 'canuckcp_exclude_post_share', true ) ? false : true );
+	?>
+	<p>
+		<span style="clear:both;width:200px;float:left;" class="meta-exclude-post-share">Exclude Share Buttons</span>
+		<input style="margin: 10px 0 0 0;" type="checkbox" name="exclude_post_share" id="exclude_post-share-id" <?php checked( $exclude_post_share, true ); ?>>
+	</p>
+	<?php
 }
-
 /**
  * Save the data.
  *
@@ -613,6 +620,16 @@ function canuckcp_save_post_custom_meta( $post_id ) {
 	} elseif ( '' === $custom_link_new && '' !== $custom_link_old ) {
 		// If there is no new meta value but an old value exists, delete it.
 		delete_post_meta( $post_id, 'canuckcp_custom_feature_link' );
+	}
+	// Exclude share buttons.
+	$exclude_post_share_old = get_post_meta( $post_id, 'canuckcp_exclude_post_share', true ) ? true : false;
+	$exclude_post_share_new = ( isset( $_POST['exclude_post_share'] ) ? true : false );// Input var okay.
+	if ( true === $exclude_post_share_new && false === $exclude_post_share_old ) {
+		// If a new meta value was added and there was no previous value, add it.
+		add_post_meta( $post_id, 'canuckcp_exclude_post_share', true, true );
+	} elseif ( false === $exclude_post_share_new && true === $exclude_post_share_old ) {
+		// If there is no new meta value but an old value exists, delete it.
+		delete_post_meta( $post_id, 'canuckcp_exclude_post_share' );
 	}
 }
 add_action( 'save_post', 'canuckcp_save_post_custom_meta' );

@@ -26,7 +26,7 @@
 namespace KevinSpaceThemes\UpdateManager;
 
 // EDIT: URL where Update Manager is installed; with trailing slash!
-const UPDATE_SERVER = 'https://kevinsspace.ca/wp-content/plugins/';
+const UPDATE_SERVER = 'https://kevinsspace.ca/';
 
 // EDIT: plugin or theme?
 const UPDATE_TYPE = 'theme';
