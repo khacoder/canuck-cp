@@ -2,6 +2,10 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 0.0.8
+-----------------------------------
+* fixed Update Manager bugs
+
 Version 0.0.7
 -----------------------------------
 * set up sharring options on single posts and pages
