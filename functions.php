@@ -25,6 +25,7 @@ require get_template_directory() . '/includes/icons.php';
 if ( is_admin() ) {
 	require get_template_directory() . '/includes/metabox-functions.php';
 	require get_template_directory() . '/includes/theme-page.php';
+	require_once get_template_directory() . '/includes/UpdateClient.class.php';
 }
 if ( is_customize_preview() ) {
 	require get_template_directory() . '/includes/kha-customizer.php';
