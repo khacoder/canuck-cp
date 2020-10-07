@@ -4,7 +4,9 @@
 
 Version 0.0.9
 -----------------------------------
-*
+* fixed galleries
+* removed post formay styles
+* fine tuned styles
 
 Version 0.0.8
 -----------------------------------

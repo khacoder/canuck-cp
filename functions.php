@@ -124,7 +124,7 @@ if ( ! function_exists( 'canuckcp_load_js' ) ) {
 				'canuck-cp-custom_js',
 				'accessibleNavigationScreenReaderText',
 				array(
-					'expandMain'    => __( '````````````````````````Open Main Menu', 'canuck-cp' ),
+					'expandMain'    => __( 'Open Main Menu', 'canuck-cp' ),
 					'collapseMain'  => __( 'Close Main Menu', 'canuck-cp' ),
 					'expandChild'   => __( 'Expand Submenu', 'canuck-cp' ),
 					'collapseChild' => __( 'Collapse Submenu', 'canuck-cp' ),
@@ -247,6 +247,8 @@ if ( ! function_exists( 'canuckcp_theme_supports' ) ) {
 		set_post_thumbnail_size( 1100, 733, true );
 		// Enable translation.
 		load_theme_textdomain( 'canuck-cp', get_template_directory() . '/languages' );
+		// HTML5 markup for comment lists, comment forms, search forms and galleries.
+		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'gallery', 'caption' ) );
 		// Title tags.
 		add_theme_support( 'title-tag' );
 		// Custom logo support.

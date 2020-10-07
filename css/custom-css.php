@@ -608,37 +608,9 @@ function canuckcp_custom_css() {
 	$ka_css .= '#canuck-cp-footer .tagcloud a { background-color: ' . $footer_background_color . ';border: 1px solid ' . canuckcp_hex_to_rgba( $footer_link_color, 0.5 ) . ';color: ' . $footer_link_color . '}' . PHP_EOL;
 	$ka_css .= '#canuck-cp-footer .tagcloud a:hover { background-color: ' . $footer_background_color . ';border: 1px solid ' . canuckcp_hex_to_rgba( $footer_hover_color, 0.5 ) . ';color: ' . $footer_hover_color . '}' . PHP_EOL;
 	$ka_css .= 'footer .widget_recent_entries li,footer .widget_recent_entries li:last-child,footer .canuck-cp_recent_posts li,footer .canuck-cp_recent_posts li:last-child{ border-bottom: 1px solid ' . canuckcp_hex_to_rgba( $footer_link_color, 0.25 ) . '; }' . PHP_EOL;
+	$ka_css .= '.footer-topstrip-left a:hover,.footer-topstrip-left a:focus { outline: none; background-color: ' . $footer_link_color . '; }' . PHP_EOL;
+	$ka_css .= '.footer-topstrip-left a:hover svg path,.footer-topstrip-left a:focus svg path { fill: ' . $footer_hover_color . '; }' . PHP_EOL;
+	$ka_css .= '.footer-topstrip-left a svg path { fill: ' . $footer_link_color . '; transition: .75s ease; }' . PHP_EOL;
+	$ka_css .= '.footer-topstrip-right a svg path { fill: ' . $footer_link_color . '; transition: .75s ease; }' . PHP_EOL;
 	return $ka_css;
-}
-
-/**
- * Enqueues back-end CSS for Gutenberg editor
- *
- * @see wp_add_inline_style() to use this function to append the
- * custom styles to style.css.
- *
- * Bring your options into this function to set up your conditional css.
- */
-function canuckcp_custom_css_gutenberg() {
-	$ka_gutenberg_css = '';
-	// Theme fonts.
-	$theme_fonts = canuckcp_fonts();
-	if ( 'default' !== $theme_fonts['header']['family'] ) {
-		$ka_gutenberg_css .= '.editor-styles-wrapper h1,.editor-styles-wrapper h2,.editor-styles-wrapper h3,.editor-styles-wrapper h4,.editor-styles-wrapper h5,.editor-styles-wrapper h6,#page-title-wide .page-title-wrap h1,.editor-post-title editor-post-title__block textarea,.editor-post-title__block .editor-post-title__input,span.title {font-weight: 300; font-family:' . $theme_fonts['header']['family'] . '!important;}' . PHP_EOL;
-	}
-	if ( 'default' !== $theme_fonts['body']['family'] ) {
-		$ka_gutenberg_css .= '.edit-post-visual-editor .editor-block-list__block-edit,
-								.edit-post-visual-editor .editor-block-list__block,.editor-styles-wrapper {font-family:' . $theme_fonts['body']['family'] . '!important;}' . PHP_EOL;
-	}
-	if ( 'default' !== $theme_fonts['page']['family'] ) {
-		$ka_gutenberg_css .= '#page-title-wide .page-title-wrap h1 {font-family:' . $theme_fonts['page']['family'] . '!important;}' . PHP_EOL;
-	}
-	// Post galleries.
-	$use_post_gallery_captions = get_theme_mod( 'canuckcp_use_post_gallery_captions' ) ? true : false;
-	if ( true === $use_post_gallery_captions ) {
-		$ka_gutenberg_css .= '.gallery .gallery-caption{ display: block!important; }';
-	} else {
-		$ka_gutenberg_css .= '.gallery .gallery-caption{ display: none!important; }';
-	}
-	return $ka_gutenberg_css;
 }
