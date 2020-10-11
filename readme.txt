@@ -8,7 +8,7 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 0.0.9
+Version: 1.0.0
 Stable tag: 0.0.9
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -19,7 +19,7 @@ Canuck CP is distributed under the terms of the GNU GPL
 Canuck CP is a full featured ClassicPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
 
 == Upgrade Notice ==
-* see changelog.txt
+* initial release
 
 == Description ==
 * Canuck CP is a full featured responsive theme that looks great on full size screens, tablets and mobile devices. Users have incredible flexibility to create the website that suits your style, with extensive theme options, post metabox options, and page
@@ -34,10 +34,11 @@ metabox options. Comprehensive user documentation is available in the Admin Pane
 * optionally include breadcrumbs
 * optionally include featured images on WordPress core templates: archive, category, tag, and search
 
-= Static Home Page Options =
-* Feature area can be a slider, image, or no feature
+= Static Home Page Buider =
+* easy to use, no need for a page builder
+* feature area can be a slider, image, or no feature
 * 15 Home Page Areas and 15 Home Page Sections, with the flexibility of putting any section in any area.
-* colored background or image with opacity settings for both optios
+* colored background or image with opacity settings for both options
 * optionally use parallax effects for images
 
 = Blog Options =
@@ -145,7 +146,7 @@ License URI: see the license.txt file for license details.
   CC0 Public Domain, http://www.publicdomainpictures.net/view-image.php?image=9767&picture=starry-night
 * password800.jpg - Old Key by Georgr Hodan
   CC0 Creative Commons, https://www.publicdomainpictures.net/en/view-image.php?image=62976&picture=old-key
-* Downtown Calgary Peace Bridge At Night by Piotr Filipek
+* Canadian Rockies by Piotr Filipek
   CC0 Creative Commons, http://www.filipekphotography.com/
   Piotr is my son-in-law, a great photographer, who has release this photo to me, under CC0 License
 * layout icons made by theme author using excel, not worth licensing

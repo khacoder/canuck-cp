@@ -6924,7 +6924,6 @@ function canuckcp_add_custom_controls() {
 			}
 		}
 	}
-
 	if ( class_exists( 'WP_Customize_Control' ) ) {
 		/**
 		 * Class to create a custom tags control.
@@ -6952,7 +6951,6 @@ function canuckcp_add_custom_controls() {
 			}
 		}
 	}
-
 	if ( class_exists( 'WP_Customize_Control' ) ) {
 		/**
 		 * Adds multiple category selection support to the theme customizer via checkboxes.
@@ -6996,7 +6994,6 @@ function canuckcp_add_custom_controls() {
 			}
 		}
 	}
-
 	if ( class_exists( 'WP_Customize_Control' ) ) {
 		/**
 		 * Create a Radio-Image control
@@ -7068,58 +7065,6 @@ function canuckcp_add_custom_controls() {
 					?>
 				</div>
 				<script>jQuery(document).ready(function(jQuery) { jQuery( '[id="input_<?php echo esc_attr( $this->id ); ?>"]' ).buttonset(); });</script>
-				<?php
-			}
-		}
-	}
-	if ( class_exists( 'WP_Customize_Control' ) ) {
-		/**
-		 * Class to add a Fontawesome dropdown selection c/w icons
-		 */
-		class Canuck_Customizer_Fontawesome_Control extends WP_Customize_Control {// phpcs:ignore
-			/**
-			 * Declare the control type.
-			 *
-			 * @access public
-			 * @var string
-			 */
-			public $type = 'canuck-icon-picker';
-			/**
-			 * Enqueue css
-			 */
-			public function enqueue() {
-				wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), CANUCKCP_VERSION );
-			}
-			/**
-			 * Render content.
-			 */
-			public function render_content() {
-				if ( empty( $this->choices ) ) {
-					return;
-				}
-				?>
-				<label>
-					<?php
-					if ( ! empty( $this->label ) ) {
-						?>
-						<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-						<?php
-					}
-					if ( ! empty( $this->description ) ) {
-						?>
-						<span class="description customize-control-description"><?php echo wp_kses_post( $this->description ); ?></span>
-						<?php
-					}
-					?>
-					<select <?php $this->link(); ?> style="font-family: 'FontAwesome', Arial;">
-						<?php
-						foreach ( $this->choices as $value => $label ) {
-							// Note $label must not be escaped or it will not work, $label is from a hardcoded array so escaping is not really necessary.
-							echo '<option value="' . $value . '"' . selected( $this->value(), $value, false ) . '>' . $label . ' ' . wp_kses_post( $value ) . '</option>';// phpcs:ignore
-						}
-						?>
-					</select>
-				</label>
 				<?php
 			}
 		}
@@ -8360,7 +8305,7 @@ function canuckcp_import_parent_options() {
 	$canuckcp_import_parent_options = get_theme_mod( 'canuckcp_import_parent_theme_options' ) ? true : false;
 	if ( true === $canuckcp_import_parent_options ) {
 		$options_setup     = canuckcp_get_customizer_option_partameters();
-		$parent_theme_mods = get_option( 'theme_mods_canuck' );
+		$parent_theme_mods = get_option( 'theme_mods_canuck-cp' );
 		// Start by turning off the switch to import options.
 		set_theme_mod( 'canuckcp_import_parent_theme_options', false );
 		// Only update if the option in the child theme is not set.

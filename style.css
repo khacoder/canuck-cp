@@ -5,7 +5,7 @@ Author: Kevin Archibald
 Author URI: https://kevinsspace.ca/
 Description: Canuck remains a full featured theme with all options avaiable in the free version of the theme, there is no up sell version. Set up a great landing page with any of 15 sections that can be stacked in any orde. No other page builder is required. All theme options can be backed up to a private page so content is preserved during theme switch. Canuck has unlimited Portfolio pages that can be setp in any of 9 layouts. Canuck also has a Feature template and a Mosaic Portfolio template, offering unlimited set up of these pages. For bloggers, Canuck offers audio, gallery, image, quote, and video post formats and users can choose one of 6 layouts for the main blog index. Set each page up with one sidebar, two sidebars, or full width. There is extensive documentation available in the Appearance->Canuck theme page and instructional videos available at the Author site.
 Tags: one-column,two-columns,three-columns,left-sidebar,right-sidebar,grid-layout,flexible-header,custom-background,custom-colors,custom-header,custom-menu,custom-logo,editor-style,featured-image-header,featured-images,footer-widgets,full-width-template,sticky-post,theme-options,threaded-comments,translation-ready,blog,e-commerce,portfolio
-Version: 0.0.9
+Version: 1.0.0
 Requires at least: 1.1
 Tested up to: 1.2
 Requires PHP: 5.6
@@ -986,26 +986,29 @@ table#wp-calendar tr #next a { font-size: 0.917em; font-weight: bold; padding-to
 }
 /* ============================================================================================================ 600 */
 @media only screen and (max-width:600px){
-	.header-image-overlay-wrap h1   { margin: 100px 0 0 0; font-size: 1em; }
-	.header-image-overlay-wrap span { font-size: .875em; }
+	.header-image-overlay-wrap h1                                                          { margin: 100px 0 0 0; font-size: 1em; }
+	.header-image-overlay-wrap span                                                        { font-size: .875em; }
 	.header-wide-slider .header-logo-menu-strip .header-image-left,
-	.header-wide-image .header-logo-menu-strip .header-image-left                           { height: 45px; width: 100px; float: left; text-align: left; line-height: inherit; margin: 0; padding: 5px 0 5px 25px; }
-	.header-wide-image .header-logo-menu-wide .header-logo-menu-strip .header-image-left a  { background-size: contain; height: 45px; }
-	.header-logo-menu-strip .header-image-left img                                          { max-width: 60%; max-height: 60%; margin: 10px 0 0 20px; }
-	button.menu-1-toggle                                                                    { top: 10px; }
+	.header-wide-image .header-logo-menu-strip .header-image-left                          { height: 45px; width: 100px; float: left; text-align: left; line-height: inherit; margin: 0; padding: 5px 0 5px 25px; }
+	.header-wide-image .header-logo-menu-wide .header-logo-menu-strip .header-image-left a { background-size: contain; height: 45px; }
+	.header-wide-no-feature .header-logo-menu-strip .header-image-left                     { margin: 0; padding: 0; }
+	.header-logo-menu-strip .header-image-left img                                         { max-width: 60%; max-height: 60%; margin: 0 0 0 20px; }
+	button.menu-1-toggle                                                                   { top: 10px; }
+	.sticky-spacer                                                                         { margin-top: 100px; }
 }
 /* ============================================================================================================ 480 */
 @media only screen and (max-width:480px){
 	/* ------------------------------------------------- Header top strip --------------- */
-	.header-topstrip-wrap .header-topstrip-left,.footer-topstrip-wrap .footer-topstrip-left { font-size: 9px; }
+	.header-topstrip-wrap .header-topstrip-left,.footer-topstrip-wrap .footer-topstrip-left { font-size: 9px!important; }
 	.header-topstrip-left .contact-hours,.footer-topstrip-left .contact-hours               { margin: 0 5px 0 0; }
 	.header-topstrip-left .contact-hours i,.footer-topstrip-left .contact-hours i           { display: none; }
 	.header-topstrip-left .contact-phone,.footer-topstrip-left .contact-phone               { margin: 0 5px 0 0; }
 	.header-topstrip-left .contact-phone i, .footer-topstrip-left .contact-phone i          { display: none; }
+	.header-topstrip-left .contact-page i svg, .footer-topstrip-left .contact-page i svg    { width: 10px; }
 	.header-topstrip-right .social-nav-class li a:before,
 	.footer-topstrip-right .social-nav-class li a:before                                    { font-size: 10px; width: 25px; }
 	.header-wide-image .header-logo-menu-strip .header-image-left                           { padding: 0 0 0 25px; }
-	.header-image-overlay-wrap h1                                                           { margin: 100px 0 0 0; }
+	.header-image-overlay-wrap h1                                                           { margin: 75px 0 0 0; }
 	/* -------------------------------------------------------------------------- General */
 	body                  { font-size: 75%; line-height: 1.3125em; }
 	h1,h2,h3,h4,h5,h6     { line-height: 1.3125em; }

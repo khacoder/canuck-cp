@@ -75,7 +75,6 @@ function canuckcp_skin_css() {
 	$skin_css .= 'body.sticky .scrolltotop:hover svg path { fill: ' . $primary_accent . '; }' . PHP_EOL;
 	/* ******************************************************************************** Header */
 	$skin_css .= '.header-wide-image .header-topstrip-wide { background-color: rgba(0,0,0,.5); }' . PHP_EOL;
-	$skin_css .= '.header-wide-no-feature .header-topstrip-wide,.header-wide-slider .header-topstrip-wide { background-color: rgba(0,0,0,.2); }' . PHP_EOL;
 	$skin_css .= '.header-wide-no-feature .header-topstrip-left,.header-wide-slider .header-topstrip-left { color: #474747; }' . PHP_EOL;
 	$skin_css .= '.header-wide-no-feature .header-topstrip-left svg path,.header-wide-slider .header-topstrip-left svg path { fill: #474747; }' . PHP_EOL;
 	$skin_css .= '.header-wide-no-feature .header-topstrip-left a,.header-wide-slider .header-topstrip-left a { color: #474747; }' . PHP_EOL;
@@ -245,7 +244,6 @@ function canuckcp_skin_css() {
 	$skin_css .= '#three-column-sidebar-left { background-color: #ffffff; box-shadow: 0 0 5px #000000; }' . PHP_EOL;
 	$skin_css .= '#three-column-sidebar-right { background-color: #ffffff; box-shadow: 0 0 5px #000000; }' . PHP_EOL;
 	$skin_css .= 'body.sticky header.header-wide-no-feature div.header-logo-menu-strip,body.sticky header.header-wide-image div.header-logo-menu-strip { background-color: #e3e3e3; color: #474747; }' . PHP_EOL;
-
 	$skin_css .= '#main-menu-right ul { border-bottom: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul li { color: #474747; background-color: #ffffff; border-top: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul li a { background-color: #ffffff; color: #474747; }' . PHP_EOL;
@@ -253,7 +251,6 @@ function canuckcp_skin_css() {
 	$skin_css .= '#main-menu-right ul li.current-menu-item > a, #main-menu-right ul li.current-menu-ancestor > a { background-color: ' . $primary_accent . '; color: #ffffff; border-radius: 0px; }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul li button { background-color: #ffffff; color: #474747; }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul li button:hover,#main-menu-right ul li button:focus { background-color: ' . $secondary_accent . '; color: #ffffff; border-radius: 0px; }' . PHP_EOL;
-
 	$skin_css .= '#main-menu-right ul ul { border-bottom: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul li { color: #474747; background-color: #ffffff; border-top: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul li a { background-color: #ffffff; color: #474747; }' . PHP_EOL;
@@ -261,7 +258,6 @@ function canuckcp_skin_css() {
 	$skin_css .= '#main-menu-right ul ul li.current-menu-item > a,#main-menu-right ul ul li.current-menu-ancestor > a { background-color: ' . $primary_accent . '; color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul li button { background-color: #ffffff; color: #474747; }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul li button:hover,#main-menu-right ul ul li button:focus { background-color: ' . $secondary_accent . '; color: #ffffff; }' . PHP_EOL;
-
 	$skin_css .= '#main-menu-right ul ul ul { border-bottom: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul ul li { color: #474747; background-color: #ffffff; border-top: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul ul li a { background-color: #ffffff; color: #474747; }' . PHP_EOL;
@@ -270,7 +266,6 @@ function canuckcp_skin_css() {
 	$skin_css .= '#main-menu-right ul ul ul li.current-menu-item > a:hover,#main-menu-right ul ul ul li.current-menu-item > a:focus { background-color: ' . $secondary_accent . '; color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul ul li button { background-color: #ffffff; color: #474747; }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul ul li button:hover,#main-menu-right ul ul ul li button:focus { background-color: ' . $secondary_accent . '; color: #ffffff; }' . PHP_EOL;
-
 	$skin_css .= '#main-menu-right ul ul ul ul { border-bottom: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul ul ul li { color: #474747; background-color: #ffffff; border-top: 1px solid rgba(71,71,71,.1); }' . PHP_EOL;
 	$skin_css .= '#main-menu-right ul ul ul ul li a { background-color: #ffffff; color: #474747; }' . PHP_EOL;
