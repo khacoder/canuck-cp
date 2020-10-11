@@ -146,7 +146,7 @@ License URI: see the license.txt file for license details.
   CC0 Public Domain, http://www.publicdomainpictures.net/view-image.php?image=9767&picture=starry-night
 * password800.jpg - Old Key by Georgr Hodan
   CC0 Creative Commons, https://www.publicdomainpictures.net/en/view-image.php?image=62976&picture=old-key
-* Downtown Calgary Peace Bridge At Night by Piotr Filipek
+* Canadian Rockies by Piotr Filipek
   CC0 Creative Commons, http://www.filipekphotography.com/
   Piotr is my son-in-law, a great photographer, who has release this photo to me, under CC0 License
 * layout icons made by theme author using excel, not worth licensing
