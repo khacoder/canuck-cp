@@ -7,7 +7,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 /**
@@ -32,7 +32,7 @@ function canuckcp_get_gallery_images() {
 		$images  = array();
 		$pattern = get_shortcode_regex();
 		// Note: leave as double quotes, or the preg match will not work.
-		preg_match( "/$pattern/s", $gallery_string, $match );// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		preg_match( "/$pattern/s", $gallery_string, $match );// phpcs:ignore
 		if ( $match ) {
 			$atts = shortcode_parse_atts( $match[3] );
 		} else {

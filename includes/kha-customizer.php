@@ -64,7 +64,7 @@ function canuckcp_get_customizer_groups() {
 		'canuckcp_social'  => array(
 			'name'        => 'canuckcp_social',
 			'title'       => esc_html__( 'Canuck CP Social Links', 'canuck-cp' ),
-			'description' => 'Enter up to 8 social links',
+			'description' => esc_html__( 'Enter up to 8 social links', 'canuck-cp' ),
 			'priority'    => 2,
 			'sections'    => array(
 				'social_links' => array(
@@ -628,7 +628,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url1',
 			'title'       => esc_html__( 'Social Link 1 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 2,
 			'default'     => '',
@@ -651,7 +651,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url2',
 			'title'       => esc_html__( 'Social Link 2 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 4,
 			'default'     => '',
@@ -674,7 +674,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url3',
 			'title'       => esc_html__( 'Social Link 3 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 6,
 			'default'     => '',
@@ -697,7 +697,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url4',
 			'title'       => esc_html__( 'Social Link 4 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 8,
 			'default'     => '',
@@ -720,7 +720,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url5',
 			'title'       => esc_html__( 'Social Link 5 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 10,
 			'default'     => '',
@@ -743,7 +743,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url6',
 			'title'       => esc_html__( 'Social Link 6 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 12,
 			'default'     => '',
@@ -766,7 +766,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url7',
 			'title'       => esc_html__( 'Social Link 7 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 14,
 			'default'     => '',
@@ -789,7 +789,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'name'        => 'canuckcp_social_url8',
 			'title'       => esc_html__( 'Social Link 8 URL', 'canuck-cp' ),
 			'option_type' => 'text',
-			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),
+			'description' => esc_html__( 'Enter the url for your social link, ex: https://www.facebook.com/your link/', 'canuck-cp' ),// phpcs:ignore
 			'section'     => 'social_links',
 			'priority'    => 16,
 			'default'     => '',
@@ -4840,7 +4840,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'description' => esc_html__( 'The icon should load in the previewer', 'canuck-cp' ),
 			'section'     => 'home_section_10',
 			'priority'    => 15,
-			'default'     => 'no icon',
+			'default'     => 'no icon',// phpcs:ignore
 			'transport'   => 'refresh',
 			'sanitize'    => 'esc_html',
 		),
@@ -5072,7 +5072,7 @@ function canuckcp_get_customizer_option_partameters() {
 			'description' => esc_html__( 'The icon should load in the previewer', 'canuck-cp' ),
 			'section'     => 'home_section_11',
 			'priority'    => 15,
-			'default'     => 'no icon',
+			'default'     => 'no icon',// phpcs:ignore
 			'transport'   => 'refresh',
 			'sanitize'    => 'esc_html',
 		),
@@ -6812,7 +6812,7 @@ function canuckcp_add_control_theme_mod( $canuckcp_option ) {
 		);
 	} elseif ( 'scat' === $canuckcp_option['option_type'] ) {
 		$wp_customize->add_control(
-			new Canuck_Category_Dropdown_Custom_Control(
+			new CanuckCP_Category_Dropdown_Custom_Control(
 				$wp_customize,
 				$canuckcp_option['name'],
 				array(
@@ -6827,7 +6827,7 @@ function canuckcp_add_control_theme_mod( $canuckcp_option ) {
 		);
 	} elseif ( 'stag' === $canuckcp_option['option_type'] ) {
 		$wp_customize->add_control(
-			new Canuck_Tags_Dropdown_Custom_Control(
+			new CanuckCP_Tags_Dropdown_Custom_Control(
 				$wp_customize,
 				$canuckcp_option['name'],
 				array(
@@ -6842,7 +6842,7 @@ function canuckcp_add_control_theme_mod( $canuckcp_option ) {
 		);
 	} elseif ( 'mcat' === $canuckcp_option['option_type'] ) {
 		$wp_customize->add_control(
-			new Canuck_Category_Checkboxes_Control(
+			new CanuckCP_Category_Checkboxes_Control(
 				$wp_customize,
 				$canuckcp_option['name'],
 				array(
@@ -6857,7 +6857,7 @@ function canuckcp_add_control_theme_mod( $canuckcp_option ) {
 		);
 	} elseif ( 'fa' === $canuckcp_option['option_type'] ) {
 		$wp_customize->add_control(
-			new Canuck_Customizer_Fontawesome_Control(
+			new CanuckCP_Customizer_Fontawesome_Control(
 				$wp_customize,
 				$canuckcp_option['name'],
 				array(
@@ -6873,7 +6873,7 @@ function canuckcp_add_control_theme_mod( $canuckcp_option ) {
 		);
 	} elseif ( 'radio_image' === $canuckcp_option['option_type'] ) {
 		$wp_customize->add_control(
-			new Canuck_Custom_Radio_Image_Control(
+			new CanuckCP_Custom_Radio_Image_Control(
 				$wp_customize,
 				$canuckcp_option['name'],
 				array(
@@ -6901,7 +6901,7 @@ function canuckcp_add_custom_controls() {
 		 *
 		 * Source: https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls.
 		 */
-		class Canuck_Category_Dropdown_Custom_Control extends WP_Customize_Control {
+		class CanuckCP_Category_Dropdown_Custom_Control extends WP_Customize_Control {
 			/**
 			 * Render Content
 			 */
@@ -6929,7 +6929,7 @@ function canuckcp_add_custom_controls() {
 		 * Class to create a custom tags control.
 		 * Modified from //source https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls.
 		 */
-		class Canuck_Tags_Dropdown_Custom_Control extends WP_Customize_Control {// phpcs:ignore
+		class CanuckCP_Tags_Dropdown_Custom_Control extends WP_Customize_Control {// phpcs:ignore
 			/**
 			 * Render the content on the theme customizer page
 			 */
@@ -6960,7 +6960,7 @@ function canuckcp_add_custom_controls() {
 		 * ref: http://themefoundation.com/customizer-multiple-category-control/
 		 */
 		// phpcs:ignore
-		class Canuck_Category_Checkboxes_Control extends WP_Customize_Control {// phpcs:ignore
+		class CanuckCP_Category_Checkboxes_Control extends WP_Customize_Control {// phpcs:ignore
 			/**
 			 * Declare the control type.
 			 *
@@ -7007,7 +7007,7 @@ function canuckcp_add_custom_controls() {
 		 * @link https://github.com/reduxframework/kirki/
 		 * @link http://ottopress.com/2012/making-a-custom-control-for-the-theme-customizer/
 		 */
-		class Canuck_Custom_Radio_Image_Control extends WP_Customize_Control {// phpcs:ignore
+		class CanuckCP_Custom_Radio_Image_Control extends WP_Customize_Control {// phpcs:ignore
 			/**
 			 * Declare the control type.
 			 *
@@ -7074,7 +7074,11 @@ function canuckcp_add_custom_controls() {
  * This function adds some styles to the WordPress Customizer
  */
 function canuckcp_customizer_styles() {
-	wp_enqueue_style( 'canuck-template', get_theme_file_uri( '/css/customizer.css' ), array(), '1.0' );
+	if ( is_rtl() ) {
+		wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/customizer-rtl.css' ), array(), '1.0' );
+	} else {
+		wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/customizer.css' ), array(), '1.0' );
+	}
 }
 add_action( 'customize_controls_print_styles', 'canuckcp_customizer_styles', 999 );
 
@@ -7330,9 +7334,9 @@ function canuckcp_footer_options_backup() {
 function canuckcp_style_options_backup() {
 	// get options.
 	$canuckcp_color_scheme         = esc_html( get_theme_mod( 'canuckcp_color_scheme', 'gray-pink' ) );
-	$canuckcp_header_font          = esc_html( get_theme_mod( 'canuckcp_header_font', 'Open Sans' ) );
-	$canuckcp_body_font            = esc_html( get_theme_mod( 'canuckcp_body_font', 'Open Sans' ) );
-	$canuckcp_page_title_font      = esc_html( get_theme_mod( 'canuckcp_page_title_font', 'Open Sans' ) );
+	$canuckcp_header_font          = esc_html( get_theme_mod( 'canuckcp_header_font', 'Open Sans' ) );// phpcs:ignore
+	$canuckcp_body_font            = esc_html( get_theme_mod( 'canuckcp_body_font', 'Open Sans' ) );// phpcs:ignore
+	$canuckcp_page_title_font      = esc_html( get_theme_mod( 'canuckcp_page_title_font', 'Open Sans' ) );// phpcs:ignore
 	$canuckcp_display_font_options = esc_html( get_theme_mod( 'canuckcp_display_font_options', 'auto' ) );
 	// display options.
 	$string  = '';
@@ -7456,8 +7460,8 @@ function canuckcp_home_options_backup() {
 	$canuckcp_section1_button_text_color             = esc_html( get_theme_mod( 'canuckcp_section1_button_text_color', '#474747' ) );
 	$canuckcp_section1_button_hover_background_color = esc_html( get_theme_mod( 'canuckcp_section1_button_hover_background_color', '#474747' ) );
 	$canuckcp_section1_button_hover_text_color       = esc_html( get_theme_mod( 'canuckcp_section1_button_hover_text_color', '#ffffff' ) );
-	$canuckcp_section1_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section1_shortcode, );
-	$canuckcp_section1_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section1_shortcode_encoded, );
+	$canuckcp_section1_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section1_shortcode );
+	$canuckcp_section1_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section1_shortcode_encoded );
 	// display options.
 	$string .= '<h3 style="line-height:1em;background-color:#c2fccf;">' . esc_html__( 'Sec 1 Text/Shortcode/Widget Options', 'canuck-cp' ) . '</h3>' . PHP_EOL;
 	$string .= '<span>' . esc_html__( 'Section 1-Usage Options: ', 'canuck-cp' ) . $canuckcp_section1_usage . '</span>' . PHP_EOL;
@@ -7582,8 +7586,8 @@ function canuckcp_home_options_backup() {
 	$canuckcp_section3_button_text_color             = esc_html( get_theme_mod( 'canuckcp_section3_button_text_color', '#474747' ) );
 	$canuckcp_section3_button_hover_background_color = esc_html( get_theme_mod( 'canuckcp_section3_button_hover_background_color', '#474747' ) );
 	$canuckcp_section3_button_hover_text_color       = esc_html( get_theme_mod( 'canuckcp_section3_button_hover_text_color', '#ffffff' ) );
-	$canuckcp_section3_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section3_shortcode, );
-	$canuckcp_section3_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section3_shortcode_encoded, );
+	$canuckcp_section3_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section3_shortcode );
+	$canuckcp_section3_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section3_shortcode_encoded );
 	// display options.
 	$string .= '<h3 style="line-height:1em;background-color:#c2fccf;">' . esc_html__( 'Section 3 Text/Shortcode/Widget Options', 'canuck-cp' ) . '</h3>' . PHP_EOL;
 	$string .= '<span>' . esc_html__( 'Section 3-Usage Options: ', 'canuck-cp' ) . $canuckcp_section3_usage . '</span>' . PHP_EOL;
@@ -7687,8 +7691,8 @@ function canuckcp_home_options_backup() {
 	$canuckcp_section5_button_text_color             = esc_html( get_theme_mod( 'canuckcp_section5_button_text_color', '#474747' ) );
 	$canuckcp_section5_button_hover_background_color = esc_html( get_theme_mod( 'canuckcp_section5_button_hover_background_color', '#474747' ) );
 	$canuckcp_section5_button_hover_text_color       = esc_html( get_theme_mod( 'canuckcp_section5_button_hover_text_color', '#ffffff' ) );
-	$canuckcp_section5_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section5_shortcode, );
-	$canuckcp_section5_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section5_shortcode_encoded, );
+	$canuckcp_section5_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section5_shortcode );
+	$canuckcp_section5_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section5_shortcode_encoded );
 	// display options.
 	$string .= '<h3 style="line-height:1em;background-color:#c2fccf;">' . esc_html__( 'Section 5 Text/Shortcode/Widget Options', 'canuck-cp' ) . '</h3>' . PHP_EOL;
 	$string .= '<span>' . esc_html__( 'Section 5-Usage Options: ', 'canuck-cp' ) . $canuckcp_section5_usage . '</span>' . PHP_EOL;
@@ -7792,8 +7796,8 @@ function canuckcp_home_options_backup() {
 	$canuckcp_section7_button_text_color             = esc_html( get_theme_mod( 'canuckcp_section7_button_text_color', '#474747' ) );
 	$canuckcp_section7_button_hover_background_color = esc_html( get_theme_mod( 'canuckcp_section7_button_hover_background_color', '#474747' ) );
 	$canuckcp_section7_button_hover_text_color       = esc_html( get_theme_mod( 'canuckcp_section7_button_hover_text_color', '#ffffff' ) );
-	$canuckcp_section7_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section7_shortcode, );
-	$canuckcp_section7_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section7_shortcode_encoded, );
+	$canuckcp_section7_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section7_shortcode );
+	$canuckcp_section7_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section7_shortcode_encoded );
 	// display options.
 	$string .= '<h3 style="line-height:1em;background-color:#c2fccf;">' . esc_html__( 'Section 7 Text/Shortcode/Widget Options', 'canuck-cp' ) . '</h3>' . PHP_EOL;
 	$string .= '<span>' . esc_html__( 'Section 7-Usage Options: ', 'canuck-cp' ) . $canuckcp_section7_usage . '</span>' . PHP_EOL;
@@ -7964,8 +7968,8 @@ function canuckcp_home_options_backup() {
 	$canuckcp_section10_button_text_color             = esc_html( get_theme_mod( 'canuckcp_section10_button_text_color', '#4c4c4c' ) );
 	$canuckcp_section10_button_hover_background_color = esc_html( get_theme_mod( 'canuckcp_section10_button_hover_background_color', '#4c4c4c' ) );
 	$canuckcp_section10_button_hover_text_color       = esc_html( get_theme_mod( 'canuckcp_section10_button_hover_text_color', '#ffffff' ) );
-	$canuckcp_section10_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section10_shortcode, );
-	$canuckcp_section10_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section10_shortcode_encoded, );
+	$canuckcp_section10_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section10_shortcode );
+	$canuckcp_section10_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section10_shortcode_encoded );
 	// display options.
 	$string .= '<h3 style="line-height:1em;background-color:#c2fccf;">' . esc_html__( 'Section 10 Media/Content Options', 'canuck-cp' ) . '</h3>' . PHP_EOL;
 	$string .= '<span>' . esc_html__( 'Section 10-Background Image: ', 'canuck-cp' ) . $canuckcp_section10_background_image . '</span>' . PHP_EOL;
@@ -8007,8 +8011,8 @@ function canuckcp_home_options_backup() {
 	$canuckcp_section11_button_text_color             = esc_html( get_theme_mod( 'canuckcp_section11_button_text_color', '#4c4c4c' ) );
 	$canuckcp_section11_button_hover_background_color = esc_html( get_theme_mod( 'canuckcp_section11_button_hover_background_color', '#4c4c4c' ) );
 	$canuckcp_section11_button_hover_text_color       = esc_html( get_theme_mod( 'canuckcp_section11_button_hover_text_color', '#ffffff' ) );
-	$canuckcp_section11_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section11_shortcode, );
-	$canuckcp_section11_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section11_shortcode_encoded, );
+	$canuckcp_section11_shortcode_encoded             = str_replace( '[', '*left-square-bracket*', $canuckcp_section11_shortcode );
+	$canuckcp_section11_shortcode_encoded             = str_replace( ']', '*right-square-bracket*', $canuckcp_section11_shortcode_encoded );
 	// display options.
 	$string .= '<h3 style="line-height:1em;background-color:#c2fccf;">' . esc_html__( 'Section 11 Content/Media Options', 'canuck-cp' ) . '</h3>' . PHP_EOL;
 	$string .= '<span>' . esc_html__( 'Section 11-Background Image: ', 'canuck-cp' ) . $canuckcp_section11_background_image . '</span>' . PHP_EOL;

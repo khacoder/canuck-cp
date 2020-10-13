@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile
 /**
  * Updates to Breadcrumb Trail
  * This plugin has been integrated into Canuck CP.
@@ -9,7 +10,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 /**
@@ -480,7 +481,7 @@ class CanuckCP_Breadcrumb_Trail {
 		$network       = is_multisite() && ! is_main_site() && true === $this->args['network'];
 		$label         = $network ? get_bloginfo( 'name' ) : $this->labels['home'];
 		$rel           = $network ? '' : ' rel="home"';
-		$this->items[] = sprintf( '<a href="%s"%s>%s</a>', esc_url( user_trailingslashit( home_url() ) ), $rel, $label );
+		$this->items[] = sprintf( '<a href="%s"%s>%s</a>', esc_url( user_trailingslashit( esc_url( home_url() ) ) ), $rel, $label );
 	}
 
 	/**
@@ -802,7 +803,7 @@ class CanuckCP_Breadcrumb_Trail {
 							'm' => get_the_time( 'Y' ),
 							'w' => get_the_time( 'W' ),
 						),
-						home_url()
+						esc_url( home_url() )
 					),
 					$week,
 					false

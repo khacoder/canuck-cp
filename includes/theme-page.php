@@ -35,7 +35,7 @@ function canuckcp_theme_page_tabs( $current = 'canuckcp_intro_page' ) {
 	echo '<h2 class="nav-tab-wrapper">';
 	foreach ( $tabs as $tab => $name ) {
 		$class = ( $tab === $current ) ? ' nav-tab-active' : '';
-		echo "<a class='nav-tab$class' href='?page=canuckcp_theme_page&tab=$tab&_wp_nonce=$canuckcp_admin_nonce'>$name</a>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo "<a class='nav-tab$class' href='?page=canuckcp_theme_page&tab=$tab&_wp_nonce=$canuckcp_admin_nonce'>$name</a>"; // phpcs:ignore
 	}
 	echo '</h2>';
 }

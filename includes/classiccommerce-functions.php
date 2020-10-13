@@ -9,7 +9,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      modified by Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      modified by Kevin Archibald <https://kevinsspace.ca/contact/>
  * @link        http://www.wpexplorer.com/woocommerce-compatible-theme/
  */
 
@@ -18,11 +18,11 @@
  *
  * @param integer $cols is columns to use.
  */
-function cc_new_loop_shop_per_page( $cols ) {
+function canuckcp_cc_new_loop_shop_per_page( $cols ) {
 	$cols = 12; // insert the number to be shown per page.
 	return $cols;
 }
-add_filter( 'loop_shop_per_page', 'cc_new_loop_shop_per_page', 20 );
+add_filter( 'loop_shop_per_page', 'canuckcp_cc_new_loop_shop_per_page', 20 );
 
 /**
  * Alter shop columns.

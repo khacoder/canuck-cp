@@ -5,7 +5,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 $use_excerpts                = get_theme_mod( 'canuckcp_use_excerpts', false );
@@ -63,7 +63,7 @@ if ( ! post_password_required() ) {
 		<div class="post-content-tf entry-content">
 			<?php
 			if ( ! post_password_required() ) {
-				the_content( esc_html__( 'Read more', 'canuck' ) );
+				the_content( esc_html__( 'Read more', 'canuck-cp' ) );
 				canuckcp_post_meta_pages();
 				if ( ! $canuckcp_exclude_post_share && $canuckcp_share_on_posts && canuckcp_post_share() ) {
 						echo canuckcp_post_share();// phpcs:ignore

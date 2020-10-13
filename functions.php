@@ -8,11 +8,11 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 // Theme version.
-define( 'CANUCKCP_VERSION', '0.0.3' );
+define( 'CANUCKCP_VERSION', '1.0.1' );
 /**
  * ---- load files ---------------
  */
@@ -172,11 +172,23 @@ if ( ! function_exists( 'canuckcp_styles' ) ) {
 		$ka_css      = canuckcp_custom_css();
 		$ka_skin_css = canuckcp_skin_css();
 		if ( is_child_theme() ) {
-			wp_enqueue_style( 'canuck-cp-parent', get_template_directory_uri() . '/style.css', array(), CANUCKCP_VERSION );
+			if ( is_rtl() ) {
+				wp_enqueue_style( 'canuck-cp-parent', get_template_directory_uri() . '/main-rtl.css', array(), CANUCKCP_VERSION );
+			} else {
+				wp_enqueue_style( 'canuck-cp-parent', get_template_directory_uri() . '/style.css', array(), CANUCKCP_VERSION );
+			}
 			if ( 'template-portfolio.php' === $page_template ) {
-				wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-portfolio-style.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
+				if ( is_rtl() ) {
+					wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-portfolio-style-rtl.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
+				} else {
+					wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-portfolio-style.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
+				}
 			} elseif ( 'template-home.php' === $page_template ) {
-				wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-home-style.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
+				if ( is_rtl() ) {
+					wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-home-style-rtl.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
+				} else {
+					wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-home-style.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
+				}
 			} else {
 				wp_enqueue_style( 'canuck-cp-template-child', get_template_directory_uri() . '/css/template-blank-style.css', array( 'canuck-cp-parent' ), CANUCKCP_VERSION );
 			}
@@ -191,11 +203,23 @@ if ( ! function_exists( 'canuckcp_styles' ) ) {
 				// Load splide slider.
 				wp_enqueue_style( 'splide-style', get_template_directory_uri() . '/js/splide/css/themes/splide-sea-green.css', array(), CANUCKCP_VERSION );
 			}
-			wp_enqueue_style( 'canuck-cp-style', get_stylesheet_uri(), array(), CANUCKCP_VERSION );
+			if ( is_rtl() ) {
+				wp_enqueue_style( 'canuck-cp-style', get_template_directory_uri() . '/main-rtl.css', array(), CANUCKCP_VERSION );
+			} else {
+				wp_enqueue_style( 'canuck-cp-style', get_stylesheet_uri(), array(), CANUCKCP_VERSION );
+			}
 			if ( 'template-portfolio.php' === $page_template ) {
-				wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-portfolio-style.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
+				if ( is_rtl() ) {
+					wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-portfolio-style-rtl.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
+				} else {
+					wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-portfolio-style.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
+				}
 			} elseif ( 'template-home.php' === $page_template ) {
-				wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-home-style.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
+				if ( is_rtl() ) {
+					wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-home-style-rtl.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
+				} else {
+					wp_enqueue_style( 'canuck-cp-template', get_theme_file_uri( '/css/template-home-style.css' ), array( 'canuck-cp-style' ), CANUCKCP_VERSION );
+				}
 			}
 			wp_add_inline_style( 'canuck-cp-style', $ka_css );
 			wp_add_inline_style( 'canuck-cp-style', $ka_skin_css );

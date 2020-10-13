@@ -5,7 +5,7 @@
  * @package   PPID WordPress Theme
  * @copyright Copyright (C) 2019 or later  Kevin Archibald
  * @license   http://www.gnu.org/licenses/gpl-2.0.html
- * @author    Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author    Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 if ( ! post_password_required() ) {
@@ -158,7 +158,7 @@ if ( ! post_password_required() ) {
 				<?php
 				if ( true === $use_honeypot ) {
 					?>
-					<span class="canuck-cp-span-custom3"><?php echo esc_html__( 'This input should not be filled out' ); ?>
+					<span class="canuck-cp-span-custom3"><?php echo esc_html__( 'This input should not be filled out', 'canuck-cp' ); ?>
 						<input class="custom-3" type="text" maxlength="100" name="canuckcp_contact_custom3" value="" tabindex="-1" autocomplete="off" />
 					</span>
 					<?php

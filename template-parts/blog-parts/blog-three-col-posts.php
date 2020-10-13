@@ -7,7 +7,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author     Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author     Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 $canuckcp_post_count = 0;

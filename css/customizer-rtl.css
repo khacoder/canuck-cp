@@ -1,5 +1,5 @@
 /**
- * Customizer CSS
+ * Customizer CSS - RTL
  *
  * This css file contains styles for the customizer admin area.
  *
@@ -9,30 +9,30 @@
  * @author		Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
-.customize-control                                                       { display:block; width: 100%; padding: 5px 0 10px 0; border-bottom: 2px solid #dbdbdb; margin: 0; }
+.customize-control                                                       { display: block; width: 100%; padding: 5px 0 10px 0; border-bottom: 2px solid #dbdbdb; margin: 0; }
 .customize-control-title                                                 { display: block; }
 .customize-control label,.customize-control-title                        { font-size: 12px; font-weight: 600; line-height: 16px; }
 .customize-control input,.customize-control textarea,
 .customize-control .description, .customize-control select               { font-size: 12px; font-weight: normal; line-height: 16px; margin: 5px 0 5px 0; }
 .canuck-intro                                                            { margin: 0; padding: 0; background-color: #ffffff; }
-.canuck-intro-title                                                      { margin: 0 0 5px 5px!important; }
+.canuck-intro-title                                                      { margin: 0 5px 5px 0!important; }
 .canuck-intro-docs                                                       { clear: both; }
-.canuck-intro-author,.canuck-intro-demo,.canuck-intro-docs               { margin: 0 0 0 5px!important; }
-.canuck-intro form                                                       { margin: 0 0 0 0; display: inline-block; }
+.canuck-intro-author,.canuck-intro-demo,.canuck-intro-docs               { margin: 0 5px 0 0!important; }
+.canuck-intro form                                                       { margin: 0; display: inline-block; }
 /* sidebar control - increased width from 300px to 350px */
-.wp-full-overlay-sidebar                                                 { width: 350px; }
+/*.wp-full-overlay-sidebar                                                 { width: 350px; }
 .wp-full-overlay.expanded                                                { margin-left: 350px; }
 /* ---- Custom: Radio Image CSS ---- */
 .customize-control-radio_image .image.ui-buttonset input[type=radio]     { height: auto; }
-.customize-control-radio_image .image.ui-buttonset label                 { display: inline-block; margin-right: 5px; margin-bottom: 5px; }
+.customize-control-radio_image .image.ui-buttonset label                 { display: inline-block; margin-left: 5px; margin-bottom: 5px; }
 .customize-control-radio_image .image.ui-buttonset label.ui-state-active { background: none; }
-.customize-control-radio_image .customize-control-radio-buttonset label  { padding: 5px 10px; background: #f7f7f7; border-left: 1px solid #dedede; line-height: 35px; }
+.customize-control-radio_image .customize-control-radio-buttonset label  { padding: 5px 10px; background: #f7f7f7; border-right: 1px solid #dedede; line-height: 35px; }
 .customize-control-radio_image label img                                 { border: 1px solid #bbb; opacity: 0.5; }
 #customize-controls .customize-control-radio-image label img             { max-width: 50px; height: auto; }
 .customize-control-radio_image label.ui-state-active img                 { background: #dedede; border-color: #000; opacity: .5; }
 .customize-control-radio_image label.ui-state-hover img                  { opacity: 0.9; border-color: #999; }
-.customize-control-radio-buttonset label.ui-corner-left                  { border-radius: 3px 0 0 3px; border-left: 0; }
-.customize-control-radio-buttonset label.ui-corner-right                 { border-radius: 0 3px 3px 0; }
+.customize-control-radio-buttonset label.ui-corner-left                  { border-radius: 3px 3px 0 0; border-right: 0; }
+.customize-control-radio-buttonset label.ui-corner-right                 { border-radius: 0 0 3px 3px; }
 /* slightly different background for all hidden blocks */
 #customize-control-canuckcp_section1_background_image,
 #customize-control-canuckcp_section1_overlay_opacity,

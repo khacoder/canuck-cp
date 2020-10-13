@@ -8,8 +8,8 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 1.0.0
-Stable tag: 1.0.0
+Version: 1.0.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,20 +19,15 @@ Canuck CP is distributed under the terms of the GNU GPL
 Canuck CP is a full featured ClassicPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
 
 == Upgrade Notice ==
-* initial release
+* Version 1.0.1
+* added RTL (major change)
 
 == Description ==
-* Canuck CP is a full featured responsive theme that looks great on full size screens, tablets and mobile devices. Users have incredible flexibility to create the website that suits your style, with extensive theme options, post metabox options, and page
-metabox options. Comprehensive user documentation is available in the Admin Panel under Appearance->Canuck CP.
+* Canuck CP is a full featured responsive theme that looks great on full size screens, tablets and mobile devices. Users have incredible flexibility to create the website that suits your style, with extensive theme options, post metabox options, and page metabox options. Comprehensive user documentation is available in the Admin Panel under Appearance->Canuck CP.
 
-= Backup Option =
-* back up created content to a page to prevent loss of data when you switch themes
-
-= Layout Options =
-* left sidebar, right sidebar, both sidebars, fullwidth
-* Each page can use a different layout
-* optionally include breadcrumbs
-* optionally include featured images on WordPress core templates: archive, category, tag, and search
+= Donation Only =
+* There is no upsell for this theme, all options and features are included.
+* Users who decide to use the theme can donate to the author at https://canuckdemo.kevinsspace.ca/donate/.
 
 = Static Home Page Buider =
 * easy to use, no need for a page builder
@@ -45,6 +40,12 @@ metabox options. Comprehensive user documentation is available in the Admin Pane
 * post style options : top feature, side feature, two column grid, three column grid. two stamp grid, three stamp grid
 * options to exclude post meta: date,author,category,tags
 * sticky posts displayed at the top of your blog
+
+= Layout Options =
+* left sidebar, right sidebar, both sidebars, fullwidth
+* Each page can use a different layout
+* optionally include breadcrumbs
+* optionally include featured images on WordPress core templates: archive, category, tag, and search
 
 = Header =
 * top strip with contact information and social links
@@ -62,6 +63,9 @@ metabox options. Comprehensive user documentation is available in the Admin Pane
 = Sidebars =
 * Default A & B, Blog A & B, Error 404 A&B, Contact A & B, About A & B, sidebar_1 to sidebar_6
 * the theme offers great flexibility allowing any sidebar to be selected for any page
+
+= Backup Option =
+* back up created content to a page to prevent loss of data when you switch themes
 
 = Child Theme Friendly =
 * option to import parent theme option settings

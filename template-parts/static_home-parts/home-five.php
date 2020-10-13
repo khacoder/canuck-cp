@@ -7,7 +7,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 // Get the options.
@@ -16,7 +16,7 @@ $section5_text         = stripslashes( get_theme_mod( 'canuckcp_section5_text', 
 $section5_shortcode    = stripslashes( get_theme_mod( 'canuckcp_section5_shortcode', '' ) );
 $section5_include_link = get_theme_mod( 'canuckcp_include_section5_button', false );
 $section5_link         = get_theme_mod( 'canuckcp_section5_button_link', '#' );
-$section5_button_icon  = get_theme_mod( 'canuckcp_section5_button_icon', 'no icon' );
+$section5_button_icon  = get_theme_mod( 'canuckcp_section5_button_icon', 'no icon' );// phpcs:ignore
 $section5_button_label = get_theme_mod( 'canuckcp_section5_button_name', esc_html__( 'more', 'canuck-cp' ) );
 $sec5_bg_image         = get_theme_mod( 'canuckcp_section5_background_image', '' );
 $sec5_use_parallax     = get_theme_mod( 'canuckcp_section5_use_parallax', false );

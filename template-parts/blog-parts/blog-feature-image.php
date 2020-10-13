@@ -5,7 +5,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2016  kevinhaig
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      kevinhaig <www.kevinsspace.ca/contact/>
+ * @author      kevinhaig <https://kevinsspace.ca/contact/>
  */
 
 global $post;

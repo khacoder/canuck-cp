@@ -8,13 +8,13 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later  Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  *
  * @wordpress plugin
  * Plugin Name: Canuck CP Contact Widget
  * Plugin URI: http://kevinsspace.ca
  * Description: A widget for the Canuck CP Theme that allows the user to set up a contact form.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later
@@ -68,7 +68,7 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$canuckcp_contact_defaults = array(
-			'canuckcp_contact_widget_title' => 'Contact Me',
+			'canuckcp_contact_widget_title' => esc_html__( 'Contact Me', 'canuck-cp' ),
 		);
 		$instance                  = wp_parse_args( (array) $instance, $canuckcp_contact_defaults );
 		$title                     = $instance['canuckcp_contact_widget_title'];

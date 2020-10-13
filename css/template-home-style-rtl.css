@@ -9,24 +9,24 @@
 
 /* ==================================== Static Home Page Styles ====================================== */
 /* ========================= Static Home Section 1 ============================ */
-.home-1-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-1-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-1-wide                          { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-1-wide-overlay                  { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-1-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
-.home-1-shortcode, .home-1-widget     { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; }
+.home-1-shortcode, .home-1-widget     { width: calc(100% - 20px); float: right; margin: 0; padding: 10px; }
 .home-1-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
-.home-1-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
-.home-1-button svg                    { margin: 0 5px 0 0; }
+.home-1-button                        { width: 100%; float: right; margin: 10px 0 10px 0; text-align: center; }
+.home-1-button svg                    { margin: 0 0 0 5px; }
 .home-1-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-1-button a.button1:before       { content: ''; width: 100%; top: 0; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-1-button a.button1:before       { content: ''; width: 100%; top: 0; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-1-button a.button1:hover        { cursor: pointer; }
 .home-1-button a.button1:hover:before { height: 100%; opacity: 1; }
 /*  ========================= Static Home Section 2 ============================ */
-.home-2-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-2-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-2-wide                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-2-wide-overlay             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-2-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
-.home-2-wrap .servicebox         { display: block; width: 33.333%; float: left; padding: 0; text-align: center; }
+.home-2-wrap .servicebox         { display: block; width: 33.333%; float: right; padding: 0; text-align: center; }
 .home-2-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.5em; line-height: 1.5em; margin-bottom: 5px; padding:0; }
-.home-2-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+.home-2-wrap .servicebox-content { width: 90%; clear: both; float: right; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 .home-2-wrap .servicebox p       { font-size: 1em; }
 .home-2-wrap .servicebox ul      { margin-left: 4%; }
 /* ------- Graphic in Section 2 Service Box ---- */
@@ -42,26 +42,26 @@
 .section2-graphic .section2-linked-image,
 .section2-graphic img.no-link                   { opacity: 1; display: block; position: relative; width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0; transition: .5s ease; backface-visibility: hidden; }
 .section2-linked-image img                      { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
-.section2-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height:0; transition: .5s ease; }
+.section2-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height: 0; transition: .5s ease; }
 .section2-graphic:hover .section2-image-overlay { bottom: 0; height: 100%; }
-.section2-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.section2-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; right: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 /* ------ service box buttons --- */
-.home-2-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: center; }
-.home-2-button svg                    { margin: 2px 5px -2px 0; }
+.home-2-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: center; }
+.home-2-button svg                    { margin: 2px 0 -2px 5px; }
 .home-2-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-2-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-2-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-2-button a.button1:hover        { cursor: pointer; }
 .home-2-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 3 ============================ */
-.home-3-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-3-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-3-wide                          { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-3-wide-overlay                  { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-3-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
-.home-3-shortcode,.home-3-widget      { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; text-align: center; }
+.home-3-shortcode,.home-3-widget      { width: calc(100% - 20px); float: right; margin: 0; padding: 10px; text-align: center; }
 .home-3-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
-.home-3-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
-.home-3-button svg                    { margin: 0 5px 0 0; }
+.home-3-button                        { width: 100%; float: right; margin: 10px 0 10px 0; text-align: center; }
+.home-3-button svg                    { margin: 0 0 0 5px; }
 .home-3-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-3-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-3-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-3-button a.button1:hover        { cursor: pointer; }
 .home-3-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 4 ============================ */
@@ -86,26 +86,26 @@
 .section4-graphic .section4-linked-image,
 .section4-graphic img.no-link                   { opacity: 1; display: block; position: relative; width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0; transition: .5s ease; backface-visibility: hidden; }
 .section4-linked-image img                      { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
-.section4-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height:0; transition: .5s ease; }
+.section4-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height: 0; transition: .5s ease; }
 .section4-graphic:hover .section4-image-overlay { bottom: 0; height: 100%; }
-.section4-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.section4-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; right: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 /* ------ service box buttons --- */
-.home-4-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: center; }
-.home-4-button svg                    { margin: 2px 5px -2px 0; }
+.home-4-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: center; }
+.home-4-button svg                    { margin: 2px 0 -2px 5px; }
 .home-4-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-4-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-4-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-4-button a.button1:hover        { cursor: pointer; }
 .home-4-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 5 ============================ */
-.home-5-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-5-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-5-wide                          { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-5-wide-overlay                  { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-5-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.55em; line-height: 1.5em; overflow: hidden; }
-.home-5-shortcode,.home-5-widget      { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; }
+.home-5-shortcode,.home-5-widget      { width: calc(100% - 20px); float: right; margin: 0; padding: 10px; }
 .home-5-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
-.home-5-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
-.home-5-button svg                    { margin: 0 5px 0 0; }
+.home-5-button                        { width: 100%; float: right; margin: 10px 0 10px 0; text-align: center; }
+.home-5-button svg                    { margin: 0 0 0 5px; }
 .home-5-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-5-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-5-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-5-button a.button1:hover        { cursor: pointer; }
 .home-5-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 6 ============================ */
@@ -122,7 +122,7 @@
 .section6-linked-fi,
 .section6-graphic i.no-link         { display: block; margin: 10px auto 10px auto; background-color: rgba(0,0,0,0); line-height: 75px; text-align: center; transition: all 0.5s; }
 .section6-linked-fi i svg,
-.section6-graphic i.no-link svg     { height: 48px; width:auto; vertical-align: middle; text-align: center; transition: all 0.5s; }
+.section6-graphic i.no-link svg     { height: 48px; width: auto; vertical-align: middle; text-align: center; transition: all 0.5s; }
 .section6-linked-fi i:hover svg     { height: 60px; width: auto; cursor: pointer; transition: all 0.5s; }
 .section6-image-overlay i svg       { width: 20px; cursor: pointer; transition: all 0.5s; }
 .section6-image-overlay i:hover svg {  cursor: pointer; transition: all 0.5s; }
@@ -132,33 +132,33 @@
 .section6-linked-image img                      { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
 .section6-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height:0; transition: .5s ease; }
 .section6-graphic:hover .section6-image-overlay { bottom: 0; height: 100%; }
-.section6-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.section6-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; right: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 /* ------ service box buttons --- */
-.home-6-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: center; }
-.home-6-button svg                    { margin: 2px 5px -2px 0; }
+.home-6-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: center; }
+.home-6-button svg                    { margin: 2px 0 -2px 5px; }
 .home-6-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-6-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-6-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-6-button a.button1:hover        { cursor: pointer; }
 .home-6-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 7 ============================ */
-.home-7-wide                          { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-7-wide-overlay                  { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-7-wide                          { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-7-wide-overlay                  { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-7-wrap                          { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; font-size: 1.5em; line-height: 1.5em; overflow: hidden; }
-.home-7-shortcode,.home-7-widget      { width: calc(100% - 20px); float: left; margin: 0; padding: 10px; }
+.home-7-shortcode,.home-7-widget      { width: calc(100% - 20px); float: right; margin: 0; padding: 10px; }
 .home-7-text                          { width: 90%; margin: 10px auto 10px auto; padding: 0; text-align: center; }
-.home-7-button                        { width: 100%; float: left; margin: 10px 0 10px 0; text-align: center; }
-.home-7-button svg                    { margin: 0 5px 0 0; }
+.home-7-button                        { width: 100%; float: right; margin: 10px 0 10px 0; text-align: center; }
+.home-7-button svg                    { margin: 0 0 0 5px; }
 .home-7-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-7-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-7-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-7-button a.button1:hover        { cursor: pointer; }
 .home-7-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 8 ============================ */
-.home-8-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-8-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-8-wide                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-8-wide-overlay             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-8-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
-.home-8-wrap .servicebox         { display: block; width: 25%; float: left; padding: 0; text-align: center; }
+.home-8-wrap .servicebox         { display: block; width: 25%; float: right; padding: 0; text-align: center; }
 .home-8-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.25em; line-height: 1.25em; margin-bottom: 5px; padding:0; }
-.home-8-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+.home-8-wrap .servicebox-content { width: 90%; clear: both; float: right; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 .home-8-wrap .servicebox p       { font-size: 1em; }
 .home-8-wrap .servicebox ul      { margin-left: 4%; }
 /* ------- Graphic in Section 8 Service Box ---- */
@@ -175,119 +175,118 @@
 .section8-linked-image img                      { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
 .section8-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height: 0; transition: .5s ease; }
 .section8-graphic:hover .section8-image-overlay { bottom: 0; height: 100%; }
-.section8-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.section8-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; right: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 /* ------ service box buttons --- */
-.home-8-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: center; }
-.home-8-button svg                    { margin: 2px 5px -2px 0; }
+.home-8-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: center; }
+.home-8-button svg                    { margin: 2px 0 -2px 5px; }
 .home-8-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-8-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-8-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-8-button a.button1:hover        { cursor: pointer; }
 .home-8-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 9 ============================ */
-.home-9-wide                                                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-9-wide-overlay                                             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-9-wide                                                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-9-wide-overlay                                             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-9-wrap                                                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 5px; text-decoration: none; overflow: hidden; }
-.home-9-title                                                    { width: 100%; float: left; text-align: center; margin: 0; padding: 0; }
-.home-9-text                                                     { width: 100%; float: left; text-align: center; margin: 15px 0 50px 0; padding: 0; }
-.home-9-columns-3                                                { width: 100%; float: left; margin: 0; padding: 0; }
-.home-9-columns-4                                                { width: 100%; float: left; margin: 0; padding: 0; }
-.home-9-columns-3 .section9-portfolio-container                  { width: calc(33.333% - 10px); float: left; position: relative; margin: 5px; padding: 0; }
-.home-9-columns-4 .section9-portfolio-container                  { width: calc(25% - 10px); float: left; position: relative; margin: 5px; padding: 0; }
+.home-9-title                                                    { width: 100%; float: right; text-align: center; margin: 0; padding: 0; }
+.home-9-text                                                     { width: 100%; float: right; text-align: center; margin: 15px 0 50px 0; padding: 0; }
+.home-9-columns-3                                                { width: 100%; float: right; margin: 0; padding: 0; }
+.home-9-columns-4                                                { width: 100%; float: right; margin: 0; padding: 0; }
+.home-9-columns-3 .section9-portfolio-container                  { width: calc(33.333% - 10px); float: right; position: relative; margin: 5px; padding: 0; }
+.home-9-columns-4 .section9-portfolio-container                  { width: calc(25% - 10px); float: right; position: relative; margin: 5px; padding: 0; }
 .section9-portfolio-container img                                { display: block; width: 100%; height: auto; }
 .section9-portfolio-container .image-overlay                     { position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; width: 0; height: 100%; transition: .5s ease; }
 .section9-portfolio-container:hover .image-overlay               { width: 100%; }
-.section9-portfolio-container .image-overlay .overlay-wrap       { position: relative; overflow: hidden; top: 0; left: 0; bottom: 0; right: 0;
-																	display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.section9-portfolio-container .image-overlay .overlay-wrap       { position: relative; overflow: hidden; top: 0; left: 0; bottom: 0; right: 0; display: flex; flex-direction: column; justify-content: center; height: 100%; }
 .section9-portfolio-container:hover .image-overlay .overlay-wrap { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
-.section9-portfolio-container .image-overlay .links              { width: 100%; float: left; clear: both; margin: 0; padding: 0; text-align: center; }
-.section9-portfolio-container .image-overlay .links a            { margin: 0 0 0 10px; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
+.section9-portfolio-container .image-overlay .links              { width: 100%; float: right; clear: both; margin: 0; padding: 0; text-align: center; }
+.section9-portfolio-container .image-overlay .links a            { margin: 0 10px 0 0; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
 .section9-portfolio-container:hover .image-overlay .links a      { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
 .section9-portfolio-container .image-overlay .links a:hover      { transition-property: color; transition: .25s ease; }
-.section9-portfolio-container .image-overlay .title              { width: 100%; clear: both; float: left; margin: 0; padding: 0; text-align: center; font-size: 1em; line-height: 1.25em; }
-.section9-portfolio-container .image-overlay .content            { width: calc(100% - 10px); float: left; clear: both; margin: 0; padding: 0 5px 0 5px; text-align: center; font-size: .875em; line-height: 1.25em; }
+.section9-portfolio-container .image-overlay .title              { width: 100%; clear: both; float: right; margin: 0; padding: 0; text-align: center; font-size: 1em; line-height: 1.25em; }
+.section9-portfolio-container .image-overlay .content            { width: calc(100% - 10px); float: right; clear: both; margin: 0; padding: 0 5px 0 5px; text-align: center; font-size: .875em; line-height: 1.25em; }
 /* ========================= Static Home Section 10 ============================ */
-.home-10-wide         { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-10-wide-overlay { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-10-wide         { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-10-wide-overlay { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-10-wrap         { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 /* media on the left */
-.home-10-media     { width: calc(50% - 20px); float: left; margin: 0; padding: 0 10px 0 10px; }
-.home-10-shortcode { width: 100%; float: left; margin: 0; padding: 0; }
-.home-10-widget    { width: 100%; float: left; margin: 0; padding: 0; }
-.home-10-image     { width: 100%; float: left; margin: 0; padding: 0; }
+.home-10-media     { width: calc(50% - 20px); float: right; margin: 0; padding: 0 10px 0 10px; }
+.home-10-shortcode { width: 100%; float: right; margin: 0; padding: 0; }
+.home-10-widget    { width: 100%; float: right; margin: 0; padding: 0; }
+.home-10-image     { width: 100%; float: right; margin: 0; padding: 0; }
 /* content on the right */
-.home-10-content                       { width: calc(50% - 20px); float: left; margin: 0; padding: 0 10px 0 10px; }
-.home-10-title h2                      { width: 100%; float: left; margin: 0; padding: 0; font-size: 1.5em; line-height: 1.25em; }
-.home-10-text                          { width: 100%; float: left; margin: 20px 0 20px 0;; padding: 20px 0 20px 0; font-size: 1.25em; line-height: 1.25em; }
-.home-10-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: left; }
-.home-10-button svg                    { margin: 2px 5px -2px 0; }
+.home-10-content                       { width: calc(50% - 20px); float: right; margin: 0; padding: 0 10px 0 10px; }
+.home-10-title h2                      { width: 100%; float: right; margin: 0; padding: 0; font-size: 1.5em; line-height: 1.25em; }
+.home-10-text                          { width: 100%; float: right; margin: 20px 0 20px 0;; padding: 20px 0 20px 0; font-size: 1.25em; line-height: 1.25em; }
+.home-10-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: right; }
+.home-10-button svg                    { margin: 2px 0 -2px 5px; }
 .home-10-button a.button1              { display: inline-block; margin: 20px 0 0 0; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-10-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-10-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-10-button a.button1:hover        { cursor: pointer; }
 .home-10-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 11 ============================ */
-.home-11-wide         { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-11-wide-overlay { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-11-wide         { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-11-wide-overlay { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-11-wrap         { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
 /* media on the right */
-.home-11-media     { width: calc(50% - 20px); float: right; margin: 0; padding: 0 10px 0 10px; }
-.home-11-shortcode { width: 100%; float: right; margin: 0; padding: 0; }
-.home-11-widget    { width: 100%; float: right; margin: 0; padding: 0; }
-.home-11-image     { width: 100%; float: right; margin: 0; padding: 0; }
+.home-11-media     { width: calc(50% - 20px); float: left; margin: 0; padding: 0 10px 0 10px; }
+.home-11-shortcode { width: 100%; float: left; margin: 0; padding: 0; }
+.home-11-widget    { width: 100%; float: left; margin: 0; padding: 0; }
+.home-11-image     { width: 100%; float: left; margin: 0; padding: 0; }
 /* content on the right */
-.home-11-content                       { width: calc(50% - 20px); float: left; margin: 0; padding: 0 10px 0 10px; }
-.home-11-title h2                      { width: 100%; float: left; margin: 0; padding: 0; font-size: 1.5em; line-height: 1.25em; }
-.home-11-text                          { width: 100%; float: left; margin: 20px 0 20px 0; padding: 20px 0 20px 0; font-size: 1.25em; line-height: 1.25em; }
-.home-11-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: left; }
-.home-11-button svg                    { margin: 2px 5px -2px 0; }
+.home-11-content                       { width: calc(50% - 20px); float: right; margin: 0; padding: 0 10px 0 10px; }
+.home-11-title h2                      { width: 100%; float: right; margin: 0; padding: 0; font-size: 1.5em; line-height: 1.25em; }
+.home-11-text                          { width: 100%; float: right; margin: 20px 0 20px 0; padding: 20px 0 20px 0; font-size: 1.25em; line-height: 1.25em; }
+.home-11-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: left; }
+.home-11-button svg                    { margin: 2px 0 -2px 5px; }
 .home-11-button a.button1              { display: inline-block; margin: 20px 0 0 0; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-11-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-11-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-11-button a.button1:hover        { cursor: pointer; }
 .home-11-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 12 ============================ */
-.home-12-wide                                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-12-wide-overlay                             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-12-wide                                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-12-wide-overlay                             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-12-wrap                                     { clear: both; display: block; width: calc(100% - 10px); margin: 0; padding: 5px; text-decoration: none; overflow: hidden; }
-.home-12-title                                    { width: 100%; float: left; text-align: center; margin: 0; padding: 0; }
-.home-12-text                                     { width: 100%; float: left; text-align: center; margin: 15px 0 50px 0; padding: 0; }
-#home-12-carousel                                 { width: 100%; float: left; margin: 0; padding: 0; }
+.home-12-title                                    { width: 100%; float: right; text-align: center; margin: 0; padding: 0; }
+.home-12-text                                     { width: 100%; float: right; text-align: center; margin: 15px 0 50px 0; padding: 0; }
+#home-12-carousel                                 { width: 100%; float: right; margin: 0; padding: 0; }
 #home-12-carousel .splide-silde                   { width: auto; float: none; }
 #home-12-carousel .splide__pagination             { display: none; }
-.home-12 ul li                                    { /*width: 100%; float: left;*/ position: relative; margin: 0; padding: 0; }
+.home-12 ul li                                    { position: relative; margin: 0; padding: 0; }
 .home-12 ul li .image-overlay                     { position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; width: 100%; height: 100%; opacity: 0.0; transition: .5s ease; }
 .home-12 ul li:hover .image-overlay               { opacity: 1.0; }
 .home-12 ul li .image-overlay .overlay-wrap       { position: relative; overflow: hidden; top: 0; left: 0; bottom: 0; right: 0; display: flex; flex-direction: column; justify-content: center; height: 100%; }
 .home-12 ul li:hover .image-overlay .overlay-wrap { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
-.home-12 ul li .image-overlay .links              { width: 100%; float: left; clear: both; margin: 0; padding: 0; text-align: center; }
-.home-12 ul li .image-overlay .links a            { margin: 0 0 0 10px; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
+.home-12 ul li .image-overlay .links              { width: 100%; float: right; clear: both; margin: 0; padding: 0; text-align: center; }
+.home-12 ul li .image-overlay .links a            { margin: 0 10px 0 0; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
 .home-12 ul li:hover .image-overlay .links a      { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
 .home-12 ul li .image-overlay .links a:hover      { transition-property: color; transition: .25s ease; }
-.home-12 ul li .image-overlay .title              { width: 100%; clear: both; float: left; margin: 0; padding: 0; text-align: center; font-size: 1em; line-height: 1.25em; }
-.home-12 ul li .image-overlay .content            { width: calc(100% - 10px); float: left; clear: both; margin: 0; padding: 0 5px 0 5px; text-align: center; font-size: .875em; line-height: 1.25em; }
+.home-12 ul li .image-overlay .title              { width: 100%; clear: both; float: right; margin: 0; padding: 0; text-align: center; font-size: 1em; line-height: 1.25em; }
+.home-12 ul li .image-overlay .content            { width: calc(100% - 10px); float: right; clear: both; margin: 0; padding: 0 5px 0 5px; text-align: center; font-size: .875em; line-height: 1.25em; }
 /* ========================= Static Home Section 13 ============================ */
-.home-13-wide                                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-13-wide-overlay                             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-13-wide                                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-13-wide-overlay                             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-13-wrap                                     { clear: both; display: block; width: calc(100% - 10px); margin: 0; padding: 5px; text-decoration: none; overflow: hidden; }
-.home-13-title                                    { width: 100%; float: left; text-align: center; margin: 0; padding: 0; }
-.home-13-text                                     { width: 100%; float: left; text-align: center; margin: 15px 0 50px 0; padding: 0; }
-#home-13-carousel                                 { width: 100%; float: left; margin: 0; padding: 0; }
+.home-13-title                                    { width: 100%; float: right; text-align: center; margin: 0; padding: 0; }
+.home-13-text                                     { width: 100%; float: right; text-align: center; margin: 15px 0 50px 0; padding: 0; }
+#home-13-carousel                                 { width: 100%; float: right; margin: 0; padding: 0; }
 #home-13-carousel .splide-silde                   { width: auto; float: none; }
 #home-13-carousel .splide__pagination             { display: none; }
-.home-13 ul li                                    { /*width: 100%; float: left;*/ position: relative; margin: 0; padding: 0; }
+.home-13 ul li                                    { position: relative; margin: 0; padding: 0; }
 .home-13 ul li .image-overlay                     { position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; width: 100%; height: 100%; opacity: 0.0; transition: .5s ease; }
 .home-13 ul li:hover .image-overlay               { opacity: 1.0; }
 .home-13 ul li .image-overlay .overlay-wrap       { position: relative; overflow: hidden; top: 0; left: 0; bottom: 0; right: 0; display: flex; flex-direction: column; justify-content: center; height: 100%; }
 .home-13 ul li:hover .image-overlay .overlay-wrap { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
-.home-13 ul li .image-overlay .links              { width: 100%; float: left; clear: both; margin: 0; padding: 0; text-align: center; }
+.home-13 ul li .image-overlay .links              { width: 100%; float: right; clear: both; margin: 0; padding: 0; text-align: center; }
 .home-13 ul li .image-overlay .links a            { margin: 0; padding: 0; opacity: 1; text-align: center; font-size: 1.5em; transition-property: color; transition: .5s ease; }
 .home-13 ul li:hover .image-overlay .links a      { transition-property: color; transition: .5s; transition-timing-function: linear; transition-delay: .5s; }
 .home-13 ul li .image-overlay .links a:hover      { transition-property: color; transition: .25s ease; }
 /*  ========================= Static Home Section 14 ============================ */
-.home-14-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-14-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-14-wide                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-14-wide-overlay             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-14-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
-.home-14-wrap .servicebox         { display: block; width: 33.333%; float: left; padding: 0; text-align: center; }
+.home-14-wrap .servicebox         { display: block; width: 33.333%; float: right; padding: 0; text-align: center; }
 .home-14-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.5em; line-height: 1.5em; margin-bottom: 5px; padding:0; }
-.home-14-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+.home-14-wrap .servicebox-content { width: 90%; clear: both; float: right; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 .home-14-wrap .servicebox p       { font-size: 1em; }
 .home-14-wrap .servicebox ul      { margin-left: 4%; }
 /* ------- Graphic in Section 14 Service Box ---- */
@@ -301,25 +300,25 @@
 .section14-image-overlay i:hover svg { cursor: pointer; transition: all 0.5s; }
 /* ----- Section 14 images ----- */
 .section14-graphic .section14-linked-image,
-.section14-graphic img.no-link                   { opacity: 1; display: block; position: relative; width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0; transition: .5s ease; backface-visibility: hidden; }
-.section14-linked-image img                      { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
-.section14-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height:0; transition: .5s ease; }
+.section14-graphic img.no-link                    { opacity: 1; display: block; position: relative; width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0; transition: .5s ease; backface-visibility: hidden; }
+.section14-linked-image img                       { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
+.section14-image-overlay                          { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height:0; transition: .5s ease; }
 .section14-graphic:hover .section14-image-overlay { bottom: 0; height: 100%; }
-.section14-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.section14-image-overlay i                        { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; right: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 /* ------ service box buttons --- */
-.home-14-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: center; }
-.home-14-button svg                    { margin: 2px 5px -2px 0; }
+.home-14-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: center; }
+.home-14-button svg                    { margin: 2px 0 -2px 5px; }
 .home-14-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-14-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-14-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-14-button a.button1:hover        { cursor: pointer; }
 .home-14-button a.button1:hover:before { height: 100%; opacity: 1; }
 /* ========================= Static Home Section 15 ============================ */
-.home-15-wide                     { width: 100%; float: left; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
-.home-15-wide-overlay             { width: 100%; float: left; margin: 0; padding: 75px 0 75px 0; }
+.home-15-wide                     { width: 100%; float: right; margin: 0; padding: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.home-15-wide-overlay             { width: 100%; float: right; margin: 0; padding: 75px 0 75px 0; }
 .home-15-wrap                     { clear: both; display: block; max-width: 1300px; margin: 0 auto 0 auto; padding: 0; text-decoration: none; overflow: hidden; }
-.home-15-wrap .servicebox         { display: block; width: 25%; float: left; padding: 0; text-align: center; }
+.home-15-wrap .servicebox         { display: block; width: 25%; float: right; padding: 0; text-align: center; }
 .home-15-wrap .servicebox h4      { text-align: center; margin-top: 10px; font-size: 1.25em; line-height: 1.25em; margin-bottom: 5px; padding:0; }
-.home-15-wrap .servicebox-content { width: 90%; clear: both; float: left; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+.home-15-wrap .servicebox-content { width: 90%; clear: both; float: right; font-size: 1em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 .home-15-wrap .servicebox p       { font-size: 1em; }
 .home-15-wrap .servicebox ul      { margin-left: 4%; }
 /* ------- Graphic in Section 15 Service Box ---- */
@@ -327,21 +326,21 @@
 .section15-linked-fi,
 .section15-graphic i.no-link         { display: block; margin: 10px auto 10px auto; background-color: rgba(0,0,0,0); line-height: 75px; text-align: center; transition: all 0.5s; }
 .section15-linked-fi i svg,
-.section15-graphic i.no-link svg     { height: 48px; width:auto; vertical-align: middle; text-align: center; transition: all 0.5s; }
+.section15-graphic i.no-link svg     { height: 48px; width: auto; vertical-align: middle; text-align: center; transition: all 0.5s; }
 .section15-linked-fi i:hover svg     { height: 60px; width: auto; cursor: pointer; transition: all 0.5s; }
 .section15-image-overlay i svg       { width: 20px; cursor: pointer; transition: all 0.5s; }
 /* ----- Section 15 images ----- */
 .section15-graphic .section15-linked-image,
-.section15-graphic img.no-link                   { opacity: 1; display: block; position: relative; width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0; transition: .5s ease; backface-visibility: hidden; }
-.section15-linked-image img                      { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
-.section15-image-overlay                         { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height: 0; transition: .5s ease; }
+.section15-graphic img.no-link                    { opacity: 1; display: block; position: relative; width: 75%; height: auto; margin: 0 auto 0 auto; padding: 0; transition: .5s ease; backface-visibility: hidden; }
+.section15-linked-image img                       { display: block; max-width: 100%; height: auto; margin: 0 auto 0 auto; }
+.section15-image-overlay                          { position: absolute; bottom: 100%; left: 0; right: 0; overflow: hidden; width: 100%; height: 0; transition: .5s ease; }
 .section15-graphic:hover .section15-image-overlay { bottom: 0; height: 100%; }
-.section15-image-overlay i                       { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.section15-image-overlay i                        { white-space: nowrap; font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
 /* ------ service box buttons --- */
-.home-15-button                        { width: 100%; clear: both; float: left; padding: 0; margin: 0; text-align: center; }
+.home-15-button                        { width: 100%; clear: both; float: right; padding: 0; margin: 0; text-align: center; }
 .home-15-button svg                    { margin: 2px 5px -2px 0; }
 .home-15-button a.button1              { display: inline-block; margin: 8px; padding: 5px 35px 5px 35px; font-size: 1em; position: relative; opacity: .999; border-radius: 3px; overflow: hidden; transition: all 0.3s; }
-.home-15-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; left: 0; z-index: -1; transition: all 0.3s; }
+.home-15-button a.button1:before       { content: ''; width: 100%; top: 0%; height: 0; opacity: 0; position: absolute; right: 0; z-index: -1; transition: all 0.3s; }
 .home-15-button a.button1:hover        { cursor: pointer; }
 .home-15-button a.button1:hover:before { height: 100%; opacity: 1; }
 
@@ -374,7 +373,7 @@
 	.home-7-wrap                                          { font-size: 1.25em; line-height: 1.25em; }
 	.home-7-button a.button1                              { padding: 5px 25px 5px 25px; }
 	.home-8-wrap .servicebox h4                           { text-align: center; margin-top: 10px; font-size: 1.15em; line-height: 1.15em; margin-bottom: 5px; padding: 0; }
-	.home-8-wrap .servicebox-content                      { width: 90%; clear: both; float: left; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+	.home-8-wrap .servicebox-content                      { width: 90%; clear: both; float: right; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 	.home-8-wrap .servicebox                              { width: 50%; }
 	.home-8-wrap .servicebox.three,
 	.home-8-wrap .servicebox.four                         { margin: 20px 0 0 0; }
@@ -396,7 +395,7 @@
 	.home-14-wrap .servicebox-content                     { font-size: .925em; line-height: 1.25em; }
 	.home-14-button a.button1                             { padding: 5px 25px 5px 25px; font-size: .925em; }
 	.home-15-wrap .servicebox h4                          { text-align: center; margin-top: 10px; font-size: 1.15em; line-height: 1.15em; margin-bottom: 5px; padding: 0; }
-	.home-15-wrap .servicebox-content                     { width: 90%; clear: both; float: left; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+	.home-15-wrap .servicebox-content                     { width: 90%; clear: both; float: right; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 	.home-15-wrap .servicebox                             { width: 50%; }
 	.home-15-wrap .servicebox.three,
 	.home-15-wrap .servicebox.four                        { margin: 20px 0 0 0; }
@@ -424,7 +423,7 @@
 	.home-6-wrap .servicebox-content             { font-size: .828em; line-height: 1.25em; }
 	.home-6-button a.button1                     { padding: 5px 20px 5px 20px; font-size: .825em; }
 	.home-8-wrap .servicebox h4                  { text-align: center; margin-top: 10px; font-size: 1em; line-height: 1.25em; }
-	.home-8-wrap .servicebox-content             { width: 90%; clear: both; float: left; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+	.home-8-wrap .servicebox-content             { width: 90%; clear: both; float: right; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 	.home-8-wrap .servicebox                     { width: 50%; }
 	.home-8-wrap .servicebox.three               { clear: both; }
 	.home-8-wrap .servicebox.three,
@@ -440,7 +439,7 @@
 	.home-14-wrap .servicebox-content            { font-size: .828em; line-height: 1.25em; }
 	.home-14-button a.button1                    { padding: 5px 20px 5px 20px; font-size: .825em; }
 	.home-15-wrap .servicebox h4                  { text-align: center; margin-top: 10px; font-size: 1em; line-height: 1.25em; }
-	.home-15-wrap .servicebox-content             { width: 90%; clear: both; float: left; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
+	.home-15-wrap .servicebox-content             { width: 90%; clear: both; float: right; font-size: 0.9em; line-height: 1.25em; padding: 0 5% 0 5%; margin: 0; }
 	.home-15-wrap .servicebox                     { width: 50%; }
 	.home-15-wrap .servicebox.three               { clear: both; }
 	.home-15-wrap .servicebox.three,
@@ -488,9 +487,9 @@
 	.home-14-wrap .servicebox h4                 { font-size: 1.25em; line-height: 1.25em; }
 	.home-14-wrap .servicebox-content            { font-size: 1em; line-height: 1.25em; }
 	.home-14-button a.button1                    { font-size: 1em; }
-	.home-15-wrap .servicebox                     { width: 100%; }
-	.section15-graphic                            { padding: 0; }
-	.home-15-wrap .servicebox h4                  { font-size: 1.25em; line-height: 1.25em; }
-	.home-15-wrap .servicebox-content             { font-size: 1em; line-height: 1.25em; }
-	.home-15-button a.button1                     { font-size: 1em; }
+	.home-15-wrap .servicebox                    { width: 100%; }
+	.section15-graphic                           { padding: 0; }
+	.home-15-wrap .servicebox h4                 { font-size: 1.25em; line-height: 1.25em; }
+	.home-15-wrap .servicebox-content            { font-size: 1em; line-height: 1.25em; }
+	.home-15-button a.button1                    { font-size: 1em; }
 }

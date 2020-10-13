@@ -5,7 +5,7 @@
  * @package   Canuck CP ClassicPress Theme
  * @copyright Copyright (C) 2020 or later Kevin Archibald
  * @license   http://www.gnu.org/licenses/gpl-2.0.html
- * @author    Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author    Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 $include_pinterest_pinit = get_theme_mod( 'canuckcp_include_pinit' ) ? true : false;

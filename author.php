@@ -8,7 +8,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 global $canuckcp_include_breadcrumbs,$canuckcp_exclude_page_title,$canuckcp_page_title,$canuckcp_curauth;

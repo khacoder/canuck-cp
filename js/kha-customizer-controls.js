@@ -6,7 +6,7 @@
  * @package   Canuck CP ClassicPress Theme 
  * @copyright Copyright (C) 2017-2019, kevinhaig
  * @license   GPLv2 or later http://www.gnu.org/licenses/quick-guide-gplv2.html
- * @author	  kevinhaig <www.kevinsspace.ca/contact/>
+ * @author	  kevinhaig <https://kevinsspace.ca/contact/>
  * Canuck is distributed under the terms of the GNU GPL
  * 
  * This file adds some LIVE to the Theme Customizer live preview. To leverage

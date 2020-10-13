@@ -7,7 +7,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 /**
@@ -315,15 +315,15 @@ function canuckcp_hex_to_rgba( $hex, $opacity = 1 ) {
 function canuckcp_fonts() {
 	$header_font     = get_theme_mod( 'canuckcp_header_font', 'Open Sans' ); // phpcs:ignore
 	if ( 'default' === $header_font ) {
-		$header_font = 'Open Sans';
+		$header_font = 'Open Sans';// phpcs:ignore
 	}
 	$body_font       = get_theme_mod( 'canuckcp_body_font', 'Open Sans' ); // phpcs:ignore
 	if ( 'default' === $body_font ) {
-		$body_font = 'Open Sans';
+		$body_font = 'Open Sans';// phpcs:ignore
 	}
 	$page_title_font = get_theme_mod( 'canuckcp_page_title_font', 'Open Sans' ); // phpcs:ignore
 	if ( 'default' === $page_title_font ) {
-		$page_title_font = 'Open Sans';
+		$page_title_font = 'Open Sans';// phpcs:ignore
 	}
 	$fonts       = array(
 		'Open Sans'           => array(
@@ -577,14 +577,14 @@ function canuckcp_page_share( $share_label = '' ) {
 		if ( get_theme_mod( 'canuckcp_include_pinit' ) ? true : false ) {
 			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share">
 							<a class="pinterest-share" data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" data-pin-round="true" data-pin-hover="false">
-							</a></span>';
+							</a></span>';// phpcs:ignore
 		}
 		if ( get_theme_mod( 'canuckcp_include_facebook' ) ? true : false ) {
-			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . get_the_permalink() . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener">
-							<i>' . canuckcp_svg( 'facebook-square', '16px', '#21759b' ) . '</i></a>';
+			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . esc_url( get_the_permalink() ) . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener">
+							<i>' . canuckcp_svg( 'facebook-square', '16px', '#21759b' ) . '</i></a>';// phpcs:ignore
 		}
 		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
-			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';
+			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';// phpcs:ignore
 		}
 		$share_html .= '</div>';
 		return $share_html;
@@ -606,13 +606,13 @@ function canuckcp_post_share( $share_label = '' ) {
 			$share_html .= '<span class="share-text-post">' . $share_label . '</span>';
 		}
 		if ( get_theme_mod( 'canuckcp_include_pinit' ) ? true : false ) {
-			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share"><a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" data-pin-round="true" data-pin-hover="false"></a></span>';
+			$share_html .= '<span title="' . esc_attr__( 'Share on Pinterest', 'canuck-cp' ) . '" class="pinterest-share"><a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" data-pin-round="true" data-pin-hover="false"></a></span>';// phpcs:ignore
 		}
 		if ( get_theme_mod( 'canuckcp_include_facebook' ) ? true : false ) {
-			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . get_the_permalink() . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'facebook-square', '16px', '#21759b' ) . '</i></a>';
+			$share_html .= '<a class="facebook-share" href="https://www.facebook.com/sharer?u=' . esc_url( get_the_permalink() ) . '" title="' . esc_attr__( 'Share on Facebook', 'canuck-cp' ) . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'facebook-square', '16px', '#21759b' ) . '</i></a>';// phpcs:ignore
 		}
 		if ( get_theme_mod( 'canuckcp_include_twitter' ) ? true : false ) {
-			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . get_the_permalink() . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';
+			$share_html .= '<a class="twitter-share" title="' . esc_attr__( 'Share on Twitter', 'canuck-cp' ) . '" href="http://twitter.com/intent/tweet?text=Currently reading ' . get_the_title() . ' at&url=' . esc_url( get_the_permalink() ) . '" target="_blank" rel="noopener"><i>' . canuckcp_svg( 'twitter-square', '16px', '#33ccff' ) . '</i></a>';
 		}
 		$share_html .= '</div>';
 		return $share_html;

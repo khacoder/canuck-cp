@@ -7,7 +7,7 @@
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald
  * @license     http://www.gnu.org/licenses/gpl-2.0.html
- * @author      Kevin Archibald <www.kevinsspace.ca/contact/>
+ * @author      Kevin Archibald <https://kevinsspace.ca/contact/>
  */
 
 $sec8_bg_image     = get_theme_mod( 'canuckcp_section8_background_image', '' );
@@ -32,13 +32,13 @@ if ( '' !== $sec8_bg_image ) {
 				<?php
 				// Get the options.
 				$section8_box1_use_image_font = get_theme_mod( 'canuckcp_section8_box1_use_font_icon', false );
-				$section8_box1_image_font     = get_theme_mod( 'canuckcp_section8_box1_image_font', 'no icon' );
+				$section8_box1_image_font     = get_theme_mod( 'canuckcp_section8_box1_image_font', 'no icon' );// phpcs:ignore
 				$section8_box1_image          = get_theme_mod( 'canuckcp_section8_box1_image', '' );
 				$section8_box1_title          = stripslashes( get_theme_mod( 'canuckcp_section8_box1_title', '' ) );
 				$section8_box1_text           = stripslashes( get_theme_mod( 'canuckcp_section8_box1_text', '' ) );
 				$section8_box1_include_link   = get_theme_mod( 'canuckcp_section8_box1_include_link', false );
 				$section8_box1_button_link    = get_theme_mod( 'canuckcp_section8_box1_button_link', '#' );
-				$section8_box1_button_icon    = get_theme_mod( 'canuckcp_section8_box1_button_icon', 'no icon' );
+				$section8_box1_button_icon    = get_theme_mod( 'canuckcp_section8_box1_button_icon', 'no icon' );// phpcs:ignore
 				$section8_box1_button_label   = get_theme_mod( 'canuckcp_section8_box1_button_title', esc_html__( '...more', 'canuck-cp' ) );
 				// check for old versions.
 				if ( 'fa-' === substr( $section8_box1_image_font, 0, 3 ) || 'no icon' === $section8_box1_image_font ) {
@@ -146,13 +146,13 @@ if ( '' !== $sec8_bg_image ) {
 				<?php
 				// Get the options.
 				$section8_box2_use_image_font = get_theme_mod( 'canuckcp_section8_box2_use_font_icon', false );
-				$section8_box2_image_font     = get_theme_mod( 'canuckcp_section8_box2_image_font', 'no icon' );
+				$section8_box2_image_font     = get_theme_mod( 'canuckcp_section8_box2_image_font', 'no icon' );// phpcs:ignore
 				$section8_box2_image          = get_theme_mod( 'canuckcp_section8_box2_image', '' );
 				$section8_box2_title          = stripslashes( get_theme_mod( 'canuckcp_section8_box2_title', '' ) );
 				$section8_box2_text           = stripslashes( get_theme_mod( 'canuckcp_section8_box2_text', '' ) );
 				$section8_box2_include_link   = get_theme_mod( 'canuckcp_section8_box2_include_link', false );
 				$section8_box2_button_link    = get_theme_mod( 'canuckcp_section8_box2_button_link', '#' );
-				$section8_box2_button_icon    = get_theme_mod( 'canuckcp_section8_box2_button_icon', 'no icon' );
+				$section8_box2_button_icon    = get_theme_mod( 'canuckcp_section8_box2_button_icon', 'no icon' );// phpcs:ignore
 				$section8_box2_button_label   = get_theme_mod( 'canuckcp_section8_box2_button_title', esc_html__( '...more', 'canuck-cp' ) );
 				// check for old versions.
 				if ( 'fa-' === substr( $section8_box2_image_font, 0, 3 ) || 'no icon' === $section8_box2_image_font ) {
@@ -260,13 +260,13 @@ if ( '' !== $sec8_bg_image ) {
 				<?php
 				// Get the options.
 				$section8_box3_use_image_font = get_theme_mod( 'canuckcp_section8_box3_use_font_icon', false );
-				$section8_box3_image_font     = get_theme_mod( 'canuckcp_section8_box3_image_font', 'no icon' );
+				$section8_box3_image_font     = get_theme_mod( 'canuckcp_section8_box3_image_font', 'no icon' );// phpcs:ignore
 				$section8_box3_image          = get_theme_mod( 'canuckcp_section8_box3_image', '' );
 				$section8_box3_title          = stripslashes( get_theme_mod( 'canuckcp_section8_box3_title', '' ) );
 				$section8_box3_text           = stripslashes( get_theme_mod( 'canuckcp_section8_box3_text', '' ) );
 				$section8_box3_include_link   = get_theme_mod( 'canuckcp_section8_box3_include_link', false );
 				$section8_box3_button_link    = get_theme_mod( 'canuckcp_section8_box3_button_link', '#' );
-				$section8_box3_button_icon    = get_theme_mod( 'canuckcp_section8_box3_button_icon', 'no icon' );
+				$section8_box3_button_icon    = get_theme_mod( 'canuckcp_section8_box3_button_icon', 'no icon' );// phpcs:ignore
 				$section8_box3_button_label   = get_theme_mod( 'canuckcp_section8_box3_button_title', esc_html__( '...more', 'canuck-cp' ) );
 				// check for old versions.
 				if ( 'fa-' === substr( $section8_box3_image_font, 0, 3 ) || 'no icon' === $section8_box3_image_font ) {
@@ -374,13 +374,13 @@ if ( '' !== $sec8_bg_image ) {
 				<?php
 				// Get the options.
 				$section8_box4_use_image_font = get_theme_mod( 'canuckcp_section8_box4_use_font_icon', false );
-				$section8_box4_image_font     = get_theme_mod( 'canuckcp_section8_box4_image_font', 'no icon' );
+				$section8_box4_image_font     = get_theme_mod( 'canuckcp_section8_box4_image_font', 'no icon' );// phpcs:ignore
 				$section8_box4_image          = get_theme_mod( 'canuckcp_section8_box4_image', '' );
 				$section8_box4_title          = stripslashes( get_theme_mod( 'canuckcp_section8_box4_title', '' ) );
 				$section8_box4_text           = stripslashes( get_theme_mod( 'canuckcp_section8_box4_text', '' ) );
 				$section8_box4_include_link   = get_theme_mod( 'canuckcp_section8_box4_include_link', false );
 				$section8_box4_button_link    = get_theme_mod( 'canuckcp_section8_box4_button_link', '#' );
-				$section8_box4_button_icon    = get_theme_mod( 'canuckcp_section8_box4_button_icon', 'no icon' );
+				$section8_box4_button_icon    = get_theme_mod( 'canuckcp_section8_box4_button_icon', 'no icon' );// phpcs:ignore
 				$section8_box4_button_label   = get_theme_mod( 'canuckcp_section8_box4_button_title', esc_html__( 'more', 'canuck-cp' ) );
 				// check for old versions.
 				if ( 'fa-' === substr( $section8_box4_image_font, 0, 3 ) || 'no icon' === $section8_box4_image_font ) {
