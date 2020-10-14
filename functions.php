@@ -657,9 +657,9 @@ if ( ! function_exists( 'canuckcp_register_sidebars' ) ) {
 		if ( class_exists( 'WooCommerce' ) ) {
 			register_sidebar(
 				array(
-					'id'            => 'canuckcp_woo_sidebar_a',
-					'name'          => esc_html__( 'WooCommerce Sidebar a', 'canuck-cp' ),
-					'description'   => esc_html__( 'Use this side bar for the Woo Commerce Shop Page', 'canuck-cp' ),
+					'id'            => 'canuckcp_cc_sidebar_a',
+					'name'          => esc_html__( 'ClassicCommerce Sidebar a', 'canuck-cp' ),
+					'description'   => esc_html__( 'Use this side bar for the ClassicCommerce Shop Page', 'canuck-cp' ),
 					'before_widget' => '<div id="%1$s" class="widget %2$s">',
 					'after_widget'  => '</div>',
 					'before_title'  => '<h3 class="widget-title">',
@@ -668,9 +668,9 @@ if ( ! function_exists( 'canuckcp_register_sidebars' ) ) {
 			);
 			register_sidebar(
 				array(
-					'id'            => 'canuckcp_woo_sidebar_b',
-					'name'          => esc_html__( 'WooCommerce Sidebar b', 'canuck-cp' ),
-					'description'   => esc_html__( 'Use this side bar for the Woo Commerce Shop Page', 'canuck-cp' ),
+					'id'            => 'canuckcp_cc_sidebar_b',
+					'name'          => esc_html__( 'ClassicCommerce Sidebar b', 'canuck-cp' ),
+					'description'   => esc_html__( 'Use this side bar for the ClassicCommerce Shop Page', 'canuck-cp' ),
 					'before_widget' => '<div id="%1$s" class="widget %2$s">',
 					'after_widget'  => '</div>',
 					'before_title'  => '<h3 class="widget-title">',

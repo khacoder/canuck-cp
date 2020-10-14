@@ -1,4 +1,4 @@
-<?php // phpcs:ignore WordPress.Files.FileName.InvalidClassFileName
+<?php
 /**
  * Canuck CP Theme Customizer.
  * This file sets up the options for the theme.

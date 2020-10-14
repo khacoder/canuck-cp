@@ -201,7 +201,7 @@ function canuckcp_cc_shop_options() {
 		)
 	);
 	$wp_customize->add_control(
-		new Canuck_Custom_Radio_Image_Control(
+		new CanuckCP_Custom_Radio_Image_Control(
 			$wp_customize,
 			'canuckcp_shop_page_layout',
 			array(

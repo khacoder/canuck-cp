@@ -16,7 +16,7 @@ add_action( 'admin_menu', 'canuckcp_theme_page_init' );
  * Canuck CP add theme page
  */
 function canuckcp_theme_page_init() {
-	$themepage = add_theme_page( __( 'Canuck CP Theme', 'canuck-cp' ), __( 'Canuck', 'canuck-cp' ), 'edit_theme_options', 'canuckcp_theme_page', 'canuckcp_theme_page_callback' );
+	$themepage = add_theme_page( __( 'Canuck CP Theme', 'canuck-cp' ), __( 'Canuck CP', 'canuck-cp' ), 'edit_theme_options', 'canuckcp_theme_page', 'canuckcp_theme_page_callback' );
 }
 
 /**
@@ -25,7 +25,7 @@ function canuckcp_theme_page_init() {
  * @param string $current is current page.
  */
 function canuckcp_theme_page_tabs( $current = 'canuckcp_intro_page' ) {
-	$tabs               = array(
+	$tabs                 = array(
 		'canuckcp_intro_page'        => esc_html__( 'Introduction', 'canuck-cp' ),
 		'canuckcp_quick_setup_page'  => esc_html__( 'Quick Setup', 'canuck-cp' ),
 		'canuckcp_detail_setup_page' => esc_html__( 'Detail Setup', 'canuck-cp' ),
@@ -60,11 +60,11 @@ function canuckcp_theme_page_callback() {
 		<div id="canuck-cp-page">
 			<?php
 			if ( isset( $_GET['page'] ) ) {
-				$page_string = sanitize_text_field( wp_unslash( $_GET['page'] ) ); // phpcs:ignore non sanitized
+				$page_string = sanitize_text_field( wp_unslash( $_GET['page'] ) ); // phpcs:ignore
 			}
-			if ( 'themes.php' === $pagenow && 'canuckcp_theme_page' === $page_string ) { // phpcs:ignore input var ok.
-				if ( isset( $_GET['tab'] ) && isset( $_GET['_wp_nonce'] ) && false !== wp_verify_nonce( $_GET['_wp_nonce'], 'canuck-admin-nonce' ) ) {
-					$tab = esc_html( wp_unslash( $_GET['tab'] ) ); // phpcs:ignore input var ok, sanitization ok.
+			if ( 'themes.php' === $pagenow && 'canuckcp_theme_page' === $page_string ) { // phpcs:ignore
+				if ( isset( $_GET['tab'] ) && isset( $_GET['_wp_nonce'] ) && false !== wp_verify_nonce( $_GET['_wp_nonce'], 'canuck-admin-nonce' ) ) {// phpcs:ignore
+					$tab = esc_html( wp_unslash( $_GET['tab'] ) ); // phpcs:ignore
 				} else {
 					$tab = 'canuckcp_intro_page';
 				}
@@ -340,7 +340,7 @@ function canuckcp_detailed_setup_callback() {
 	echo '</ol>';
 	echo '<p><strong>' . esc_html__( 'Slider Settings - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Slider setup can be found in "Canuck CP General->Slider Options"', 'canuck-cp' ) . '</p>';
 
-	echo '<p>' . esc_html__( 'As of Canuck CP Version 1.1.8 you can now also use a video for the Home Page or Blog Page Feature areas. ', 'canuck-cp' ) .
+	echo '<p>' . esc_html__( 'Canuck CP allows you to use a video for the Home Page or Blog Page Feature areas. ', 'canuck-cp' ) .
 				esc_html__( 'To set up a Home Page video:".', 'canuck-cp' ) . '</p>';
 	echo '<ol>';
 	echo '<li>' . esc_html__( 'Select the "Appearance->Customize" tab.', 'canuck-cp' ) . '</li>';
@@ -354,15 +354,14 @@ function canuckcp_detailed_setup_callback() {
 	echo '</ol>';
 
 	echo '<h3>' . esc_html__( 'Canuck CP General', 'canuck-cp' ) . '</h3>';
-	echo '<p><strong>' . esc_html__( 'Miscellaneous Options - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'This is where you can include Pinterest sharing discussed in the Quick Start tab.', 'canuck-cp' ) . '</p>';
+	echo '<p><strong>' . esc_html__( 'Simple Contact Form - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Canuck offers a simple contact form, provide the options for it here.', 'canuck-cp' ) . '</p>';
 	echo '<p><strong>' . esc_html__( 'Backup Options - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Discussed in the Introduction tab.', 'canuck-cp' ) . '</p>';
 	echo '<p><strong>' . esc_html__( 'Exclude Categories - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'This is where you can exclude categories that would be used in the featured posts for sliders, portfolios, etc.', 'canuck-cp' ) . '</p>';
-	echo '<p><strong>' . esc_html__( 'Flex Slider Options - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Set slider options such as type, pause and transition times.', 'canuck-cp' ) . '</p>';
+	echo '<p><strong>' . esc_html__( 'Slider Options - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Set slider options such as type, pause and transition times.', 'canuck-cp' ) . '</p>';
 	echo '<p><strong>' . esc_html__( 'jQuery Options - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Disable jQuery scripts for debugging or to use a different script.', 'canuck-cp' ) . '</p>';
 
 	echo '<h3>' . esc_html__( 'Canuck CP Layouts', 'canuck-cp' ) . '</h3>';
-	echo '<p><strong>' . esc_html__( 'Breadcrumbs - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Select "General Layout Options" and you can set up Breadcrumbs there. ', 'canuck-cp' ) .
-						esc_html__( 'You must have the plugin "Breadcrumb Trail" by Justin Tadlock installed to use breadcrumbs.', 'canuck-cp' ) . '</p>';
+	echo '<p><strong>' . esc_html__( 'Breadcrumbs - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Select "General Layout Options" and you can set up Breadcrumbs there. ', 'canuck-cp' ) . '</p>';
 	echo '<p><strong>' . esc_html__( 'Use Featured Images - ', 'canuck-cp' ) . '</strong>' . esc_html__( 'Normally featured images are not shown on WordPress Core templates. ', 'canuck-cp' ) .
 						esc_html__( 'If you check this box they will be included on archive, category, search, and tag pages. ', 'canuck-cp' ) .
 						esc_html__( 'The side presentation will be shown on fullwidth, left and right sidebar layouts, while the top feature presentation will be used for the three column layout.', 'canuck-cp' ) . '</p>';
@@ -388,35 +387,9 @@ function canuckcp_detailed_setup_callback() {
 				esc_html__( 'You can also choose to exclude the No Comments link in the blog and single page post meta.', 'canuck-cp' ) .
 				esc_html__( 'There is a option in the General Blog Option panel to include captions on Galleries.', 'canuck-cp' ) . '</p>';
 
-	echo '<h3>' . esc_html__( 'Canuck CP WooCommerce Options', 'canuck-cp' ) . '</h3>';
-	echo '<p>' . esc_html__( 'This option appears only if the WooCommerce plugin is installed and activated. ', 'canuck-cp' ) .
-				esc_html__( 'Special WooCommerce sidebars are set up, and you can select the layout you want for the Shop and Product pages.', 'canuck-cp' ) . '</p>';
-
-	echo '<h3>' . esc_html__( 'Post Formats', 'canuck-cp' ) . '</h3>';
-	echo '<p>' . esc_html__( 'Canuck CP supports Audio, Quote, Gallery, Image, and Video Post Formats ', 'canuck-cp' ) . '</p>';
-	echo '<ol>';
-	echo '<li><strong>' . esc_html__( 'Audio Post Format: ', 'canuck-cp' ) . '</strong>' .
-						esc_html__( 'Add your audio using the Add Media button in your post editor panel. ', 'canuck-cp' ) .
-						esc_html__( 'Then select the Audio Format for your post. ', 'canuck-cp' ) .
-						esc_html__( 'If you want to change the background for the audio, simply insert a featured image.', 'canuck-cp' ) . '</li>';
-	echo '<li><strong>' . esc_html__( 'Quote Post Format: ', 'canuck-cp' ) . '</strong>' .
-						esc_html__( 'If you like to start your posts off with a quote, the Quote Post Format is for you. ', 'canuck-cp' ) .
-						esc_html__( 'The quote post format requires a bit of a special set up, but really it is not very difficult. ', 'canuck-cp' ) .
-						esc_html__( 'Add the quote data between &lt;q&gt;quote|author|link&lt;/q&gt; tags then select the Quote Format for your post.', 'canuck-cp' ) . '</li>';
-	echo '<li><strong>' . esc_html__( 'Gallery Post Format: ', 'canuck-cp' ) . '</strong>' .
-						esc_html__( 'The Gallery Post Format allows you to present a group of photos in a carousel navigated feature area. ', 'canuck-cp' ) .
-						esc_html__( 'Simply select Add Media when setting up your post. ', 'canuck-cp' ) .
-						esc_html__( 'Insert the gallery and then add your content. ', 'canuck-cp' ) .
-						esc_html__( 'Finally select Gallery in the radio button in the Format panel.', 'canuck-cp' ) . '</li>';
-	echo '<li><strong>' . esc_html__( 'Image Post Format: ', 'canuck-cp' ) . '</strong>' .
-						esc_html__( 'The Image Post Format allows you to blog about a special image. ', 'canuck-cp' ) .
-						esc_html__( 'Set up a feature image post and click the Image radio in the Format panel. ', 'canuck-cp' ) .
-						esc_html__( 'Add your image caption and description when you upload and set the feature image as they will be shown in the hover mode, along with photograph meta details.', 'canuck-cp' ) . '</li>';
-	echo '<li><strong>' . esc_html__( 'Video Post Format: ', 'canuck-cp' ) . '</strong>' .
-						esc_html__( 'This post format allows you to set up a video in the feature area of your post. ', 'canuck-cp' ) .
-						esc_html__( 'Simply select Add Media and add your YouTube url. ', 'canuck-cp' ) .
-						esc_html__( 'Add your content and select Video in the radio button in the Format panel.', 'canuck-cp' ) . '</li>';
-	echo '</ol>';
+	echo '<h3>' . esc_html__( 'Canuck CP ClassicCommerce Options', 'canuck-cp' ) . '</h3>';
+	echo '<p>' . esc_html__( 'This option appears only if the ClassicCommerce plugin is installed and activated. ', 'canuck-cp' ) .
+				esc_html__( 'Special ClassicCommerce sidebars are set up, and you can select the layout you want for the Shop and Product pages.', 'canuck-cp' ) . '</p>';
 
 	echo '<h3>' . esc_html__( 'Portfolio Page', 'canuck-cp' ) . '</h3>';
 	echo '<p>' . esc_html__( 'You can set up as many Portfolio Pages as you want. ', 'canuck-cp' ) .

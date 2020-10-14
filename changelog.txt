@@ -4,7 +4,9 @@
 
 Version 1.0.2
 -----------------------------------
-* 
+* test and adjust for ClassicCommerce
+* review and adjust docs section
+* initial public release
 
 Version 1.0.1
 -----------------------------------
@@ -12,5 +14,4 @@ Version 1.0.1
 
 Version 1.0.0
 -----------------------------------
-* initial public release
 * improved responsive styling in header
