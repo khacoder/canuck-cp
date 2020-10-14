@@ -14,7 +14,7 @@
  * Plugin Name: Canuck CP Contact Widget
  * Plugin URI: http://kevinsspace.ca
  * Description: A widget for the Canuck CP Theme that allows the user to set up a contact form.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later

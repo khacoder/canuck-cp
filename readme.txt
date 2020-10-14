@@ -8,8 +8,8 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 1.0.2
-Stable tag: 1.0.2
+Version: 1.0.3
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
 
