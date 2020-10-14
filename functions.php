@@ -12,7 +12,7 @@
  */
 
 // Theme version.
-define( 'CANUCKCP_VERSION', '1.0.2' );
+define( 'CANUCKCP_VERSION', '1.0.3' );
 /**
  * ---- load files ---------------
  */
@@ -37,7 +37,7 @@ require get_template_directory() . '/widgets/class-canuck-cp-archives-widget.php
 if ( false === get_theme_mod( 'canuckcp_disable_widget_slider' ) ? true : false ) {
 	require get_template_directory() . '/widgets/class-canuck-cp-slider-widget.php';
 }
-if ( false === get_theme_mod( 'canuckcp_use_contact_form' ) ? true : false ) {
+if ( false !== get_theme_mod( 'canuckcp_use_contact_form' ) ? true : false ) {
 	require get_template_directory() . '/widgets/class-canuck-cp-contact-form-widget.php';
 }
 if ( class_exists( 'WooCommerce' ) ) {

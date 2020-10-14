@@ -4,7 +4,10 @@
 
 Version 1.0.3
 -----------------------------------
-*
+* fixed portfolio page image svg color and hover states
+* removed skin color from blog comments form and added 1 px border
+* fixed bug in conditional loading of the contact form widget
+* removed reCaptcha in comments, will reconsider in the future
 
 Version 1.0.2
 -----------------------------------

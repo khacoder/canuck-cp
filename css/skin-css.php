@@ -140,17 +140,17 @@ function canuckcp_skin_css() {
 	$skin_css .= '.portfolio-container .image-overlay { background-color: ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .8 ) . '; color: rgba(255,255,255,0); }' . PHP_EOL;
 	$skin_css .= '.portfolio-container .image-overlay .overlay-wrap { color: rgba(255,255,255,0); }' . PHP_EOL;
 	$skin_css .= '.portfolio-container:hover .image-overlay .overlay-wrap { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.portfolio-container .image-overlay .links a { color: rgba(255,255,255,0); }' . PHP_EOL;
-	$skin_css .= '.portfolio-container:hover .image-overlay .links a { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.portfolio-container .image-overlay .links a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;
+	$skin_css .= '.portfolio-container .image-overlay .links a svg path { fill: rgba(255,255,255,0); }' . PHP_EOL;
+	$skin_css .= '.portfolio-container:hover .image-overlay .links a svg path { fill: rgba(255,255,255,1); }' . PHP_EOL;
+	$skin_css .= '.portfolio-container .image-overlay .links a:hover svg path { fill: rgba(255,255,255,.7); }' . PHP_EOL;
 	$skin_css .= '.portfolio-classic-item-wrap .portfolio-classic-overlay { background-color: ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .8 ) . '; color: rgba(255,255,255,0); }' . PHP_EOL;
 	$skin_css .= '.portfolio-classic-item-wrap .portfolio-classic-overlay .portfolio-classic-overlay-wrap { color: rgba(255,255,255,0); }' . PHP_EOL;
 	$skin_css .= '.portfolio-classic-item-wrap:hover .portfolio-classic-overlay .portfolio-classic-overlay-wrap { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.portfolio-classic-item-wrap .portfolio-classic-overlay .links a { color: rgba(255,255,255,0); }' . PHP_EOL;
-	$skin_css .= '.portfolio-classic-item-wrap:hover .portfolio-classic-overlay .links a { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.portfolio-classic-item-wrap .portfolio-classic-overlay .links a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;
-	$skin_css .= '.masonry-gallery.portfolio .masonry-grid-item:hover .masonry-image-overlay .masonry-links a { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.masonry-gallery.portfolio .masonry-grid-item .masonry-image-overlay .masonry-links a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;
+	$skin_css .= '.portfolio-classic-item-wrap .portfolio-classic-overlay .links a svg path { fill: rgba(255,255,255,0); }' . PHP_EOL;
+	$skin_css .= '.portfolio-classic-item-wrap:hover .portfolio-classic-overlay .links a svg path { fill: rgba(255,255,255,1); }' . PHP_EOL;
+	$skin_css .= '.portfolio-classic-item-wrap .portfolio-classic-overlay .links a:hover svg path { fill: rgba(255,255,255,.7); }' . PHP_EOL;
+	$skin_css .= '.masonry-gallery.portfolio .masonry-grid-item:hover .masonry-image-overlay .masonry-links a svg path { fill: rgba(255,255,255,1); }' . PHP_EOL;
+	$skin_css .= '.masonry-gallery.portfolio .masonry-grid-item .masonry-image-overlay .masonry-links a:hover svg path { fill: rgba(255,255,255,.7); }' . PHP_EOL;
 	/* ******************************************************************************** Feature Styles */
 	$skin_css .= '.feature-wrap-full { background-color: #ffffff; }' . PHP_EOL;
 	/* ******************************************************************************** Post Styles */
@@ -206,7 +206,7 @@ function canuckcp_skin_css() {
 	$skin_css .= '.comment-reply-link:hover { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.comment-list .bypostauthor .comment-author cite:before { background-color: #808080; color: #ffffff; }' . PHP_EOL;
 	$skin_css .= 'p.no-comments { border-top: 1px solid #7f7f7f; }' . PHP_EOL;
-	$skin_css .= '.comment-form-author input,.comment-form-email input,.comment-form-url input { background-color: ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .5 ) . '; }' . PHP_EOL;
+	$skin_css .= '.comment-form-author input,.comment-form-email input,.comment-form-url input { border: 1px solid #7f7f7f; background-color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '#respond textarea { background-color: #ffffff; border: 1px solid #474747; }' . PHP_EOL;
 	$skin_css .= '.comment-form .form-submit input#submit.submit { border: 1px solid ' . $primary_accent . '; color: #474747; background-color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.comment-form .form-submit input#submit.submit:hover { color: #ffffff; background-color: ' . $primary_accent . '; }' . PHP_EOL;
