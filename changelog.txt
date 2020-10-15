@@ -2,6 +2,10 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 1.0.4
+-----------------------------------
+* 
+
 Version 1.0.3
 -----------------------------------
 * fixed portfolio page image svg color and hover states

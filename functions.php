@@ -12,7 +12,7 @@
  */
 
 // Theme version.
-define( 'CANUCKCP_VERSION', '1.0.3' );
+define( 'CANUCKCP_VERSION', '1.0.4' );
 /**
  * ---- load files ---------------
  */
