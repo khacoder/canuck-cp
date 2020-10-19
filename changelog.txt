@@ -4,7 +4,9 @@
 
 Version 1.0.4
 -----------------------------------
-* 
+* modified the template-contact.php to only load if the Simple Contact Form is enabled
+* ensured that the reCaptcha scripts would not load unless the Simple Contact Form is enabled and the Use reCaptcha is enabled
+* fixed a few css bugs
 
 Version 1.0.3
 -----------------------------------

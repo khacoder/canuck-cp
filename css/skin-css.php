@@ -87,9 +87,6 @@ function canuckcp_skin_css() {
 	$skin_css .= '.canuck-cp-search .searchform .search-field { background-color: ' . $primary_accent . '; color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-show-search-trigger a:focus,.canuck-cp-show-search-trigger:hover { outline: none; border: none; background-color: ' . $primary_accent . '; transition: .75s ease; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-search-icon-form:hover svg path { fill: ' . $primary_accent . '; }' . PHP_EOL;
-	$skin_css .= '.header-wide-no-feature .header-logo-menu-strip nav a,.header-wide-slider .header-logo-menu-strip nav a { color: #474747; }' . PHP_EOL;
-	$skin_css .= '.header-wide-image .header-logo-menu-strip nav a { color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.header-wide-no-feature .header-logo-menu-strip nav a:hover,.header-wide-slider .header-logo-menu-strip nav a:hover,.header-wide-image .header-logo-menu-strip nav a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= 'body.sticky .header-wide-no-feature,body.sticky .header-wide-slider { background-color: #ffffff; border-bottom: 1px solid #e8e8e8; }' . PHP_EOL;
 	$skin_css .= 'body.sticky .header-wide-image { background-color: #ffffff; border-bottom: 1px solid #e8e8e8; }' . PHP_EOL;
 	$skin_css .= 'body.sticky .header-logo-menu-strip nav { color: #474747; }' . PHP_EOL;
@@ -101,6 +98,9 @@ function canuckcp_skin_css() {
 	$skin_css .= 'button.menu-1-toggle:hover svg path,button.menu-1-toggle:focus svg path { fill: #ffffff; }' . PHP_EOL;
 	$skin_css .= 'button.sidebar-a-toggle, button.sidebar-b-toggle { color: rgba(255,255,255,.6); background-color: rgba(0,0,0,0.3); border: 1px solid #ffffff; }' . PHP_EOL;
 	$skin_css .= 'button.sidebar-a-toggle:hover svg path, button.sidebar-b-toggle:hover svg path { fill: ' . $primary_accent . '; transition: .5s ease-in; }' . PHP_EOL;
+	$skin_css .= '.header-wide-no-feature .header-logo-menu-strip nav a,.header-wide-slider .header-logo-menu-strip nav a { color: #474747; }' . PHP_EOL;
+	$skin_css .= '.header-wide-image .header-logo-menu-strip nav a { color: #ffffff; }' . PHP_EOL;
+	$skin_css .= '.header-wide-no-feature .header-logo-menu-strip nav a:hover,.header-wide-slider .header-logo-menu-strip nav a:hover,.header-wide-image .header-logo-menu-strip nav a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.header-wide-no-feature button, .header-wide-slider button { color: #474747; }' . PHP_EOL;
 	$skin_css .= '.header-wide-image button { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= 'body.sticky .header-wide-image button { color: #474747; }' . PHP_EOL;
@@ -154,8 +154,8 @@ function canuckcp_skin_css() {
 	/* ******************************************************************************** Feature Styles */
 	$skin_css .= '.feature-wrap-full { background-color: #ffffff; }' . PHP_EOL;
 	/* ******************************************************************************** Post Styles */
-	$skin_css .= '.read-more-wrap a.read-more { border: 1px solid ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .5 ) . '; color: #474747; background-color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.read-more-wrap a.read-more:before { border: 1px solid ' . canuckcp_hex_to_rgba( $primary_accent, $opacity = .5 ) . '; background-color: ' . $primary_accent . '; }' . PHP_EOL;
+	$skin_css .= '.read-more-wrap a.read-more { border: 1px solid ' . $primary_accent . '; color: #474747; background-color: #ffffff; }' . PHP_EOL;
+	$skin_css .= '.read-more-wrap a.read-more:before { border: 1px solid ' . $primary_accent . '; background-color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.read-more-wrap a.read-more:hover { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= 'img.border { border: 8px solid #ffffff!important; box-shadow: 0px 0px 5px 0 rgba(71,71,71,0.25)!important; }' . PHP_EOL;
 	$skin_css .= '.wp-caption.border { border: 8px solid #ffffff!important; box-shadow: 0px 0px 5px 0 rgba(71,71,71,0.25)!important; }' . PHP_EOL;
@@ -181,8 +181,8 @@ function canuckcp_skin_css() {
 	$skin_css .= '.pmeta-sticky { color: #7f7f7f; }' . PHP_EOL;
 	$skin_css .= '.pmeta-timestamp a,.pmeta-author a,.pmeta-post-comments a, .pmeta-categories a,.pmeta-taglist a,.pmeta-edit a { color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.pmeta-timestamp a:hover,.pmeta-author a:hover,.pmeta-post-comments a:hover, .pmeta-categories a:hover,.pmeta-taglist a:hover,.pmeta-edit a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
-	$skin_css .= '.pmeta-timestamp i,.pmeta-author i,.pmeta-post-comments i, .pmeta-categories i,.pmeta-taglist i, .pmeta-sticky i,.pmeta-edit i { color: #7f7f7f; }' . PHP_EOL;
-	$skin_css .= '.audio-post-feature { color: #ffffff; }' . PHP_EOL;
+	//$skin_css .= '.pmeta-timestamp i,.pmeta-author i,.pmeta-post-comments i, .pmeta-categories i,.pmeta-taglist i, .pmeta-sticky i,.pmeta-edit i { color: #7f7f7f; }' . PHP_EOL;
+	/*$skin_css .= '.audio-post-feature { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.audio-post-feature-overlay { color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.gallery img { border: 1px solid #e3e3e3!important; background-color: #ffffff!important; }' . PHP_EOL;
 	$skin_css .= '.post-format-image-overlay { background: rgba(0,0,0,.7); color: #ffffff; }' . PHP_EOL;
@@ -191,7 +191,7 @@ function canuckcp_skin_css() {
 	$skin_css .= '.quote-post-feature .quote-post-feature-author,.quote-post-feature .quote-post-feature-author a { color: rgba(255,255,255,.5); }' . PHP_EOL;
 	$skin_css .= '.format-quote .entry-content blockquote { border-left: 5px solid #7f7f7f; background: #eaeaea; }' . PHP_EOL;
 	$skin_css .= '.post-format-image-overlay-content a { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.post-format-image-overlay-content a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;
+	$skin_css .= '.post-format-image-overlay-content a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;*/
 	/* ***************************************************************************** Contact Form Styles */
 	$skin_css .= '.canuck-cp-widget-contact-submit,.canuck-cp-contact-submit { color: ' . $primary_accent . '; border: 1px solid ' . $primary_accent . '; background-color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-widget-contact-submit:hover,.canuck-cp-contact-submit:hover  { color: #ffffff; background-color: ' . $primary_accent . '; }' . PHP_EOL;

@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignoreFile
 /**
  * Canuck CP Theme Customizer.
  * This file sets up the options for the theme.
