@@ -19,8 +19,10 @@ Canuck CP is distributed under the terms of the GNU GPL
 Canuck CP is a full featured ClassicPress theme offering the user many options to control the look of the theme, and many options for special pages and content.
 
 == Upgrade Notice ==
-* Version 1.0.1
-* added RTL (major change)
+= Version 1.0.4 =
+* modified the template-contact.php to only load if the Simple Contact Form is enabled
+* ensured that the reCaptcha scripts would not load unless the Simple Contact Form is enabled and the Use reCaptcha is enabled
+* fixed a few css bugs
 
 == Description ==
 * Canuck CP is a full featured responsive theme that looks great on full size screens, tablets and mobile devices. Users have incredible flexibility to create the website that suits your style, with extensive theme options, post metabox options, and page metabox options. Comprehensive user documentation is available in the Admin Panel under Appearance->Canuck CP.
