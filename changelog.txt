@@ -2,6 +2,11 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 1.0.5
+-----------------------------------
+* removed commented out code from style.css
+ 
+
 Version 1.0.4
 -----------------------------------
 * modified the template-contact.php to only load if the Simple Contact Form is enabled

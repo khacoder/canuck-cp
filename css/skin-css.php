@@ -17,9 +17,8 @@ function canuckcp_skin_css() {
 	/**
 	 * ---------- Basic Styles
 	 * general font color : charcoal #474747 rgba(71,71,71,1 )
-	 * general link color :#7f7f7f;
+	 * general link color :$primary_accent;
 	 * border colors: #7f7f7f;
-	 * general font hover : $primary_accent
 	 * a:hover $secondary_accent
 	 * background accents : light gray #e3e3e3 rgba( 227,227,227,1)
 	 * background fonts : med gray #d3d3d3 rgba( 211,211,211,1)
@@ -181,17 +180,6 @@ function canuckcp_skin_css() {
 	$skin_css .= '.pmeta-sticky { color: #7f7f7f; }' . PHP_EOL;
 	$skin_css .= '.pmeta-timestamp a,.pmeta-author a,.pmeta-post-comments a, .pmeta-categories a,.pmeta-taglist a,.pmeta-edit a { color: ' . $primary_accent . '; }' . PHP_EOL;
 	$skin_css .= '.pmeta-timestamp a:hover,.pmeta-author a:hover,.pmeta-post-comments a:hover, .pmeta-categories a:hover,.pmeta-taglist a:hover,.pmeta-edit a:hover { color: ' . $secondary_accent . '; }' . PHP_EOL;
-	//$skin_css .= '.pmeta-timestamp i,.pmeta-author i,.pmeta-post-comments i, .pmeta-categories i,.pmeta-taglist i, .pmeta-sticky i,.pmeta-edit i { color: #7f7f7f; }' . PHP_EOL;
-	/*$skin_css .= '.audio-post-feature { color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.audio-post-feature-overlay { color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.gallery img { border: 1px solid #e3e3e3!important; background-color: #ffffff!important; }' . PHP_EOL;
-	$skin_css .= '.post-format-image-overlay { background: rgba(0,0,0,.7); color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.quote-post-feature { color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.quote-post-feature-overlay { color: #ffffff; }' . PHP_EOL;
-	$skin_css .= '.quote-post-feature .quote-post-feature-author,.quote-post-feature .quote-post-feature-author a { color: rgba(255,255,255,.5); }' . PHP_EOL;
-	$skin_css .= '.format-quote .entry-content blockquote { border-left: 5px solid #7f7f7f; background: #eaeaea; }' . PHP_EOL;
-	$skin_css .= '.post-format-image-overlay-content a { color: rgba(255,255,255,1); }' . PHP_EOL;
-	$skin_css .= '.post-format-image-overlay-content a:hover { color: rgba(255,255,255,.7); }' . PHP_EOL;*/
 	/* ***************************************************************************** Contact Form Styles */
 	$skin_css .= '.canuck-cp-widget-contact-submit,.canuck-cp-contact-submit { color: ' . $primary_accent . '; border: 1px solid ' . $primary_accent . '; background-color: #ffffff; }' . PHP_EOL;
 	$skin_css .= '.canuck-cp-widget-contact-submit:hover,.canuck-cp-contact-submit:hover  { color: #ffffff; background-color: ' . $primary_accent . '; }' . PHP_EOL;
