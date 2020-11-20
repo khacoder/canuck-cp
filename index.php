@@ -31,7 +31,6 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 			<div id="two-column-content">
 				<?php
 				get_template_part( '/template-parts/blog-parts/blog', 'top-feature' );
-				get_template_part( '/template-parts/partials', 'page-navi' );
 				?>
 			</div>
 			<?php
@@ -43,7 +42,6 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 			<div id="three-column-content">
 				<?php
 				get_template_part( '/template-parts/blog-parts/blog', 'top-feature' );
-				get_template_part( '/template-parts/partials', 'page-navi' );
 				?>
 			</div>
 			<aside id="three-column-sidebar-right" class="toggle-sb-b">
@@ -55,7 +53,6 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 			<div id="fullwidth">
 				<?php
 				get_template_part( '/template-parts/blog-parts/blog', 'top-feature' );
-				get_template_part( '/template-parts/partials', 'page-navi' );
 				?>
 			</div>
 			<?php
@@ -64,7 +61,6 @@ get_template_part( '/template-parts/partials', 'page-title-no-post' );
 			<div id="two-column-content">
 				<?php
 				get_template_part( '/template-parts/blog-parts/blog', 'top-feature' );
-				get_template_part( '/template-parts/partials', 'page-navi' );
 				?>
 			</div>
 			<aside id="two-column-sidebar-right" class="toggle-sb-b">

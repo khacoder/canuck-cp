@@ -68,7 +68,7 @@ if ( have_posts() ) {
 							}
 							canuckcp_post_meta_pages();
 						} else {
-							echo get_the_password_form(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							echo get_the_password_form(); // phpcs:ignore
 						}
 						?>
 					</div>

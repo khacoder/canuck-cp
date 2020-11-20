@@ -5,7 +5,8 @@
 Version 1.0.5
 -----------------------------------
 * removed commented out code from style.css
- 
+* remove page-navi function call in index.php because it uses the general-posts template part
+* added apply_filters() to returns in icons.php so development users can set up filters to add svg icons
 
 Version 1.0.4
 -----------------------------------

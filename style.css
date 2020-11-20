@@ -87,7 +87,7 @@ blockquote, blockquote p { margin-left: 1em; font-style: italic; font-weight: 60
 blockquote p:before      { padding: 0 0.5em 0 0; font-size: 1em; content:'"'; line-height: 1.5em;  vertical-align: top; }
 pre                      { margin: 1em 0 0 0; padding: 1em; font-size: 1em; border-radius: 10px; overflow-x: auto; }
 label                    { font-size: 1em; }
-code                     {  font-size: 1em; }
+code                     { font-size: 1em; }
 q                        { font-style: italic; }
 q:before, q:after        { content:'"'; }
 /* ------------- unordered list ----------------------- */
