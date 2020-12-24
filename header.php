@@ -5,8 +5,7 @@
  * Template part file that contains the HTML document head and
  * opening HTML body elements, as well as the site header.
  *
- * This file is kept in case users have setup custom templates that are calling it.
- * This file is exactly the same as header.php.
+ * This file is called by certain primary template pages, and is the default.
  *
  * @package     Canuck CP ClassicPress Theme
  * @copyright   Copyright (C) 2020 or later Kevin Archibald

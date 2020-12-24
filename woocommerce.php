@@ -14,7 +14,7 @@ $canuckcp_layout_option       = get_theme_mod( 'canuckcp_shop_page_layout', 'rig
 $canuckcp_include_breadcrumbs = get_theme_mod( 'canuckcp_breadcrumbs' ) ? true : false;
 $canuckcp_exclude_page_title  = false;
 $canuckcp_page_title          = get_theme_mod( 'canuckcp_shop_page_title', __( 'Shop Products', 'canuck-cp' ) );
-get_header( 'no-feature' );
+get_header();
 get_template_part( '/template-parts/partials', 'page-title-no-post' );
 ?>
 <div id="main-section">

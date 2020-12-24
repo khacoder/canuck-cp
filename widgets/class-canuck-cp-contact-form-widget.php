@@ -14,7 +14,7 @@
  * Plugin Name: Canuck CP Contact Widget
  * Plugin URI: http://kevinsspace.ca
  * Description: A widget for the Canuck CP Theme that allows the user to set up a contact form.
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later
@@ -112,6 +112,7 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 		$use_recaptcha       = get_theme_mod( 'canuckcp_use_recaptcha' ) ? true : false;
 		$recaptcha_sitekey   = get_theme_mod( 'canuckcp_recaptcha_sitekey', '' );
 		$recaptcha_secretkey = get_theme_mod( 'canuckcp_recaptcha_secretkey', '' );
+		$disallow_html       = get_theme_mod( 'canuckcp_disallow_html' ) ? true : false;
 		if ( true !== $use_honeypot ) {
 			$use_honeypot = false;
 		}
@@ -197,14 +198,38 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 				if ( '' === $canuckcp_widget_contact_message ) {
 					$canuckcp_widget_popup_error .= esc_html__( '\n - Message required', 'canuck-cp' );
 				}
+				$found_html = false;
+				if ( true === $disallow_html ) {
+					if ( false !== strpos( $canuckcp_widget_contact_message, '<a' ) ||
+						false !== stripos( $canuckcp_widget_contact_message, '&lt;a' ) ||
+						false !== strpos( $canuckcp_widget_contact_message, '<img' ) ||
+						false !== stripos( $canuckcp_widget_contact_message, '&lt;img' ) ||
+						false !== strpos( $canuckcp_widget_contact_message, 'href=' ) ||
+						false !== strpos( $canuckcp_widget_contact_message, 'src=' ) ||
+						false !== strpos( $canuckcp_widget_contact_message, 'http' ) ||
+						false !== strpos( $canuckcp_widget_contact_message, '//' )
+					) {
+						$found_html = true;
+					} else {
+						$found_html = false;
+					}
+				}
 				// Validation complete.
 				if ( '' === $canuckcp_widget_popup_error ) {
-					// Send notification email.
-					canuckcp_email_notification( $canuckcp_widget_contact_name, $canuckcp_widget_contact_email, $canuckcp_widget_contact_message );
-					$message = esc_html__( 'Message Submitted - Thank You!', 'canuck-cp' );
-					?>
-					<script type="text/javascript">alert( <?php echo $message;// phpcs:ignore ?> );</script>
-					<?php
+					if ( true === $disallow_html && true === $found_html ) {
+						$message = esc_html__( 'Sorry - something seems to have gone wrong!', 'canuck-cp' );
+						?>
+						<script>alert( "<?php echo $message;// phpcs:ignore ?>" )</script>
+						<?php
+					} else {
+						// Send notification email.
+						canuckcp_email_notification( $canuckcp_widget_contact_name, $canuckcp_widget_contact_email, $canuckcp_widget_contact_message );
+						// Submitted popup message.
+						$message = esc_html__( 'Message Submitted - Thank You!', 'canuck-cp' );
+						?>
+						<script>alert( "<?php echo $message;// phpcs:ignore ?>" )</script>
+						<?php
+					}
 					// Reset Variables.
 					$canuckcp_widget_contact_name    = '';
 					$canuckcp_widget_contact_email   = '';
@@ -230,6 +255,11 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 				<label class="canuck-cp-widget-contact-input-label">Message:</label>
 				<textarea class="canuck-cp-widget-contact-input-textarea" name="canuckcp_widget_contact_message" rows="5" ><?php echo wp_kses_post( $canuckcp_widget_contact_message ); ?></textarea>
 				<?php
+				if ( true === $disallow_html ) {
+					?>
+					<span class="no-html-allowed"><?php esc_html_e( 'Text only please!', 'canuck-cp' ); ?></span>
+					<?php
+				}
 				// Captcha.
 				if ( true === $use_recaptcha ) {
 					?>

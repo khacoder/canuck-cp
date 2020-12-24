@@ -17,7 +17,7 @@ $canuckcp_exclude_page_title  = get_post_meta( $post->ID, 'canuckcp_metabox_titl
 $canuckcp_sidebar_a           = esc_html( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_a', true ) ? 'default-a' : get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_a', true ) ) );
 $canuckcp_sidebar_b           = esc_html( ( '' === get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_b', true ) ? 'default-b' : get_post_meta( $post->ID, 'canuckcp_metabox_sidebar_b', true ) ) );
 $canuckcp_exclude_page_share  = get_post_meta( $post->ID, 'canuckcp_exclude_share', true ) ? true : false;
-get_header( 'no-feature' );
+get_header();
 get_template_part( '/template-parts/partials', 'page-title' );
 ?>
 <div id="main-section">

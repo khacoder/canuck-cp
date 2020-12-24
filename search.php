@@ -17,7 +17,7 @@ $canuckcp_include_breadcrumbs = get_theme_mod( 'canuckcp_breadcrumbs' ) ? true :
 $canuckcp_use_feature         = get_theme_mod( 'canuckcp_use_feature' ) ? true : false;
 $canuckcp_exclude_page_title  = get_theme_mod( 'canuckcp_search_title' ) ? true : false;
 $canuckcp_page_title          = __( 'Search Results : ', 'canuck-cp' ) . get_search_query();
-get_header( 'no-feature' );
+get_header();
 get_template_part( '/template-parts/partials', 'page-title-no-post' );
 ?>
 <div id="main-section">
