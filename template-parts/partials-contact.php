@@ -7,6 +7,7 @@
  * @license   http://www.gnu.org/licenses/gpl-2.0.html
  * @author    Kevin Archibald <https://kevinsspace.ca/contact/>
  */
+
 $use_contact_form = get_theme_mod( 'canuckcp_use_contact_form' ) ? true : false;
 if ( true === $use_contact_form ) {
 	if ( ! post_password_required() ) {
@@ -29,6 +30,7 @@ if ( true === $use_contact_form ) {
 			$use_recaptcha       = get_theme_mod( 'canuckcp_use_recaptcha' ) ? true : false;
 			$recaptcha_sitekey   = get_theme_mod( 'canuckcp_recaptcha_sitekey', '' );
 			$recaptcha_secretkey = get_theme_mod( 'canuckcp_recaptcha_secretkey', '' );
+			$disallow_html       = get_theme_mod( 'canuckcp_disallow_html' ) ? true : false;
 			if ( true !== $use_honeypot ) {
 				$use_honeypot = false;
 			}
@@ -108,15 +110,38 @@ if ( true === $use_contact_form ) {
 					if ( '' === $canuckcp_contact_message ) {
 						$canuckcp_popup_error .= esc_html__( '\n - Message required', 'canuck-cp' );
 					}
+					$found_html = false;
+					if ( true === $disallow_html ) {
+						if ( false !== strpos( $canuckcp_contact_message, '<a' ) ||
+							false !== stripos( $canuckcp_contact_message, '&lt;a' ) ||
+							false !== strpos( $canuckcp_contact_message, '<img' ) ||
+							false !== stripos( $canuckcp_contact_message, '&lt;img' ) ||
+							false !== strpos( $canuckcp_contact_message, 'href=' ) ||
+							false !== strpos( $canuckcp_contact_message, 'src=' ) ||
+							false !== strpos( $canuckcp_contact_message, 'http' ) ||
+							false !== strpos( $canuckcp_contact_message, '//' )
+						) {
+							$found_html = true;
+						} else {
+							$found_html = false;
+						}
+					}
 					// Validation complete.
 					if ( '' === $canuckcp_popup_error ) {
-						// Send notification email.
-						canuckcp_email_notification( $canuckcp_contact_name, $canuckcp_contact_email, $canuckcp_contact_message );
-						// Submitted popup message.
-						$message = esc_html__( 'Mesage Submitted - Thank You!', 'canuck-cp' );
-						?>
-						<script type="text/javascript">alert( "<?php echo $message;// phpcs:ignore ?>" )</script>
-						<?php
+						if ( true === $disallow_html && true === $found_html ) {
+							$message = esc_html__( 'Sorry - something seems to have gone wrong!', 'canuck-cp' );
+							?>
+							<script>alert( "<?php echo $message;// phpcs:ignore ?>" )</script>
+							<?php
+						} else {
+							// Send notification email.
+							canuckcp_email_notification( $canuckcp_contact_name, $canuckcp_contact_email, $canuckcp_contact_message );
+							// Submitted popup message.
+							$message = esc_html__( 'Message Submitted - Thank You!', 'canuck-cp' );
+							?>
+							<script>alert( "<?php echo $message;// phpcs:ignore ?>" )</script>
+							<?php
+						}
 						// Reset Variables.
 						$canuckcp_contact_name    = '';
 						$canuckcp_contact_email   = '';
@@ -135,13 +160,19 @@ if ( true === $use_contact_form ) {
 					<?php
 					wp_nonce_field( 'canuckcp_contact_nonce_action', 'canuckcp_contact_nonce_name' );
 					?>
-					<label class="canuck-cp-contact-input-label">Name:</label>
+					<label class="canuck-cp-contact-input-label"><?php esc_html_e( 'Name:', 'canuck-cp' ); ?></label>
 					<input class="canuck-cp-contact-input" type="text" name="canuckcp_contact_name" value="<?php echo esc_attr( $canuckcp_contact_name ); ?>" />
-					<label class="canuck-cp-contact-input-label">Email:</label>
+					<label class="canuck-cp-contact-input-label"><?php esc_html_e( 'Email:', 'canuck-cp' ); ?></label>
 					<input class="canuck-cp-contact-input" type="text" name="canuckcp_contact_email" value="<?php echo esc_attr( $canuckcp_contact_email ); ?>" />
-					<label class="canuck-cp-contact-input-label">Message:</label>
+					<label class="canuck-cp-contact-input-label"><?php esc_html_e( 'Message:', 'canuck-cp' ); ?></label>
 					<textarea class="canuck-cp-contact-input-textarea" name="canuckcp_contact_message" rows="5" ><?php echo wp_kses_post( $canuckcp_contact_message ); ?></textarea>
 					<?php
+					// disallow html.
+					if ( true === $disallow_html ) {
+						?>
+						<span class="no-html-allowed"><?php esc_html_e( 'Text only please!', 'canuck-cp' ); ?></span>
+						<?php
+					}
 					// Captcha.
 					if ( true === $use_recaptcha ) {
 						?>

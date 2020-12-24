@@ -18,7 +18,7 @@ $canuckcp_use_feature         = get_theme_mod( 'canuckcp_use_feature' ) ? true :
 $canuckcp_exclude_page_title  = false;
 $canuckcp_curauth             = isset( $_GET['author_name'] ) ? get_user_by( 'slug', $author_name ) : get_userdata( intval( $author ) );// phpcs:ignore
 $canuckcp_page_title          = esc_html__( 'Posts by: ', 'canuck-cp' ) . $canuckcp_curauth->display_name;
-get_header( 'no-feature' );
+get_header();
 get_template_part( '/template-parts/partials', 'page-title-no-post' );
 ?>
 <div id="main-section">

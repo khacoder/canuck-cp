@@ -18,7 +18,7 @@ $canuckcp_exclude_page_title   = get_theme_mod( 'canuckcp_single_title' ) ? true
 $canuckcp_sidebar_a            = esc_html( get_theme_mod( 'canuckcp_single_sidebar_a', 'blog-a' ) );
 $canuckcp_sidebar_b            = esc_html( get_theme_mod( 'canuckcp_single_sidebar_b', 'blog-b' ) );
 
-get_header( 'no-feature' );
+get_header();
 
 get_template_part( '/template-parts/partials', 'page-title' );
 ?>

@@ -25,7 +25,7 @@ if ( is_day() ) {
 	$canuckcp_page_title = esc_html__( 'Posts for : ', 'canuck-cp' ) . esc_html( get_the_time( 'Y' ) );
 }
 
-get_header( 'no-feature' );
+get_header();
 
 get_template_part( '/template-parts/partials', 'page-title-no-post' );
 ?>
