@@ -2,6 +2,10 @@
                  Canuck CP ClassicPress Theme Change Log
 ==========================================================================================
 
+Version 1.0.7
+-----------------------------------
+- fixed missing translations on widget contact form.
+
 Version 1.0.6
 -----------------------------------
 * added header.php, duplicated code from header-no-feature.php, to eliminate The "no header.php" notice in debug mode

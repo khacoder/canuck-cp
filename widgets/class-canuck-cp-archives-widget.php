@@ -16,7 +16,7 @@
  * Plugin Name: Canuck Category Widget
  * Plugin URI: http://kevinsspace.ca/canuckdemo/
  * Description: A widget for the Canuck CP Theme that allows the user to remove categories from the list.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later

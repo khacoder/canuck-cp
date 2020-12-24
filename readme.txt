@@ -8,7 +8,7 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 1.0.6
+Version: 1.0.7
 Stable tag: 1.0.6
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -20,10 +20,8 @@ Canuck CP is a full featured ClassicPress theme offering the user many options t
 
 == Upgrade Notice ==
 
-= Version 1.0.6 =
-* added header.php, duplicated code from header-no-feature.php, to eliminate The "no header.php" notice in debug mode.
-* added option to disallow html in contact form, to eliminate spam.
-* fixed typo in message sent notice.
+= Version 1.0.7 =
+* 
 
 == Description ==
 * Canuck CP is a full featured responsive theme that looks great on full size screens, tablets and mobile devices. Users have incredible flexibility to create the website that suits your style, with extensive theme options, post metabox options, and page metabox options. Comprehensive user documentation is available in the Admin Panel under Appearance->Canuck CP.

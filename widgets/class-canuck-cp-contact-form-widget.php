@@ -14,7 +14,7 @@
  * Plugin Name: Canuck CP Contact Widget
  * Plugin URI: http://kevinsspace.ca
  * Description: A widget for the Canuck CP Theme that allows the user to set up a contact form.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Kevin Archibald
  * Author URI: http://kevinsspace.ca/
  * License: GPLv2 or later
@@ -248,11 +248,11 @@ class Canuck_CP_Contact_Form_Widget extends WP_Widget {
 				<?php
 				wp_nonce_field( 'canuckcp_widget_contact_nonce_action', 'canuckcp_widget_contact_nonce_name' );
 				?>
-				<label class="canuck-cp-widget-contact-input-label">Name:</label>
+				<label class="canuck-cp-widget-contact-input-label"><?php esc_html_e( 'Name:', 'canuck-cp' ); ?></label>
 				<input class="canuck-cp-widget-contact-input" type="text" name="canuckcp_widget_contact_name" value="<?php echo esc_attr( $canuckcp_widget_contact_name ); ?>" />
-				<label class="canuck-cp-widget-contact-input-label">Email:</label>
+				<label class="canuck-cp-widget-contact-input-label"><?php esc_html_e( 'Email:', 'canuck-cp' ); ?></label>
 				<input class="canuck-cp-widget-contact-input" type="text" name="canuckcp_widget_contact_email" value="<?php echo esc_attr( $canuckcp_widget_contact_email ); ?>" />
-				<label class="canuck-cp-widget-contact-input-label">Message:</label>
+				<label class="canuck-cp-widget-contact-input-label"><?php esc_html_e( 'Message:', 'canuck-cp' ); ?></label>
 				<textarea class="canuck-cp-widget-contact-input-textarea" name="canuckcp_widget_contact_message" rows="5" ><?php echo wp_kses_post( $canuckcp_widget_contact_message ); ?></textarea>
 				<?php
 				if ( true === $disallow_html ) {
