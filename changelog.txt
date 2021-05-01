@@ -4,7 +4,10 @@
 
 Version 1.0.7
 -----------------------------------
-- fixed missing translations on widget contact form.
+* fixed missing translations on widget contact form.
+* fixed site title and tagline to not show if the checkbox is checked
+* fixed Error sidebar to not use the the_widget()
+* removed post format code from partials-general posts
 
 Version 1.0.6
 -----------------------------------

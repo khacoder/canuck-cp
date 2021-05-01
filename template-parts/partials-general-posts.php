@@ -26,45 +26,15 @@ if ( have_posts() ) {
 					<div class="post-content-archive entry-content">
 						<?php
 						if ( ! post_password_required() ) {
-							if ( has_post_format( 'audio' ) ) {
-								if ( has_excerpt() ) {
-									the_excerpt();
-									printf(
-										'<div class="read-more-wrap"><a class="read-more" href="%1$s">%2$s</a></div>',
-										esc_url( get_permalink( get_the_ID() ) ),
-										esc_html__( 'Read More', 'canuck-cp' )
-									);
-								} else {
-									the_excerpt();
-								}
-							} elseif ( has_post_format( 'quote' ) ) {
-								if ( has_excerpt() ) {
-									the_excerpt();
-									printf(
-										'<div class="read-more-wrap"><a class="read-more" href="%1$s">%2$s</a></div>',
-										esc_url( get_permalink( get_the_ID() ) ),
-										esc_html__( 'Read More', 'canuck-cp' )
-									);
-								} else {
-									$trim_words      = get_theme_mod( 'canuckcp_excerpt_length', 30 );
-									$canuckcp_more   = '&hellip;<div class="read-more-wrap"><a class="read-more" href="' . esc_url( get_permalink() ) . '">' . __( 'Read More', 'canuck-cp' ) . '</a></div>';
-									$content         = get_the_content();
-									$content         = canuckcp_strip_extracted_quote( $content );
-									$content_trimmed = wp_trim_words( $content, $trim_words, $canuckcp_more );
-									$excerpt         = apply_filters( 'the_excerpt', $content_trimmed );
-									echo wp_kses_post( $excerpt );
-								}
+							if ( has_excerpt() ) {
+								the_excerpt();
+								printf(
+									'<div class="read-more-wrap"><a class="read-more" href="%1$s">%2$s</a></div>',
+									esc_url( get_permalink( get_the_ID() ) ),
+									esc_html__( 'Read More', 'canuck-cp' )
+								);
 							} else {
-								if ( has_excerpt() ) {
-									the_excerpt();
-									printf(
-										'<div class="read-more-wrap"><a class="read-more" href="%1$s">%2$s</a></div>',
-										esc_url( get_permalink( get_the_ID() ) ),
-										esc_html__( 'Read More', 'canuck-cp' )
-									);
-								} else {
-									the_excerpt();
-								}
+								the_excerpt();
 							}
 							canuckcp_post_meta_pages();
 						} else {

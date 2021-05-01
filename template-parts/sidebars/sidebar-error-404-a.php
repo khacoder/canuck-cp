@@ -11,6 +11,8 @@
  */
 
 if ( ! dynamic_sidebar( 'canuckcp_404_sidebar_a' ) ) {
-	the_widget( 'WP_Widget_Search' );
-	the_widget( 'canuckcp_recent_posts_widget' );
+	?>
+	<h2><?php esc_html_e( 'Error 404 Sidebar A', 'canuck-cp' ); ?></h2>
+	<p><?php esc_html_e( 'Go to Appearance => Widgets and drag a widget over to this sidebar.', 'canuck-cp' ); ?></p>
+	<?php
 }

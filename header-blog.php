@@ -97,18 +97,22 @@ $canuckcp_blog_desc             = get_theme_mod( 'canuckcp_home_description', ''
 						<h1><?php echo wp_kses_post( $canuckcp_blog_title ); ?></h1>
 						<?php
 					} else {
-						?>
-						<h1><?php echo get_bloginfo( 'name' );// phpcs:ignore ?></h1>
-						<?php
+						if ( false !== display_header_text() ) {
+							?>
+							<h1><?php echo get_bloginfo( 'name' );// phpcs:ignore ?></h1>
+							<?php
+						}
 					}
 					if ( '' !== $canuckcp_blog_desc ) {
 						?>
 						<span><?php echo wp_kses_post( $canuckcp_blog_desc ); ?></span>
 						<?php
 					} else {
-						?>
-						<span><?php echo get_bloginfo( 'description' );// phpcs:ignore ?></span>
-						<?php
+						if ( false !== display_header_text() ) {
+							?>?>
+							<span><?php echo get_bloginfo( 'description' );// phpcs:ignore ?></span>
+							<?php
+						}
 					}
 					?>
 					</span>

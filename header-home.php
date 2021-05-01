@@ -93,12 +93,20 @@ $canuckcp_home_desc             = get_theme_mod( 'canuckcp_home_description', ''
 					if ( '' !== $canuckcp_home_title ) {
 						echo '<h1>' . wp_kses_post( $canuckcp_home_title ) . '</h1>';
 					} else {
-						echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';// phpcs:ignore
+						if ( false !== display_header_text() ) {
+							?>
+							<h1><?php echo get_bloginfo( 'name' );// phpcs:ignore ?></h1>
+							<?php
+						}
 					}
 					if ( '' !== $canuckcp_home_desc ) {
 						echo '<span>' . wp_kses_post( $canuckcp_home_desc ) . '</span>';
 					} else {
-						echo '<span>' . get_bloginfo( 'description' ) . '</span>';// phpcs:ignore
+						if ( false !== display_header_text() ) {
+							?>?>
+							<span><?php echo get_bloginfo( 'description' );// phpcs:ignore ?></span>
+							<?php
+						}
 					}
 					?>
 					</span>
