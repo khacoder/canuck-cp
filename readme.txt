@@ -8,8 +8,8 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 1.0.7
-Stable tag: 1.0.6
+Version: 1.0.8
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,8 +20,8 @@ Canuck CP is a full featured ClassicPress theme offering the user many options t
 
 == Upgrade Notice ==
 
-= Version 1.0.7 =
-* 
+= Version 1.0.8 =
+* fixed bug in blog page and home page showing closing php tag as text. 
 
 == Description ==
 * Canuck CP is a full featured responsive theme that looks great on full size screens, tablets and mobile devices. Users have incredible flexibility to create the website that suits your style, with extensive theme options, post metabox options, and page metabox options. Comprehensive user documentation is available in the Admin Panel under Appearance->Canuck CP.

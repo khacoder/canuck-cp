@@ -103,7 +103,7 @@ $canuckcp_home_desc             = get_theme_mod( 'canuckcp_home_description', ''
 						echo '<span>' . wp_kses_post( $canuckcp_home_desc ) . '</span>';
 					} else {
 						if ( false !== display_header_text() ) {
-							?>?>
+							?>
 							<span><?php echo get_bloginfo( 'description' );// phpcs:ignore ?></span>
 							<?php
 						}
